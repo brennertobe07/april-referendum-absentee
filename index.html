@@ -15,14 +15,17 @@
     --rep-lt:   #e57368;
     --unk:      #7f8c8d;
     --unk-lt:   #b2bec3;
+    --ip:       #8e44ad;
+    --ip-lt:    #bb8fce;
+    --mail:     #27ae60;
+    --mail-lt:  #55c97a;
     --bg:       #0f1117;
     --surface:  #1a1d27;
+    --surface2: #20243a;
     --border:   #2a2d3a;
     --text:     #e8eaf0;
     --muted:    #8890a8;
     --accent:   #3a8fd4;
-    --green:    #27ae60;
-    --green-lt: #55c97a;
     --radius:   8px;
     --mono:     'DM Mono', monospace;
     --sans:     'DM Sans', sans-serif;
@@ -42,7 +45,7 @@
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
-    padding: 14px 28px;
+    padding: 12px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,13 +54,52 @@
     top: 0;
     z-index: 100;
   }
+  .header-left { display: flex; align-items: center; gap: 20px; }
   header h1 {
-    font-size: 1rem;
+    font-size: .95rem;
     font-weight: 600;
     letter-spacing: .03em;
     color: var(--text);
+    white-space: nowrap;
   }
   header h1 span { color: var(--accent); }
+
+  /* ── TOP NAV TABS ── */
+  .top-tabs {
+    display: flex;
+    gap: 4px;
+  }
+  .top-tab {
+    padding: 6px 16px;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    background: none;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: .82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .15s;
+    white-space: nowrap;
+  }
+  .top-tab:hover { color: var(--text); background: var(--border); }
+  .top-tab.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  .header-right { display: flex; align-items: center; gap: 16px; }
+  #days-remaining {
+    font-family: var(--mono);
+    font-size: .78rem;
+    color: var(--accent);
+    background: rgba(58,143,212,.12);
+    border: 1px solid rgba(58,143,212,.3);
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
   #last-updated {
     font-family: var(--mono);
     font-size: .72rem;
@@ -68,24 +110,28 @@
   /* ── LAYOUT ── */
   .layout {
     display: grid;
-    grid-template-columns: 230px 1fr;
+    grid-template-columns: 220px 1fr;
     min-height: calc(100vh - 53px);
   }
+
+  /* sidebar hidden on trends tab */
+  .layout.no-sidebar { grid-template-columns: 1fr; }
+  .layout.no-sidebar aside { display: none; }
 
   /* ── SIDEBAR ── */
   aside {
     background: var(--surface);
     border-right: 1px solid var(--border);
-    padding: 20px 14px;
+    padding: 16px 12px;
     overflow-y: auto;
   }
   aside h2 {
-    font-size: .65rem;
+    font-size: .62rem;
     font-weight: 600;
     letter-spacing: .12em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     padding-left: 8px;
   }
   #county-search {
@@ -94,336 +140,237 @@
     border: 1px solid var(--border);
     color: var(--text);
     font-family: var(--sans);
-    font-size: .82rem;
-    padding: 7px 10px;
+    font-size: .8rem;
+    padding: 6px 10px;
     border-radius: var(--radius);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     outline: none;
   }
   #county-search:focus { border-color: var(--accent); }
   #county-search::placeholder { color: var(--muted); }
 
-  #county-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
+  #county-list { list-style: none; display: flex; flex-direction: column; gap: 1px; }
   #county-list li {
-    padding: 7px 10px;
+    padding: 6px 10px;
     border-radius: var(--radius);
     cursor: pointer;
-    font-size: .82rem;
+    font-size: .8rem;
     color: var(--muted);
-    transition: background .12s, color .12s;
+    transition: background .1s, color .1s;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   #county-list li:hover { background: var(--border); color: var(--text); }
-  #county-list li.active {
-    background: var(--accent);
-    color: #fff;
-    font-weight: 600;
-  }
+  #county-list li.active { background: var(--accent); color: #fff; font-weight: 600; }
   #county-list li .badge {
     font-family: var(--mono);
-    font-size: .68rem;
-    background: rgba(255,255,255,.12);
-    padding: 1px 6px;
+    font-size: .66rem;
+    background: rgba(255,255,255,.1);
+    padding: 1px 5px;
     border-radius: 20px;
   }
   .statewide-btn {
-    display: block;
-    width: 100%;
-    padding: 8px 10px;
-    margin-bottom: 10px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: .82rem;
-    border-radius: var(--radius);
-    cursor: pointer;
-    text-align: left;
-    font-weight: 600;
-    letter-spacing: .02em;
-    transition: background .12s, border-color .12s;
+    display: block; width: 100%; padding: 7px 10px; margin-bottom: 8px;
+    background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    font-family: var(--sans); font-size: .8rem; border-radius: var(--radius);
+    cursor: pointer; text-align: left; font-weight: 600;
+    transition: background .1s, border-color .1s;
   }
   .statewide-btn:hover { background: var(--border); }
   .statewide-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-  /* ── MAIN CONTENT ── */
-  main {
-    padding: 24px 28px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
+  /* ── MAIN ── */
+  main { padding: 20px 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
 
   .section-title {
-    font-size: .65rem;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 14px;
+    font-size: .62rem; font-weight: 600; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
   }
 
   /* ── STAT CARDS ── */
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
-  }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
   .stat-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px;
   }
   .stat-card.dem   { border-top: 3px solid var(--dem); }
   .stat-card.rep   { border-top: 3px solid var(--rep); }
   .stat-card.unk   { border-top: 3px solid var(--unk); }
   .stat-card.total { border-top: 3px solid var(--accent); }
-  .stat-card.out   { border-top: 3px solid var(--green); }
-  .stat-label {
-    font-size: .7rem;
-    font-weight: 600;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  .stat-value {
-    font-family: var(--mono);
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--text);
-  }
-  .stat-sub {
-    font-size: .72rem;
-    color: var(--muted);
-    margin-top: 2px;
-  }
-  .stat-pct {
-    font-family: var(--mono);
-    font-size: .78rem;
-    margin-top: 2px;
-  }
-  .stat-card.dem .stat-pct { color: var(--dem-lt); }
-  .stat-card.rep .stat-pct { color: var(--rep-lt); }
-  .stat-card.unk .stat-pct { color: var(--unk-lt); }
-  .stat-card.out .stat-pct { color: var(--green-lt); }
+  .stat-card.out   { border-top: 3px solid var(--mail); }
+  .stat-card.ip    { border-top: 3px solid var(--ip); }
+  .stat-label { font-size: .67rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .stat-value { font-family: var(--mono); font-size: 1.4rem; font-weight: 500; color: var(--text); margin-top: 2px; }
+  .stat-sub   { font-size: .7rem; color: var(--muted); margin-top: 2px; }
+  .stat-card.dem .stat-sub  { color: var(--dem-lt); }
+  .stat-card.rep .stat-sub  { color: var(--rep-lt); }
+  .stat-card.ip  .stat-sub  { color: var(--ip-lt); }
+  .stat-card.out .stat-sub  { color: var(--mail-lt); }
 
   /* ── CHART GRID ── */
-  .chart-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .chart-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
   .chart-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px;
   }
+  .chart-card.wide { grid-column: 1 / -1; }
   .chart-card h3 {
-    font-size: .75rem;
-    font-weight: 600;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 14px;
+    font-size: .68rem; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
   }
-  .chart-card canvas { max-height: 220px; }
+  .chart-card canvas { max-height: 240px; }
+  .chart-card.tall canvas { max-height: 300px; }
 
-  /* ── PRECINCT TABLE ── */
-  .table-wrap {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
+  /* ── TOGGLE BUTTONS ── */
+  .toggle-row {
+    display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;
+    align-items: center; justify-content: space-between;
   }
+  .toggle-row h3 {
+    font-size: .68rem; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .toggle-btns { display: flex; gap: 4px; }
+  .toggle-btn {
+    padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border);
+    background: none; color: var(--muted); font-family: var(--sans); font-size: .72rem;
+    cursor: pointer; transition: all .12s;
+  }
+  .toggle-btn:hover { color: var(--text); border-color: var(--text); }
+  .toggle-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(58,143,212,.1); }
+
+  /* ── TABLE ── */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
   .table-header {
-    padding: 14px 18px;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    padding: 12px 16px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
   }
-  .table-header h3 {
-    font-size: .75rem;
-    font-weight: 600;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
+  .table-header h3 { font-size: .68rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   #precinct-search {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: .8rem;
-    padding: 5px 10px;
-    border-radius: var(--radius);
-    outline: none;
-    width: 200px;
+    background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    font-family: var(--sans); font-size: .78rem; padding: 5px 10px;
+    border-radius: var(--radius); outline: none; width: 180px;
   }
   #precinct-search:focus { border-color: var(--accent); }
   #precinct-search::placeholder { color: var(--muted); }
-
   .table-scroll { overflow-x: auto; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: .8rem;
-  }
+  table { width: 100%; border-collapse: collapse; font-size: .78rem; }
   thead th {
-    padding: 10px 14px;
-    text-align: right;
-    font-size: .65rem;
-    font-weight: 600;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    background: rgba(255,255,255,.03);
-    border-bottom: 1px solid var(--border);
+    padding: 9px 12px; text-align: right; font-size: .62rem; font-weight: 600;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+    background: rgba(255,255,255,.03); border-bottom: 1px solid var(--border);
     white-space: nowrap;
-    cursor: pointer;
-    user-select: none;
   }
   thead th:first-child { text-align: left; }
-  thead th:hover { color: var(--text); }
-  thead th.sort-asc::after  { content: ' ↑'; }
-  thead th.sort-desc::after { content: ' ↓'; }
-  tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background .08s; }
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: rgba(255,255,255,.03); }
   td {
-    padding: 9px 14px;
-    text-align: right;
-    font-family: var(--mono);
-    font-size: .78rem;
-    color: var(--text);
-    white-space: nowrap;
+    padding: 8px 12px; text-align: right;
+    font-family: var(--mono); font-size: .76rem; color: var(--text); white-space: nowrap;
   }
-  td:first-child { text-align: left; font-family: var(--sans); color: var(--text); }
-  td.county-col { color: var(--muted); font-size: .73rem; }
+  td:first-child { text-align: left; font-family: var(--sans); }
   td.dem-col { color: var(--dem-lt); }
   td.rep-col { color: var(--rep-lt); }
   td.unk-col { color: var(--unk-lt); }
-  td.out-col { color: var(--green-lt); }
-
-  .pct-bar {
-    display: flex;
-    height: 4px;
-    border-radius: 2px;
-    overflow: hidden;
-    margin-top: 4px;
-    min-width: 60px;
-  }
-  .pct-bar .b-dem { background: var(--dem); }
-  .pct-bar .b-rep { background: var(--rep); }
-  .pct-bar .b-unk { background: var(--unk); }
-
-  /* ── TABLE FOOTER ── */
+  td.out-col { color: var(--mail-lt); }
+  td.ip-col  { color: var(--ip-lt); }
   .table-footer {
-    padding: 10px 18px;
-    border-top: 1px solid var(--border);
-    font-size: .72rem;
-    color: var(--muted);
-    font-family: var(--mono);
+    padding: 8px 16px; border-top: 1px solid var(--border);
+    font-size: .7rem; color: var(--muted); font-family: var(--mono);
   }
 
-  /* ── LOADING / EMPTY ── */
-  .loading {
-    text-align: center;
-    padding: 60px;
-    color: var(--muted);
-    font-size: .9rem;
-  }
+  /* ── TRENDS ── */
+  .trends-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+
+  /* ── DAY LABEL WEEKEND ── */
+  .wknd { color: var(--rep-lt) !important; }
+
+  .loading { text-align: center; padding: 60px; color: var(--muted); }
   .error-box {
-    background: rgba(192,57,43,.12);
-    border: 1px solid rgba(192,57,43,.4);
-    border-radius: var(--radius);
-    padding: 16px 20px;
-    color: #e57368;
-    font-family: var(--mono);
-    font-size: .82rem;
-  }
-
-  /* ── LEGEND PILL ── */
-  .legend {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin-top: 6px;
-  }
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: .72rem;
-    color: var(--muted);
-  }
-  .legend-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
+    background: rgba(192,57,43,.12); border: 1px solid rgba(192,57,43,.4);
+    border-radius: var(--radius); padding: 14px 18px; color: #e57368;
+    font-family: var(--mono); font-size: .8rem;
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Virginia <span>April Referendum</span> — Absentee Ballot Tracker</h1>
-  <div id="last-updated">Loading...</div>
+  <div class="header-left">
+    <h1>Virginia <span>April Referendum</span> — Absentee Tracker</h1>
+    <div class="top-tabs">
+      <button class="top-tab active" data-tab="summary">Summary</button>
+      <button class="top-tab" data-tab="trends">Daily Trends</button>
+    </div>
+  </div>
+  <div class="header-right">
+    <div id="days-remaining">— days to election</div>
+    <div id="last-updated">Loading…</div>
+  </div>
 </header>
 
-<div class="layout">
-  <aside>
+<div class="layout" id="layout">
+  <aside id="sidebar">
     <button class="statewide-btn active" id="btn-statewide">🗺 Statewide</button>
     <h2>Counties</h2>
     <input type="text" id="county-search" placeholder="Search county…">
     <ul id="county-list"></ul>
   </aside>
-
   <main id="main-content">
     <div class="loading">Loading data…</div>
   </main>
 </div>
 
 <script>
-// ── DATA STORE ────────────────────────────────────────────────────────────
-let DATA = { summary: null, counties: [], precincts: [], meta: null };
-let currentCounty = null; // null = statewide
-let precinctSortCol = null;
-let precinctSortDir = 1;
+// ── STATE ─────────────────────────────────────────────────────────────────
+let DATA = { summary: null, counties: [], precincts: [], daily: [], meta: null };
+let currentTab    = 'summary';
+let currentCounty = null;
 let charts = {};
 
-// ── FETCH ─────────────────────────────────────────────────────────────────
+const ELECTION_DAY = new Date('2026-04-21');
+
+// ── BOOT ──────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const [summary, counties, precincts, meta] = await Promise.all([
+    const [summary, counties, precincts, daily, meta] = await Promise.all([
       fetch('data/summary.json').then(r => r.json()),
       fetch('data/counties.json').then(r => r.json()),
       fetch('data/precincts.json').then(r => r.json()),
+      fetch('data/daily.json').then(r => r.json()),
       fetch('data/metadata.json').then(r => r.json()),
     ]);
-    DATA = { summary, counties, precincts, meta };
-    document.getElementById('last-updated').textContent =
-      `Updated: ${meta.last_updated}`;
+    DATA = { summary, counties, precincts, daily, meta };
+
+    document.getElementById('last-updated').textContent = `Updated: ${meta.last_updated}`;
+
+    const today = new Date();
+    const days  = Math.ceil((ELECTION_DAY - today) / 86400000);
+    document.getElementById('days-remaining').textContent =
+      days > 0 ? `${days} days to election` : 'Election Day';
+
     buildSidebar();
     renderView();
-  } catch (err) {
+  } catch(err) {
     document.getElementById('main-content').innerHTML =
-      `<div class="error-box">Failed to load data files. Make sure data/*.json files are present.<br>${err}</div>`;
+      `<div class="error-box">Failed to load data files.<br>${err}</div>`;
   }
 }
+
+// ── TAB NAV ───────────────────────────────────────────────────────────────
+document.querySelectorAll('.top-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentTab = btn.dataset.tab;
+    document.querySelectorAll('.top-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const layout = document.getElementById('layout');
+    layout.classList.toggle('no-sidebar', currentTab === 'trends');
+    renderView();
+  });
+});
 
 // ── SIDEBAR ───────────────────────────────────────────────────────────────
 function buildSidebar() {
@@ -438,13 +385,11 @@ function buildSidebar() {
         const li = document.createElement('li');
         li.dataset.county = c.CountyName;
         if (currentCounty === c.CountyName) li.classList.add('active');
-        li.innerHTML = `<span>${c.CountyName}</span>
-          <span class="badge">${fmt(c.VotedCount)}</span>`;
+        li.innerHTML = `<span>${c.CountyName}</span><span class="badge">${fmt(c.VotedCount)}</span>`;
         li.addEventListener('click', () => selectCounty(c.CountyName));
         ul.appendChild(li);
       });
   }
-
   render();
   document.getElementById('county-search').addEventListener('input', e => render(e.target.value));
 }
@@ -452,9 +397,8 @@ function buildSidebar() {
 function selectCounty(name) {
   currentCounty = name;
   document.getElementById('btn-statewide').classList.remove('active');
-  document.querySelectorAll('#county-list li').forEach(li => {
-    li.classList.toggle('active', li.dataset.county === name);
-  });
+  document.querySelectorAll('#county-list li').forEach(li =>
+    li.classList.toggle('active', li.dataset.county === name));
   renderView();
 }
 
@@ -465,22 +409,24 @@ document.getElementById('btn-statewide').addEventListener('click', () => {
   renderView();
 });
 
-// ── RENDER ────────────────────────────────────────────────────────────────
+// ── RENDER DISPATCH ───────────────────────────────────────────────────────
 function renderView() {
   destroyCharts();
   const main = document.getElementById('main-content');
-
-  if (currentCounty === null) {
+  if (currentTab === 'trends') {
+    renderTrends(main);
+  } else if (currentCounty === null) {
     renderStatewide(main);
   } else {
     renderCounty(main, currentCounty);
   }
 }
 
+// ── SUMMARY — STATEWIDE ───────────────────────────────────────────────────
 function renderStatewide(main) {
   const s = DATA.summary;
   const voted = s.VotedCount || 0;
-  const out   = s.OutCount || 0;
+  const out   = s.OutCount   || 0;
   const total = voted + out;
 
   main.innerHTML = `
@@ -499,48 +445,38 @@ function renderStatewide(main) {
       </div>
     </div>
     <div class="table-wrap">
-      <div class="table-header">
-        <h3>County Breakdown</h3>
-      </div>
-      <div class="table-scroll">
-        <table id="county-table"></table>
-      </div>
+      <div class="table-header"><h3>County Breakdown</h3></div>
+      <div class="table-scroll"><table id="county-table"></table></div>
       <div class="table-footer" id="county-footer"></div>
     </div>`;
 
-  // Cards
-  const sg = document.getElementById('stat-grid');
-  sg.innerHTML = statCards([
-    { cls:'total', label:'Total Universe', val: total, sub: s.CountyCount+' counties' },
-    { cls:'total', label:'Ballots Returned', val: voted, sub: pct(voted,total)+' return rate' },
-    { cls:'dem',   label:'Dem Returned', val: s.DemVotedCount, sub: pct(s.DemVotedCount, voted)+' of returned' },
-    { cls:'rep',   label:'Rep Returned', val: s.RepVotedCount, sub: pct(s.RepVotedCount, voted)+' of returned' },
-    { cls:'unk',   label:'Unknown Returned', val: s.UnknownVotedCount, sub: pct(s.UnknownVotedCount, voted)+' of returned' },
-    { cls:'out',   label:'Still Out', val: out, sub: pct(out, total)+' of universe' },
-    { cls:'dem',   label:'Dem Still Out', val: s.DemOutCount, sub: pct(s.DemOutCount, out)+' of still out' },
-    { cls:'rep',   label:'Rep Still Out', val: s.RepOutCount, sub: pct(s.RepOutCount, out)+' of still out' },
+  document.getElementById('stat-grid').innerHTML = statCards([
+    { cls:'total', label:'Total Universe',    val: total,                 sub: s.CountyCount+' counties · '+s.PrecinctCount+' precincts' },
+    { cls:'total', label:'Ballots Returned',  val: voted,                 sub: pct(voted,total)+' return rate' },
+    { cls:'dem',   label:'Dem Returned',      val: s.DemVotedCount,       sub: pct(s.DemVotedCount, voted)+' of returned' },
+    { cls:'rep',   label:'Rep Returned',      val: s.RepVotedCount,       sub: pct(s.RepVotedCount, voted)+' of returned' },
+    { cls:'unk',   label:'Unk Returned',      val: s.UnknownVotedCount,   sub: pct(s.UnknownVotedCount, voted)+' of returned' },
+    { cls:'out',   label:'Still Out',         val: out,                   sub: pct(out, total)+' of universe' },
+    { cls:'dem',   label:'Dem Still Out',     val: s.DemOutCount,         sub: pct(s.DemOutCount, out)+' of still out' },
+    { cls:'rep',   label:'Rep Still Out',     val: s.RepOutCount,         sub: pct(s.RepOutCount, out)+' of still out' },
   ]);
 
-  // Charts
-  buildPartyChart('chart-voted',
-    [s.DemVotedCount, s.RepVotedCount, s.UnknownVotedCount]);
-  buildPartyChart('chart-out',
-    [s.DemOutCount, s.RepOutCount, s.UnknownOutCount]);
-
-  // County table
+  buildPartyChart('chart-voted', [s.DemVotedCount, s.RepVotedCount, s.UnknownVotedCount]);
+  buildPartyChart('chart-out',   [s.DemOutCount,   s.RepOutCount,   s.UnknownOutCount]);
   buildCountyTable(DATA.counties);
 }
 
+// ── SUMMARY — COUNTY ──────────────────────────────────────────────────────
 function renderCounty(main, countyName) {
-  const cRow = DATA.counties.find(c => c.CountyName === countyName) || {};
+  const cRow     = DATA.counties.find(c => c.CountyName === countyName) || {};
   const precincts = DATA.precincts.filter(p => p.CountyName === countyName);
   const voted = cRow.VotedCount || 0;
-  const out   = cRow.OutCount || 0;
+  const out   = cRow.OutCount   || 0;
   const total = voted + out;
 
   main.innerHTML = `
     <div>
-      <div class="section-title">${countyName} County</div>
+      <div class="section-title">${countyName}</div>
       <div class="stat-grid" id="stat-grid"></div>
     </div>
     <div class="chart-grid">
@@ -558,39 +494,407 @@ function renderCounty(main, countyName) {
         <h3>Precincts — ${countyName}</h3>
         <input type="text" id="precinct-search" placeholder="Search precinct…">
       </div>
-      <div class="table-scroll">
-        <table id="precinct-table"></table>
-      </div>
+      <div class="table-scroll"><table id="precinct-table"></table></div>
       <div class="table-footer" id="precinct-footer"></div>
     </div>`;
 
-  const sg = document.getElementById('stat-grid');
-  sg.innerHTML = statCards([
-    { cls:'total', label:'Total Universe', val: total, sub: precincts.length+' precincts' },
-    { cls:'total', label:'Ballots Returned', val: voted, sub: pct(voted,total)+' return rate' },
-    { cls:'dem',   label:'Dem Returned', val: cRow.DemVotedCount, sub: pct(cRow.DemVotedCount, voted)+' of returned' },
-    { cls:'rep',   label:'Rep Returned', val: cRow.RepVotedCount, sub: pct(cRow.RepVotedCount, voted)+' of returned' },
-    { cls:'unk',   label:'Unknown Returned', val: cRow.UnknownVotedCount, sub: pct(cRow.UnknownVotedCount, voted)+' of returned' },
-    { cls:'out',   label:'Still Out', val: out, sub: pct(out, total)+' of universe' },
-    { cls:'dem',   label:'Dem Still Out', val: cRow.DemOutCount, sub: pct(cRow.DemOutCount, out)+' of still out' },
-    { cls:'rep',   label:'Rep Still Out', val: cRow.RepOutCount, sub: pct(cRow.RepOutCount, out)+' of still out' },
+  document.getElementById('stat-grid').innerHTML = statCards([
+    { cls:'total', label:'Total Universe',   val: total,               sub: precincts.length+' precincts' },
+    { cls:'total', label:'Ballots Returned', val: voted,               sub: pct(voted,total)+' return rate' },
+    { cls:'dem',   label:'Dem Returned',     val: cRow.DemVotedCount,  sub: pct(cRow.DemVotedCount, voted)+' of returned' },
+    { cls:'rep',   label:'Rep Returned',     val: cRow.RepVotedCount,  sub: pct(cRow.RepVotedCount, voted)+' of returned' },
+    { cls:'unk',   label:'Unk Returned',     val: cRow.UnknownVotedCount, sub: pct(cRow.UnknownVotedCount, voted)+' of returned' },
+    { cls:'out',   label:'Still Out',        val: out,                 sub: pct(out, total)+' of universe' },
+    { cls:'dem',   label:'Dem Still Out',    val: cRow.DemOutCount,    sub: pct(cRow.DemOutCount, out)+' of still out' },
+    { cls:'rep',   label:'Rep Still Out',    val: cRow.RepOutCount,    sub: pct(cRow.RepOutCount, out)+' of still out' },
   ]);
 
-  buildPartyChart('chart-voted',
-    [cRow.DemVotedCount, cRow.RepVotedCount, cRow.UnknownVotedCount]);
-  buildPartyChart('chart-out',
-    [cRow.DemOutCount, cRow.RepOutCount, cRow.UnknownOutCount]);
-
+  buildPartyChart('chart-voted', [cRow.DemVotedCount, cRow.RepVotedCount, cRow.UnknownVotedCount]);
+  buildPartyChart('chart-out',   [cRow.DemOutCount,   cRow.RepOutCount,   cRow.UnknownOutCount]);
   buildPrecinctTable(precincts);
 
   document.getElementById('precinct-search').addEventListener('input', e => {
     const q = e.target.value.toLowerCase();
-    buildPrecinctTable(precincts.filter(p =>
-      p.PrecinctName.toLowerCase().includes(q)));
+    buildPrecinctTable(precincts.filter(p => p.PrecinctName.toLowerCase().includes(q)));
   });
 }
 
-// ── STAT CARDS ────────────────────────────────────────────────────────────
+// ── TRENDS TAB ────────────────────────────────────────────────────────────
+function renderTrends(main) {
+  const daily = DATA.daily;
+  if (!daily || daily.length === 0) {
+    main.innerHTML = `<div class="loading">No daily data available. Run the Python script to generate data/daily.json.</div>`;
+    return;
+  }
+
+  const lastRow  = daily[daily.length - 1];
+  const totalRet = lastRow.CumTotalReturned || 0;
+  const totalIP  = lastRow.CumInPersonTotal || 0;
+  const totalMail= lastRow.CumMailTotal     || 0;
+
+  main.innerHTML = `
+    <div>
+      <div class="section-title">Daily Trends — Statewide</div>
+      <div class="stat-grid" id="trend-stats"></div>
+    </div>
+
+    <div class="chart-card tall wide" id="cumulative-wrap">
+      <div class="toggle-row">
+        <h3>Cumulative Ballots Returned</h3>
+        <div class="toggle-btns">
+          <button class="toggle-btn active" data-cum="total">Total</button>
+          <button class="toggle-btn active" data-cum="ip">In-Person</button>
+          <button class="toggle-btn active" data-cum="mail">Mail</button>
+        </div>
+      </div>
+      <canvas id="chart-cumulative"></canvas>
+    </div>
+
+    <div class="chart-card tall wide" id="daily-wrap">
+      <div class="toggle-row">
+        <h3>Daily Returns</h3>
+        <div class="toggle-btns">
+          <button class="toggle-btn active" data-mode="inperson">In-Person D/R/U</button>
+          <button class="toggle-btn" data-mode="mail">Mail D/R/U</button>
+          <button class="toggle-btn" data-mode="type">In-Person vs Mail</button>
+        </div>
+      </div>
+      <canvas id="chart-daily"></canvas>
+    </div>`;
+
+  // Stat cards
+  document.getElementById('trend-stats').innerHTML = statCards([
+    { cls:'total', label:'Total Returned',   val: totalRet,  sub: 'cumulative' },
+    { cls:'ip',    label:'In-Person',         val: totalIP,   sub: pct(totalIP, totalRet)+' of returned' },
+    { cls:'out',   label:'Mail Returned',     val: totalMail, sub: pct(totalMail, totalRet)+' of returned' },
+    { cls:'dem',   label:'Dem In-Person',     val: lastRow.CumInPersonDem,  sub: pct(lastRow.CumInPersonDem, totalIP)+' of in-person' },
+    { cls:'rep',   label:'Rep In-Person',     val: lastRow.CumInPersonRep,  sub: pct(lastRow.CumInPersonRep, totalIP)+' of in-person' },
+    { cls:'dem',   label:'Dem Mail',          val: lastRow.CumMailDem,      sub: pct(lastRow.CumMailDem, totalMail)+' of mail' },
+    { cls:'rep',   label:'Rep Mail',          val: lastRow.CumMailRep,      sub: pct(lastRow.CumMailRep, totalMail)+' of mail' },
+  ]);
+
+  buildCumulativeChart(daily);
+  buildDailyChart(daily, 'inperson');
+
+  // Cumulative toggles
+  const cumState = { total: true, ip: true, mail: true };
+  document.querySelectorAll('[data-cum]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const k = btn.dataset.cum;
+      cumState[k] = !cumState[k];
+      btn.classList.toggle('active', cumState[k]);
+      updateCumulativeChart(cumState);
+    });
+  });
+
+  // Daily mode toggles
+  let dailyMode = 'inperson';
+  document.querySelectorAll('[data-mode]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      dailyMode = btn.dataset.mode;
+      document.querySelectorAll('[data-mode]').forEach(b =>
+        b.classList.toggle('active', b.dataset.mode === dailyMode));
+      destroyChart('chart-daily');
+      buildDailyChart(daily, dailyMode);
+    });
+  });
+}
+
+// ── CUMULATIVE LINE CHART ─────────────────────────────────────────────────
+function buildCumulativeChart(daily) {
+  const labels = daily.map(d => shortDate(d.ReturnDate, d.DayOfWeek));
+
+  const datasets = [
+    {
+      id: 'total',
+      label: 'Total',
+      data: daily.map(d => d.CumTotalReturned),
+      borderColor: cssVar('--accent'),
+      backgroundColor: 'rgba(58,143,212,.08)',
+      fill: true,
+      tension: .35,
+      borderWidth: 2.5,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+    },
+    {
+      id: 'ip',
+      label: 'In-Person',
+      data: daily.map(d => d.CumInPersonTotal),
+      borderColor: cssVar('--ip'),
+      backgroundColor: 'transparent',
+      fill: false,
+      tension: .35,
+      borderWidth: 2,
+      pointRadius: 3,
+      borderDash: [],
+    },
+    {
+      id: 'mail',
+      label: 'Mail',
+      data: daily.map(d => d.CumMailTotal),
+      borderColor: cssVar('--mail'),
+      backgroundColor: 'transparent',
+      fill: false,
+      tension: .35,
+      borderWidth: 2,
+      pointRadius: 3,
+    },
+  ];
+
+  const c = new Chart(document.getElementById('chart-cumulative'), {
+    type: 'line',
+    data: { labels, datasets },
+    options: lineOpts('Cumulative Returns'),
+  });
+  charts['chart-cumulative'] = c;
+}
+
+function updateCumulativeChart(state) {
+  const c = charts['chart-cumulative'];
+  if (!c) return;
+  const map = { total: 0, ip: 1, mail: 2 };
+  Object.entries(map).forEach(([k, i]) => {
+    c.data.datasets[i].hidden = !state[k];
+  });
+  c.update();
+}
+
+// ── DAILY BAR CHART ───────────────────────────────────────────────────────
+function buildDailyChart(daily, mode) {
+  const labels = daily.map(d => shortDate(d.ReturnDate, d.DayOfWeek));
+  let datasets;
+
+  if (mode === 'inperson') {
+    datasets = [
+      { label: 'Dem In-Person', data: daily.map(d => d.InPersonDem), backgroundColor: cssVar('--dem') },
+      { label: 'Rep In-Person', data: daily.map(d => d.InPersonRep), backgroundColor: cssVar('--rep') },
+      { label: 'Unk In-Person', data: daily.map(d => d.InPersonUnknown), backgroundColor: cssVar('--unk') },
+    ];
+  } else if (mode === 'mail') {
+    datasets = [
+      { label: 'Dem Mail', data: daily.map(d => d.MailDem), backgroundColor: cssVar('--dem') },
+      { label: 'Rep Mail', data: daily.map(d => d.MailRep), backgroundColor: cssVar('--rep') },
+      { label: 'Unk Mail', data: daily.map(d => d.MailUnknown), backgroundColor: cssVar('--unk') },
+    ];
+  } else {
+    datasets = [
+      { label: 'In-Person', data: daily.map(d => d.InPersonTotal), backgroundColor: cssVar('--ip') },
+      { label: 'Mail',      data: daily.map(d => d.MailTotal),     backgroundColor: cssVar('--mail') },
+    ];
+  }
+
+  datasets.forEach(ds => {
+    ds.borderRadius = 3;
+    ds.borderSkipped = false;
+  });
+
+  const c = new Chart(document.getElementById('chart-daily'), {
+    type: 'bar',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          labels: {
+            color: cssVar('--muted'),
+            font: { family: "'DM Sans', sans-serif", size: 11 },
+            boxWidth: 12, boxHeight: 12,
+          },
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.dataset.label}: ${fmt(ctx.parsed.y)}`,
+            footer: (items) => {
+              const total = items.reduce((s, i) => s + i.parsed.y, 0);
+              return `Total: ${fmt(total)}`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          stacked: true,
+          grid: { display: false },
+          ticks: { color: cssVar('--muted'), font: { family: "'DM Mono', monospace", size: 10 } },
+        },
+        y: {
+          stacked: true,
+          grid: { color: 'rgba(255,255,255,.05)' },
+          ticks: { color: cssVar('--muted'), font: { family: "'DM Mono', monospace", size: 10 }, callback: v => fmt(v) },
+        },
+      },
+    },
+  });
+  charts['chart-daily'] = c;
+}
+
+// ── PARTY BAR CHART ───────────────────────────────────────────────────────
+function buildPartyChart(id, [dem, rep, unk]) {
+  const c = new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: {
+      labels: ['Democrat','Republican','Unknown'],
+      datasets: [{
+        data: [dem||0, rep||0, unk||0],
+        backgroundColor: [cssVar('--dem'), cssVar('--rep'), cssVar('--unk')],
+        borderRadius: 4, borderSkipped: false,
+      }],
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ' '+fmt(ctx.parsed.y) } },
+      },
+      scales: {
+        y: {
+          grid: { color: 'rgba(255,255,255,.05)' },
+          ticks: { color: cssVar('--muted'), font: { family: "'DM Mono', monospace", size: 10 }, callback: v => fmt(v) },
+        },
+        x: {
+          grid: { display: false },
+          ticks: { color: cssVar('--muted'), font: { family: "'DM Sans', sans-serif", size: 11 } },
+        },
+      },
+    },
+  });
+  charts[id] = c;
+}
+
+// ── LINE CHART OPTIONS ────────────────────────────────────────────────────
+function lineOpts(title) {
+  return {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: {
+        display: true,
+        labels: { color: cssVar('--muted'), font: { family: "'DM Sans', sans-serif", size: 11 }, boxWidth: 14, boxHeight: 14 },
+      },
+      tooltip: {
+        callbacks: { label: ctx => ` ${ctx.dataset.label}: ${fmt(ctx.parsed.y)}` },
+      },
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: { color: cssVar('--muted'), font: { family: "'DM Mono', monospace", size: 10 }, maxRotation: 45 },
+      },
+      y: {
+        grid: { color: 'rgba(255,255,255,.05)' },
+        ticks: { color: cssVar('--muted'), font: { family: "'DM Mono', monospace", size: 10 }, callback: v => fmt(v) },
+      },
+    },
+  };
+}
+
+// ── TABLES ────────────────────────────────────────────────────────────────
+function buildCountyTable(rows) {
+  const tbl = document.getElementById('county-table');
+  const tot = sumRows(rows);
+  tbl.innerHTML = `
+    <thead><tr>
+      <th style="text-align:left">County</th>
+      <th>D Ret</th><th>R Ret</th><th>U Ret</th><th>Total Ret</th>
+      <th>D Out</th><th>R Out</th><th>U Out</th><th>Total Out</th>
+      <th>Ret%</th>
+    </tr></thead>
+    <tbody>
+      ${totalRowHTML(tot,'STATEWIDE')}
+      ${rows.map(r => countyRowHTML(r)).join('')}
+    </tbody>`;
+  document.getElementById('county-footer').textContent = `${rows.length} counties`;
+  tbl.querySelectorAll('tbody tr.county-row').forEach(tr => {
+    tr.style.cursor = 'pointer';
+    tr.addEventListener('click', () => selectCounty(tr.dataset.county));
+  });
+}
+
+function buildPrecinctTable(rows) {
+  const tbl = document.getElementById('precinct-table');
+  if (!tbl) return;
+  const tot = sumRows(rows);
+  tbl.innerHTML = `
+    <thead><tr>
+      <th style="text-align:left">Precinct</th>
+      <th>D Ret</th><th>R Ret</th><th>U Ret</th><th>Total Ret</th>
+      <th>D Out</th><th>R Out</th><th>U Out</th><th>Total Out</th>
+      <th>Ret%</th>
+    </tr></thead>
+    <tbody>
+      ${totalRowHTML(tot,'TOTAL')}
+      ${rows.map(r => precinctRowHTML(r)).join('')}
+    </tbody>`;
+  const footer = document.getElementById('precinct-footer');
+  if (footer) footer.textContent = `${rows.length} precincts`;
+}
+
+function countyRowHTML(r) {
+  const voted = r.VotedCount || 0, out = r.OutCount || 0, total = voted + out;
+  return `<tr class="county-row" data-county="${escHtml(r.CountyName)}">
+    <td>${escHtml(r.CountyName)}</td>
+    <td class="dem-col">${fmt(r.DemVotedCount)}</td>
+    <td class="rep-col">${fmt(r.RepVotedCount)}</td>
+    <td class="unk-col">${fmt(r.UnknownVotedCount)}</td>
+    <td>${fmt(voted)}</td>
+    <td class="dem-col">${fmt(r.DemOutCount)}</td>
+    <td class="rep-col">${fmt(r.RepOutCount)}</td>
+    <td class="unk-col">${fmt(r.UnknownOutCount)}</td>
+    <td class="out-col">${fmt(out)}</td>
+    <td>${pct(voted, total)}</td>
+  </tr>`;
+}
+
+function precinctRowHTML(r) {
+  const voted = r.VotedCount || 0, out = r.OutCount || 0, total = voted + out;
+  return `<tr>
+    <td>${escHtml(r.PrecinctName)}</td>
+    <td class="dem-col">${fmt(r.DemVotedCount)}</td>
+    <td class="rep-col">${fmt(r.RepVotedCount)}</td>
+    <td class="unk-col">${fmt(r.UnknownVotedCount)}</td>
+    <td>${fmt(voted)}</td>
+    <td class="dem-col">${fmt(r.DemOutCount)}</td>
+    <td class="rep-col">${fmt(r.RepOutCount)}</td>
+    <td class="unk-col">${fmt(r.UnknownOutCount)}</td>
+    <td class="out-col">${fmt(out)}</td>
+    <td>${pct(voted, total)}</td>
+  </tr>`;
+}
+
+function totalRowHTML(r, label) {
+  const voted = r.VotedCount || 0, out = r.OutCount || 0, total = voted + out;
+  return `<tr style="background:rgba(58,143,212,.08);border-bottom:2px solid var(--accent)">
+    <td style="font-family:var(--sans);color:var(--accent);font-weight:700;letter-spacing:.05em">${label}</td>
+    <td class="dem-col">${fmt(r.DemVotedCount)}</td>
+    <td class="rep-col">${fmt(r.RepVotedCount)}</td>
+    <td class="unk-col">${fmt(r.UnknownVotedCount)}</td>
+    <td style="font-weight:600">${fmt(voted)}</td>
+    <td class="dem-col">${fmt(r.DemOutCount)}</td>
+    <td class="rep-col">${fmt(r.RepOutCount)}</td>
+    <td class="unk-col">${fmt(r.UnknownOutCount)}</td>
+    <td class="out-col">${fmt(out)}</td>
+    <td style="font-weight:600">${pct(voted, total)}</td>
+  </tr>`;
+}
+
+// ── HELPERS ───────────────────────────────────────────────────────────────
+function fmt(n) {
+  if (n === null || n === undefined) return '—';
+  return Number(n).toLocaleString();
+}
+function pct(num, den) {
+  if (!den) return '—';
+  return (num / den * 100).toFixed(1) + '%';
+}
+function sumRows(rows) {
+  const keys = ['DemVotedCount','RepVotedCount','UnknownVotedCount',
+                'VotedCount','DemOutCount','RepOutCount','UnknownOutCount','OutCount'];
+  const out = {};
+  keys.forEach(k => { out[k] = rows.reduce((s, r) => s + (r[k] || 0), 0); });
+  return out;
+}
 function statCards(items) {
   return items.map(i => `
     <div class="stat-card ${i.cls}">
@@ -599,206 +903,26 @@ function statCards(items) {
       <div class="stat-sub">${i.sub || ''}</div>
     </div>`).join('');
 }
-
-// ── CHARTS ────────────────────────────────────────────────────────────────
-function buildPartyChart(id, [dem, rep, unk]) {
-  const ctx = document.getElementById(id);
-  if (!ctx) return;
-  const c = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Democrat', 'Republican', 'Unknown'],
-      datasets: [{
-        data: [dem||0, rep||0, unk||0],
-        backgroundColor: [
-          getComputedStyle(document.documentElement).getPropertyValue('--dem').trim(),
-          getComputedStyle(document.documentElement).getPropertyValue('--rep').trim(),
-          getComputedStyle(document.documentElement).getPropertyValue('--unk').trim(),
-        ],
-        borderRadius: 4,
-        borderSkipped: false,
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => ' ' + fmt(ctx.parsed.y)
-          }
-        },
-        datalabels: { display: false }
-      },
-      scales: {
-        y: {
-          grid: { color: 'rgba(255,255,255,.06)' },
-          ticks: {
-            color: '#8890a8',
-            font: { family: "'DM Mono', monospace", size: 11 },
-            callback: v => fmt(v)
-          }
-        },
-        x: {
-          grid: { display: false },
-          ticks: { color: '#8890a8', font: { family: "'DM Sans', sans-serif", size: 11 } }
-        }
-      }
-    }
-  });
-  charts[id] = c;
+function shortDate(dateStr, dow) {
+  const d = new Date(dateStr + 'T12:00:00');
+  const label = `${d.getMonth()+1}/${d.getDate()}`;
+  const isWknd = dow === 'Saturday' || dow === 'Sunday';
+  return isWknd ? label + ' †' : label;
 }
-
+function cssVar(v) {
+  return getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+}
+function destroyChart(id) {
+  if (charts[id]) { charts[id].destroy(); delete charts[id]; }
+}
 function destroyCharts() {
   Object.values(charts).forEach(c => c.destroy());
   charts = {};
 }
-
-// ── COUNTY TABLE ──────────────────────────────────────────────────────────
-function buildCountyTable(rows) {
-  const tbl = document.getElementById('county-table');
-  const totalRow = sumRows(rows);
-
-  tbl.innerHTML = `
-    <thead>
-      <tr>
-        <th style="text-align:left">County</th>
-        <th title="Dem Returned">D Ret</th>
-        <th title="Rep Returned">R Ret</th>
-        <th title="Unknown Returned">U Ret</th>
-        <th title="Total Returned">Total Ret</th>
-        <th title="Dem Still Out">D Out</th>
-        <th title="Rep Still Out">R Out</th>
-        <th title="Unknown Still Out">U Out</th>
-        <th title="Total Still Out">Total Out</th>
-        <th title="Return Rate">Ret%</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${totalRowHTML(totalRow, 'STATEWIDE')}
-      ${rows.map(r => countyRowHTML(r)).join('')}
-    </tbody>`;
-
-  document.getElementById('county-footer').textContent =
-    `${rows.length} counties`;
-
-  tbl.querySelectorAll('tbody tr.county-row').forEach(tr => {
-    tr.style.cursor = 'pointer';
-    tr.addEventListener('click', () => selectCounty(tr.dataset.county));
-  });
-}
-
-function countyRowHTML(r) {
-  const voted = r.VotedCount || 0;
-  const out   = r.OutCount || 0;
-  const total = voted + out;
-  return `
-    <tr class="county-row" data-county="${escHtml(r.CountyName)}">
-      <td>${escHtml(r.CountyName)}</td>
-      <td class="dem-col">${fmt(r.DemVotedCount)}</td>
-      <td class="rep-col">${fmt(r.RepVotedCount)}</td>
-      <td class="unk-col">${fmt(r.UnknownVotedCount)}</td>
-      <td>${fmt(voted)}</td>
-      <td class="dem-col">${fmt(r.DemOutCount)}</td>
-      <td class="rep-col">${fmt(r.RepOutCount)}</td>
-      <td class="unk-col">${fmt(r.UnknownOutCount)}</td>
-      <td class="out-col">${fmt(out)}</td>
-      <td>${pct(voted, total)}</td>
-    </tr>`;
-}
-
-// ── PRECINCT TABLE ────────────────────────────────────────────────────────
-function buildPrecinctTable(rows) {
-  const tbl = document.getElementById('precinct-table');
-  if (!tbl) return;
-  const totalRow = sumRows(rows);
-
-  tbl.innerHTML = `
-    <thead>
-      <tr>
-        <th style="text-align:left">Precinct</th>
-        <th>D Ret</th>
-        <th>R Ret</th>
-        <th>U Ret</th>
-        <th>Total Ret</th>
-        <th>D Out</th>
-        <th>R Out</th>
-        <th>U Out</th>
-        <th>Total Out</th>
-        <th>Ret%</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${totalRowHTML(totalRow, 'TOTAL')}
-      ${rows.map(r => precinctRowHTML(r)).join('')}
-    </tbody>`;
-
-  const footer = document.getElementById('precinct-footer');
-  if (footer) footer.textContent = `${rows.length} precincts`;
-}
-
-function precinctRowHTML(r) {
-  const voted = r.VotedCount || 0;
-  const out   = r.OutCount || 0;
-  const total = voted + out;
-  return `
-    <tr>
-      <td>${escHtml(r.PrecinctName)}</td>
-      <td class="dem-col">${fmt(r.DemVotedCount)}</td>
-      <td class="rep-col">${fmt(r.RepVotedCount)}</td>
-      <td class="unk-col">${fmt(r.UnknownVotedCount)}</td>
-      <td>${fmt(voted)}</td>
-      <td class="dem-col">${fmt(r.DemOutCount)}</td>
-      <td class="rep-col">${fmt(r.RepOutCount)}</td>
-      <td class="unk-col">${fmt(r.UnknownOutCount)}</td>
-      <td class="out-col">${fmt(out)}</td>
-      <td>${pct(voted, total)}</td>
-    </tr>`;
-}
-
-function totalRowHTML(r, label) {
-  const voted = r.VotedCount || 0;
-  const out   = r.OutCount || 0;
-  const total = voted + out;
-  return `
-    <tr style="background:rgba(58,143,212,.08); font-weight:600; border-bottom:2px solid var(--accent)">
-      <td style="font-family:var(--sans); color:var(--accent); font-weight:700; letter-spacing:.05em">${label}</td>
-      <td class="dem-col">${fmt(r.DemVotedCount)}</td>
-      <td class="rep-col">${fmt(r.RepVotedCount)}</td>
-      <td class="unk-col">${fmt(r.UnknownVotedCount)}</td>
-      <td>${fmt(voted)}</td>
-      <td class="dem-col">${fmt(r.DemOutCount)}</td>
-      <td class="rep-col">${fmt(r.RepOutCount)}</td>
-      <td class="unk-col">${fmt(r.UnknownOutCount)}</td>
-      <td class="out-col">${fmt(out)}</td>
-      <td>${pct(voted, total)}</td>
-    </tr>`;
-}
-
-// ── HELPERS ───────────────────────────────────────────────────────────────
-function fmt(n) {
-  if (n === null || n === undefined) return '—';
-  return Number(n).toLocaleString();
-}
-
-function pct(num, den) {
-  if (!den) return '—';
-  return (num / den * 100).toFixed(1) + '%';
-}
-
-function sumRows(rows) {
-  const keys = ['DemVotedCount','RepVotedCount','UnknownVotedCount',
-                 'VotedCount','DemOutCount','RepOutCount','UnknownOutCount','OutCount'];
-  const out = {};
-  keys.forEach(k => { out[k] = rows.reduce((s, r) => s + (r[k] || 0), 0); });
-  return out;
-}
-
 function escHtml(s) {
   return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
-// ── BOOT ──────────────────────────────────────────────────────────────────
 loadData();
 </script>
 </body>

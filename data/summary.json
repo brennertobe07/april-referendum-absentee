@@ -1,13 +1,13 @@
 {
-  "TotalMatchedVoters": 519910,
-  "DemVotedCount": 59067,
-  "RepVotedCount": 53267,
-  "UnknownVotedCount": 3365,
-  "DemOutCount": 273316,
-  "RepOutCount": 93000,
-  "UnknownOutCount": 25926,
-  "VotedCount": 115699,
-  "OutCount": 392242,
-  "CountyCount": 133,
-  "PrecinctCount": 2531
+  "TotalMatchedVoters": 0,
+  "DemVotedCount": 0,
+  "RepVotedCount": 0,
+  "UnknownVotedCount": 0,
+  "VotedCount": 0,
+  "DemOutCount": 0,
+  "RepOutCount": 0,
+  "UnknownOutCount": 0,
+  "OutCount": 0,
+  "CountyCount": 0,
+  "PrecinctCount": 0
 }
