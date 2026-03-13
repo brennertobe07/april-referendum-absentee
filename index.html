@@ -512,14 +512,17 @@ function renderCounty(main, countyName) {
     </div>`;
 
   document.getElementById('stat-grid').innerHTML = statCards([
-    { cls:'total', label:'Total Universe',   val: total,               sub: precincts.length+' precincts' },
-    { cls:'total', label:'Ballots Returned', val: voted,               sub: pct(voted,total)+' return rate' },
-    { cls:'dem',   label:'Dem Returned',     val: cRow.DemVotedCount,  sub: pct(cRow.DemVotedCount, voted)+' of returned' },
-    { cls:'rep',   label:'Rep Returned',     val: cRow.RepVotedCount,  sub: pct(cRow.RepVotedCount, voted)+' of returned' },
-    { cls:'unk',   label:'Unk Returned',     val: cRow.UnknownVotedCount, sub: pct(cRow.UnknownVotedCount, voted)+' of returned' },
-    { cls:'out',   label:'Still Out',        val: out,                 sub: pct(out, total)+' of universe' },
-    { cls:'dem',   label:'Dem Still Out',    val: cRow.DemOutCount,    sub: pct(cRow.DemOutCount, out)+' of still out' },
-    { cls:'rep',   label:'Rep Still Out',    val: cRow.RepOutCount,    sub: pct(cRow.RepOutCount, out)+' of still out' },
+    { cls:'total', label:'Total Universe',   val: total,                   sub: precincts.length+' precincts' },
+    { cls:'total', label:'Ballots Returned', val: voted,                   sub: pct(voted,total)+' return rate' },
+    { cls:'ip',    label:'In-Person',        val: cRow.InPersonCount,      sub: pct(cRow.InPersonCount, voted)+' of returned' },
+    { cls:'out',   label:'Mail Returned',    val: cRow.MailCount,          sub: pct(cRow.MailCount, voted)+' of returned' },
+    { cls:'out',   label:'Still Out',        val: out,                     sub: pct(out, total)+' of universe' },
+    { cls:'dem',   label:'Dem Returned',     val: cRow.DemVotedCount,      sub: pct(cRow.DemVotedCount, voted)+' of returned' },
+    { cls:'rep',   label:'Rep Returned',     val: cRow.RepVotedCount,      sub: pct(cRow.RepVotedCount, voted)+' of returned' },
+    { cls:'ip',    label:'Dem In-Person',    val: cRow.InPersonDem,        sub: pct(cRow.InPersonDem, cRow.InPersonCount)+' of in-person' },
+    { cls:'ip',    label:'Rep In-Person',    val: cRow.InPersonRep,        sub: pct(cRow.InPersonRep, cRow.InPersonCount)+' of in-person' },
+    { cls:'dem',   label:'Dem Still Out',    val: cRow.DemOutCount,        sub: pct(cRow.DemOutCount, out)+' of still out' },
+    { cls:'rep',   label:'Rep Still Out',    val: cRow.RepOutCount,        sub: pct(cRow.RepOutCount, out)+' of still out' },
   ]);
 
   buildPartyChart('chart-voted', [cRow.DemVotedCount, cRow.RepVotedCount, cRow.UnknownVotedCount]);
