@@ -1,4 +1,5 @@
 {
-  "last_updated": "Run build_april_absentee_json.py to populate",
-  "source": "INSTANCE-1 / absentee"
+  "last_updated": "2026-03-13 15:30",
+  "source": "INSTANCE-1 / absentee",
+  "election_day": "2026-04-21"
 }
