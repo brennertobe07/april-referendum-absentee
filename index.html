@@ -232,7 +232,7 @@
     font-size: .68rem; font-weight: 600; letter-spacing: .08em;
     text-transform: uppercase; color: var(--muted);
   }
-  .toggle-btns { display: flex; gap: 4px; }
+  .toggle-btns { display: flex; gap: 4px; flex-wrap: wrap; }
   .toggle-btn {
     padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border);
     background: none; color: var(--muted); font-family: var(--sans); font-size: .72rem;
@@ -240,6 +240,8 @@
   }
   .toggle-btn:hover { color: var(--text); border-color: var(--text); }
   .toggle-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(58,143,212,.1); }
+  [data-cum="dem_ip"].active, [data-cum="dem_mail"].active { border-color: var(--dem); color: var(--dem); background: rgba(74,158,255,.1); }
+  [data-cum="rep_ip"].active, [data-cum="rep_mail"].active { border-color: var(--rep); color: var(--rep); background: rgba(255,107,91,.1); }
 
   /* ── TABLE ── */
   .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
@@ -561,6 +563,10 @@ function renderTrends(main) {
           <button class="toggle-btn active" data-cum="total">Total</button>
           <button class="toggle-btn active" data-cum="ip">In-Person</button>
           <button class="toggle-btn active" data-cum="mail">Mail</button>
+          <button class="toggle-btn" data-cum="dem_ip">Dem In-Person</button>
+          <button class="toggle-btn" data-cum="rep_ip">Rep In-Person</button>
+          <button class="toggle-btn" data-cum="dem_mail">Dem Mail</button>
+          <button class="toggle-btn" data-cum="rep_mail">Rep Mail</button>
         </div>
       </div>
       <canvas id="chart-cumulative"></canvas>
@@ -593,7 +599,7 @@ function renderTrends(main) {
   buildDailyChart(daily, 'inperson');
 
   // Cumulative toggles
-  const cumState = { total: true, ip: true, mail: true };
+  const cumState = { total: true, ip: true, mail: true, dem_ip: false, rep_ip: false, dem_mail: false, rep_mail: false };
   document.querySelectorAll('[data-cum]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.cum;
@@ -620,6 +626,32 @@ function renderTrends(main) {
 function buildCumulativeChart(daily) {
   const labels = daily.map(d => shortDate(d.ReturnDate, d.DayOfWeek));
 
+  // End-of-line label plugin
+  const endLabelPlugin = {
+    id: 'endLabel',
+    afterDatasetsDraw(chart) {
+      const ctx = chart.ctx;
+      chart.data.datasets.forEach((ds, i) => {
+        if (ds.hidden || !ds.endLabel) return;
+        const meta = chart.getDatasetMeta(i);
+        const pts  = meta.data.filter(p => p && !isNaN(p.x));
+        if (!pts.length) return;
+        const last = pts[pts.length - 1];
+        ctx.save();
+        ctx.font = "bold 10px 'DM Sans', sans-serif";
+        ctx.fillStyle = ds.borderColor;
+        ctx.textAlign = 'left';
+        ctx.fillText(ds.endLabel, last.x + 6, last.y + 4);
+        ctx.restore();
+      });
+    }
+  };
+
+  const demColor  = cssVar('--dem');
+  const repColor  = cssVar('--rep');
+  const ipColor   = cssVar('--ip');
+  const mailColor = cssVar('--mail');
+
   const datasets = [
     {
       id: 'total',
@@ -636,8 +668,9 @@ function buildCumulativeChart(daily) {
     {
       id: 'ip',
       label: 'In-Person',
+      endLabel: 'In-Person',
       data: daily.map(d => d.CumInPersonTotal),
-      borderColor: cssVar('--ip'),
+      borderColor: ipColor,
       backgroundColor: 'transparent',
       fill: false,
       tension: .35,
@@ -648,13 +681,71 @@ function buildCumulativeChart(daily) {
     {
       id: 'mail',
       label: 'Mail',
+      endLabel: 'Mail',
       data: daily.map(d => d.CumMailTotal),
-      borderColor: cssVar('--mail'),
+      borderColor: mailColor,
       backgroundColor: 'transparent',
       fill: false,
       tension: .35,
       borderWidth: 2,
       pointRadius: 3,
+    },
+    {
+      id: 'dem_ip',
+      label: 'Dem In-Person',
+      endLabel: 'Dem IP',
+      data: daily.map(d => d.CumInPersonDem),
+      borderColor: demColor,
+      backgroundColor: 'transparent',
+      fill: false,
+      tension: .35,
+      borderWidth: 2,
+      borderDash: [6, 3],
+      pointRadius: 2,
+      pointStyle: 'circle',
+      hidden: true,
+    },
+    {
+      id: 'rep_ip',
+      label: 'Rep In-Person',
+      endLabel: 'Rep IP',
+      data: daily.map(d => d.CumInPersonRep),
+      borderColor: repColor,
+      backgroundColor: 'transparent',
+      fill: false,
+      tension: .35,
+      borderWidth: 2,
+      borderDash: [6, 3],
+      pointRadius: 2,
+      hidden: true,
+    },
+    {
+      id: 'dem_mail',
+      label: 'Dem Mail',
+      endLabel: 'Dem Mail',
+      data: daily.map(d => d.CumMailDem),
+      borderColor: demColor,
+      backgroundColor: 'transparent',
+      fill: false,
+      tension: .35,
+      borderWidth: 2,
+      borderDash: [2, 2],
+      pointRadius: 2,
+      hidden: true,
+    },
+    {
+      id: 'rep_mail',
+      label: 'Rep Mail',
+      endLabel: 'Rep Mail',
+      data: daily.map(d => d.CumMailRep),
+      borderColor: repColor,
+      backgroundColor: 'transparent',
+      fill: false,
+      tension: .35,
+      borderWidth: 2,
+      borderDash: [2, 2],
+      pointRadius: 2,
+      hidden: true,
     },
   ];
 
@@ -662,6 +753,7 @@ function buildCumulativeChart(daily) {
     type: 'line',
     data: { labels, datasets },
     options: lineOpts('Cumulative Returns'),
+    plugins: [endLabelPlugin],
   });
   charts['chart-cumulative'] = c;
 }
@@ -669,10 +761,12 @@ function buildCumulativeChart(daily) {
 function updateCumulativeChart(state) {
   const c = charts['chart-cumulative'];
   if (!c) return;
-  const map = { total: 0, ip: 1, mail: 2 };
+  const map = { total: 0, ip: 1, mail: 2, dem_ip: 3, rep_ip: 4, dem_mail: 5, rep_mail: 6 };
   Object.entries(map).forEach(([k, i]) => {
     c.data.datasets[i].hidden = !state[k];
   });
+  c.update();
+}
   c.update();
 }
 
