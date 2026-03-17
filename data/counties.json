@@ -451,7 +451,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "TotalMatchedVoters": 25444,
+    "TotalMatchedVoters": 25503,
     "DemVotedCount": 2662,
     "RepVotedCount": 2428,
     "UnknownVotedCount": 216,
@@ -461,11 +461,11 @@
     "InPersonRep": 2427,
     "MailDem": 8,
     "MailRep": 1,
-    "DemOutCount": 12540,
-    "RepOutCount": 5216,
-    "UnknownOutCount": 1873,
+    "DemOutCount": 12554,
+    "RepOutCount": 5221,
+    "UnknownOutCount": 1874,
     "VotedCount": 5306,
-    "OutCount": 19629
+    "OutCount": 19649
   },
   {
     "CountyName": "Clarke",
@@ -613,7 +613,7 @@
   },
   {
     "CountyName": "Dinwiddie",
-    "TotalMatchedVoters": 1539,
+    "TotalMatchedVoters": 1540,
     "DemVotedCount": 283,
     "RepVotedCount": 306,
     "UnknownVotedCount": 8,
@@ -624,10 +624,10 @@
     "MailDem": 19,
     "MailRep": 6,
     "DemOutCount": 547,
-    "RepOutCount": 339,
+    "RepOutCount": 340,
     "UnknownOutCount": 22,
     "VotedCount": 597,
-    "OutCount": 908
+    "OutCount": 909
   },
   {
     "CountyName": "Emporia (City)",
@@ -1441,20 +1441,20 @@
   },
   {
     "CountyName": "Middlesex",
-    "TotalMatchedVoters": 895,
-    "DemVotedCount": 209,
+    "TotalMatchedVoters": 896,
+    "DemVotedCount": 210,
     "RepVotedCount": 360,
     "UnknownVotedCount": 12,
     "InPersonCount": 541,
-    "MailCount": 48,
+    "MailCount": 49,
     "InPersonDem": 181,
     "InPersonRep": 341,
-    "MailDem": 28,
+    "MailDem": 29,
     "MailRep": 19,
     "DemOutCount": 131,
     "RepOutCount": 141,
     "UnknownOutCount": 14,
-    "VotedCount": 581,
+    "VotedCount": 582,
     "OutCount": 286
   },
   {

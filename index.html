@@ -234,14 +234,27 @@
   }
   .toggle-btns { display: flex; gap: 4px; flex-wrap: wrap; }
   .toggle-btn {
+    display: flex; align-items: center; gap: 5px;
     padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border);
     background: none; color: var(--muted); font-family: var(--sans); font-size: .72rem;
     cursor: pointer; transition: all .12s;
   }
   .toggle-btn:hover { color: var(--text); border-color: var(--text); }
-  .toggle-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(58,143,212,.1); }
-  [data-cum="dem_ip"].active, [data-cum="dem_mail"].active { border-color: var(--dem); color: var(--dem); background: rgba(74,158,255,.1); }
-  [data-cum="rep_ip"].active, [data-cum="rep_mail"].active { border-color: var(--rep); color: var(--rep); background: rgba(255,107,91,.1); }
+  .toggle-btn.active { color: var(--text); border-color: var(--border); background: rgba(255,255,255,.05); }
+
+  /* colored swatch inside each toggle button */
+  .line-swatch {
+    display: inline-block;
+    width: 14px; height: 3px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    opacity: 0.35;
+    transition: opacity .12s;
+  }
+  .toggle-btn.active .line-swatch { opacity: 1; }
+
+  [data-cum="dem_ip"].active, [data-cum="rep_ip"].active { border-color: var(--border); }
+  [data-cum="dem_mail"].active, [data-cum="rep_mail"].active { border-color: var(--border); }
 
   /* ── TABLE ── */
   .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
@@ -560,13 +573,13 @@ function renderTrends(main) {
       <div class="toggle-row">
         <h3>Cumulative Ballots Returned</h3>
         <div class="toggle-btns">
-          <button class="toggle-btn active" data-cum="total">Total</button>
-          <button class="toggle-btn active" data-cum="ip">In-Person</button>
-          <button class="toggle-btn active" data-cum="mail">Mail</button>
-          <button class="toggle-btn" data-cum="dem_ip">Dem In-Person</button>
-          <button class="toggle-btn" data-cum="rep_ip">Rep In-Person</button>
-          <button class="toggle-btn" data-cum="dem_mail">Dem Mail</button>
-          <button class="toggle-btn" data-cum="rep_mail">Rep Mail</button>
+          <button class="toggle-btn" data-cum="total"><span class="line-swatch" style="background:var(--accent)"></span>Total</button>
+          <button class="toggle-btn" data-cum="ip"><span class="line-swatch" style="background:var(--ip)"></span>In-Person</button>
+          <button class="toggle-btn" data-cum="mail"><span class="line-swatch" style="background:var(--mail)"></span>Mail</button>
+          <button class="toggle-btn active" data-cum="dem_ip"><span class="line-swatch" style="background:var(--dem)"></span>Dem In-Person</button>
+          <button class="toggle-btn active" data-cum="rep_ip"><span class="line-swatch" style="background:var(--rep)"></span>Rep In-Person</button>
+          <button class="toggle-btn active" data-cum="dem_mail"><span class="line-swatch" style="background:var(--dem);opacity:.9;border-bottom:1px dashed var(--dem)"></span>Dem Mail</button>
+          <button class="toggle-btn active" data-cum="rep_mail"><span class="line-swatch" style="background:var(--rep);opacity:.9;border-bottom:1px dashed var(--rep)"></span>Rep Mail</button>
         </div>
       </div>
       <canvas id="chart-cumulative"></canvas>
@@ -599,7 +612,7 @@ function renderTrends(main) {
   buildDailyChart(daily, 'inperson');
 
   // Cumulative toggles
-  const cumState = { total: true, ip: true, mail: true, dem_ip: false, rep_ip: false, dem_mail: false, rep_mail: false };
+  const cumState = { total: false, ip: false, mail: false, dem_ip: true, rep_ip: true, dem_mail: true, rep_mail: true };
   document.querySelectorAll('[data-cum]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.cum;
@@ -664,6 +677,7 @@ function buildCumulativeChart(daily) {
       borderWidth: 2.5,
       pointRadius: 4,
       pointHoverRadius: 6,
+      hidden: true,
     },
     {
       id: 'ip',
@@ -677,6 +691,7 @@ function buildCumulativeChart(daily) {
       borderWidth: 2,
       pointRadius: 3,
       borderDash: [],
+      hidden: true,
     },
     {
       id: 'mail',
@@ -689,6 +704,7 @@ function buildCumulativeChart(daily) {
       tension: .35,
       borderWidth: 2,
       pointRadius: 3,
+      hidden: true,
     },
     {
       id: 'dem_ip',
@@ -703,7 +719,7 @@ function buildCumulativeChart(daily) {
       borderDash: [6, 3],
       pointRadius: 2,
       pointStyle: 'circle',
-      hidden: true,
+      hidden: false,
     },
     {
       id: 'rep_ip',
@@ -717,7 +733,7 @@ function buildCumulativeChart(daily) {
       borderWidth: 2,
       borderDash: [6, 3],
       pointRadius: 2,
-      hidden: true,
+      hidden: false,
     },
     {
       id: 'dem_mail',
@@ -731,7 +747,7 @@ function buildCumulativeChart(daily) {
       borderWidth: 2,
       borderDash: [2, 2],
       pointRadius: 2,
-      hidden: true,
+      hidden: false,
     },
     {
       id: 'rep_mail',
@@ -752,7 +768,13 @@ function buildCumulativeChart(daily) {
   const c = new Chart(document.getElementById('chart-cumulative'), {
     type: 'line',
     data: { labels, datasets },
-    options: lineOpts('Cumulative Returns'),
+    options: {
+      ...lineOpts('Cumulative Returns'),
+      plugins: {
+        ...lineOpts('Cumulative Returns').plugins,
+        legend: { display: false },
+      },
+    },
     plugins: [endLabelPlugin],
   });
   charts['chart-cumulative'] = c;

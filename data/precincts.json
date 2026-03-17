@@ -8229,7 +8229,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "106 - Harrowgate",
-    "TotalMatchedVoters": 483,
+    "TotalMatchedVoters": 487,
     "DemVotedCount": 83,
     "RepVotedCount": 78,
     "UnknownVotedCount": 9,
@@ -8239,16 +8239,16 @@
     "InPersonRep": 78,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 207,
+    "DemOutCount": 208,
     "RepOutCount": 65,
     "UnknownOutCount": 33,
     "VotedCount": 170,
-    "OutCount": 305
+    "OutCount": 306
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "108 - Ecoff",
-    "TotalMatchedVoters": 813,
+    "TotalMatchedVoters": 814,
     "DemVotedCount": 118,
     "RepVotedCount": 164,
     "UnknownVotedCount": 6,
@@ -8258,11 +8258,11 @@
     "InPersonRep": 164,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 312,
+    "DemOutCount": 313,
     "RepOutCount": 160,
     "UnknownOutCount": 47,
     "VotedCount": 288,
-    "OutCount": 519
+    "OutCount": 520
   },
   {
     "CountyName": "Chesterfield",
@@ -8305,7 +8305,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "111 - Iron Bridge",
-    "TotalMatchedVoters": 395,
+    "TotalMatchedVoters": 396,
     "DemVotedCount": 70,
     "RepVotedCount": 90,
     "UnknownVotedCount": 5,
@@ -8457,7 +8457,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "207 - Chippenham",
-    "TotalMatchedVoters": 446,
+    "TotalMatchedVoters": 447,
     "DemVotedCount": 63,
     "RepVotedCount": 11,
     "UnknownVotedCount": 1,
@@ -8533,7 +8533,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "211 - Nash",
-    "TotalMatchedVoters": 678,
+    "TotalMatchedVoters": 679,
     "DemVotedCount": 124,
     "RepVotedCount": 195,
     "UnknownVotedCount": 13,
@@ -8552,7 +8552,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "213 - Southside",
-    "TotalMatchedVoters": 217,
+    "TotalMatchedVoters": 219,
     "DemVotedCount": 42,
     "RepVotedCount": 12,
     "UnknownVotedCount": 2,
@@ -8562,11 +8562,11 @@
     "InPersonRep": 12,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 140,
+    "DemOutCount": 142,
     "RepOutCount": 14,
     "UnknownOutCount": 5,
     "VotedCount": 56,
-    "OutCount": 159
+    "OutCount": 161
   },
   {
     "CountyName": "Chesterfield",
@@ -8590,7 +8590,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "219 - Gates East",
-    "TotalMatchedVoters": 174,
+    "TotalMatchedVoters": 175,
     "DemVotedCount": 35,
     "RepVotedCount": 31,
     "UnknownVotedCount": 4,
@@ -8628,7 +8628,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "221 - Oxbridge",
-    "TotalMatchedVoters": 380,
+    "TotalMatchedVoters": 381,
     "DemVotedCount": 44,
     "RepVotedCount": 36,
     "UnknownVotedCount": 4,
@@ -8666,7 +8666,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "301 - Ettrick",
-    "TotalMatchedVoters": 264,
+    "TotalMatchedVoters": 265,
     "DemVotedCount": 28,
     "RepVotedCount": 8,
     "UnknownVotedCount": 4,
@@ -8742,7 +8742,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "306 - Winterpock",
-    "TotalMatchedVoters": 323,
+    "TotalMatchedVoters": 326,
     "DemVotedCount": 24,
     "RepVotedCount": 65,
     "UnknownVotedCount": 3,
@@ -8780,7 +8780,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "309 - Skinquarter",
-    "TotalMatchedVoters": 377,
+    "TotalMatchedVoters": 378,
     "DemVotedCount": 18,
     "RepVotedCount": 14,
     "UnknownVotedCount": 0,
@@ -8799,7 +8799,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "313 - Woolridge South",
-    "TotalMatchedVoters": 413,
+    "TotalMatchedVoters": 414,
     "DemVotedCount": 45,
     "RepVotedCount": 19,
     "UnknownVotedCount": 5,
@@ -8809,11 +8809,11 @@
     "InPersonRep": 19,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 192,
+    "DemOutCount": 193,
     "RepOutCount": 105,
     "UnknownOutCount": 30,
     "VotedCount": 69,
-    "OutCount": 327
+    "OutCount": 328
   },
   {
     "CountyName": "Chesterfield",
@@ -8837,7 +8837,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "315 - Bailey Bridge",
-    "TotalMatchedVoters": 330,
+    "TotalMatchedVoters": 333,
     "DemVotedCount": 28,
     "RepVotedCount": 47,
     "UnknownVotedCount": 2,
@@ -8856,7 +8856,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "316 - Spring Run",
-    "TotalMatchedVoters": 198,
+    "TotalMatchedVoters": 200,
     "DemVotedCount": 15,
     "RepVotedCount": 22,
     "UnknownVotedCount": 3,
@@ -8875,7 +8875,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "319 - Magnolia",
-    "TotalMatchedVoters": 619,
+    "TotalMatchedVoters": 620,
     "DemVotedCount": 60,
     "RepVotedCount": 34,
     "UnknownVotedCount": 4,
@@ -8894,7 +8894,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "320 - Dry Creek",
-    "TotalMatchedVoters": 680,
+    "TotalMatchedVoters": 683,
     "DemVotedCount": 62,
     "RepVotedCount": 63,
     "UnknownVotedCount": 6,
@@ -8904,16 +8904,16 @@
     "InPersonRep": 63,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 320,
-    "RepOutCount": 158,
+    "DemOutCount": 321,
+    "RepOutCount": 159,
     "UnknownOutCount": 58,
     "VotedCount": 131,
-    "OutCount": 536
+    "OutCount": 538
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "321 - Claypoint",
-    "TotalMatchedVoters": 252,
+    "TotalMatchedVoters": 253,
     "DemVotedCount": 16,
     "RepVotedCount": 26,
     "UnknownVotedCount": 2,
@@ -8932,7 +8932,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "322 - Hensley",
-    "TotalMatchedVoters": 498,
+    "TotalMatchedVoters": 500,
     "DemVotedCount": 42,
     "RepVotedCount": 43,
     "UnknownVotedCount": 5,
@@ -8942,11 +8942,11 @@
     "InPersonRep": 43,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 250,
+    "DemOutCount": 252,
     "RepOutCount": 112,
     "UnknownOutCount": 39,
     "VotedCount": 90,
-    "OutCount": 401
+    "OutCount": 403
   },
   {
     "CountyName": "Chesterfield",
@@ -9065,7 +9065,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "410 - Wagstaff",
-    "TotalMatchedVoters": 35,
+    "TotalMatchedVoters": 36,
     "DemVotedCount": 5,
     "RepVotedCount": 1,
     "UnknownVotedCount": 1,
@@ -9084,7 +9084,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "411 - Swift Creek",
-    "TotalMatchedVoters": 329,
+    "TotalMatchedVoters": 330,
     "DemVotedCount": 21,
     "RepVotedCount": 25,
     "UnknownVotedCount": 2,
@@ -9122,7 +9122,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "413 - Shenandoah",
-    "TotalMatchedVoters": 253,
+    "TotalMatchedVoters": 254,
     "DemVotedCount": 12,
     "RepVotedCount": 8,
     "UnknownVotedCount": 1,
@@ -9132,16 +9132,16 @@
     "InPersonRep": 8,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 152,
+    "DemOutCount": 153,
     "RepOutCount": 44,
     "UnknownOutCount": 31,
     "VotedCount": 21,
-    "OutCount": 227
+    "OutCount": 228
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "414 - Crenshaw",
-    "TotalMatchedVoters": 495,
+    "TotalMatchedVoters": 498,
     "DemVotedCount": 56,
     "RepVotedCount": 56,
     "UnknownVotedCount": 1,
@@ -9152,10 +9152,10 @@
     "MailDem": 0,
     "MailRep": 0,
     "DemOutCount": 231,
-    "RepOutCount": 86,
+    "RepOutCount": 87,
     "UnknownOutCount": 55,
     "VotedCount": 113,
-    "OutCount": 372
+    "OutCount": 373
   },
   {
     "CountyName": "Chesterfield",
@@ -9179,7 +9179,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "418 - Woolridge North",
-    "TotalMatchedVoters": 222,
+    "TotalMatchedVoters": 223,
     "DemVotedCount": 18,
     "RepVotedCount": 13,
     "UnknownVotedCount": 6,
@@ -9190,10 +9190,10 @@
     "MailDem": 1,
     "MailRep": 0,
     "DemOutCount": 114,
-    "RepOutCount": 51,
+    "RepOutCount": 52,
     "UnknownOutCount": 17,
     "VotedCount": 37,
-    "OutCount": 182
+    "OutCount": 183
   },
   {
     "CountyName": "Chesterfield",
@@ -9236,7 +9236,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "421 - Lucks Lane",
-    "TotalMatchedVoters": 365,
+    "TotalMatchedVoters": 366,
     "DemVotedCount": 19,
     "RepVotedCount": 27,
     "UnknownVotedCount": 1,
@@ -9255,7 +9255,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "422 - Otterdale",
-    "TotalMatchedVoters": 490,
+    "TotalMatchedVoters": 493,
     "DemVotedCount": 24,
     "RepVotedCount": 28,
     "UnknownVotedCount": 3,
@@ -9293,7 +9293,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "504 - Robious",
-    "TotalMatchedVoters": 696,
+    "TotalMatchedVoters": 700,
     "DemVotedCount": 34,
     "RepVotedCount": 24,
     "UnknownVotedCount": 2,
@@ -9312,7 +9312,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "505 - Bon Air",
-    "TotalMatchedVoters": 357,
+    "TotalMatchedVoters": 359,
     "DemVotedCount": 37,
     "RepVotedCount": 16,
     "UnknownVotedCount": 3,
@@ -9322,16 +9322,16 @@
     "InPersonRep": 16,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 202,
+    "DemOutCount": 204,
     "RepOutCount": 78,
     "UnknownOutCount": 15,
     "VotedCount": 56,
-    "OutCount": 295
+    "OutCount": 297
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "506 - Greenfield",
-    "TotalMatchedVoters": 284,
+    "TotalMatchedVoters": 285,
     "DemVotedCount": 16,
     "RepVotedCount": 12,
     "UnknownVotedCount": 3,
@@ -9341,16 +9341,16 @@
     "InPersonRep": 12,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 166,
+    "DemOutCount": 167,
     "RepOutCount": 55,
     "UnknownOutCount": 20,
     "VotedCount": 31,
-    "OutCount": 241
+    "OutCount": 242
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "507 - Salisbury",
-    "TotalMatchedVoters": 376,
+    "TotalMatchedVoters": 378,
     "DemVotedCount": 15,
     "RepVotedCount": 26,
     "UnknownVotedCount": 1,
@@ -9361,15 +9361,15 @@
     "MailDem": 0,
     "MailRep": 0,
     "DemOutCount": 164,
-    "RepOutCount": 120,
+    "RepOutCount": 121,
     "UnknownOutCount": 39,
     "VotedCount": 42,
-    "OutCount": 323
+    "OutCount": 324
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "508 - Belgrade",
-    "TotalMatchedVoters": 472,
+    "TotalMatchedVoters": 473,
     "DemVotedCount": 28,
     "RepVotedCount": 21,
     "UnknownVotedCount": 1,
@@ -9381,9 +9381,9 @@
     "MailRep": 0,
     "DemOutCount": 243,
     "RepOutCount": 148,
-    "UnknownOutCount": 25,
+    "UnknownOutCount": 26,
     "VotedCount": 50,
-    "OutCount": 416
+    "OutCount": 417
   },
   {
     "CountyName": "Chesterfield",
@@ -9464,7 +9464,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "514 - Watkins",
-    "TotalMatchedVoters": 398,
+    "TotalMatchedVoters": 400,
     "DemVotedCount": 19,
     "RepVotedCount": 27,
     "UnknownVotedCount": 3,
@@ -9502,7 +9502,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "516 - Pocoshock North",
-    "TotalMatchedVoters": 112,
+    "TotalMatchedVoters": 114,
     "DemVotedCount": 17,
     "RepVotedCount": 1,
     "UnknownVotedCount": 0,
@@ -9513,15 +9513,15 @@
     "MailDem": 0,
     "MailRep": 0,
     "DemOutCount": 70,
-    "RepOutCount": 17,
+    "RepOutCount": 18,
     "UnknownOutCount": 7,
     "VotedCount": 18,
-    "OutCount": 94
+    "OutCount": 95
   },
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "517 - Roseland",
-    "TotalMatchedVoters": 255,
+    "TotalMatchedVoters": 257,
     "DemVotedCount": 7,
     "RepVotedCount": 23,
     "UnknownVotedCount": 2,
@@ -9540,7 +9540,7 @@
   {
     "CountyName": "Chesterfield",
     "PrecinctName": "518 - Midlothian North",
-    "TotalMatchedVoters": 449,
+    "TotalMatchedVoters": 451,
     "DemVotedCount": 22,
     "RepVotedCount": 20,
     "UnknownVotedCount": 1,
@@ -9550,11 +9550,11 @@
     "InPersonRep": 20,
     "MailDem": 0,
     "MailRep": 0,
-    "DemOutCount": 215,
+    "DemOutCount": 217,
     "RepOutCount": 148,
     "UnknownOutCount": 31,
     "VotedCount": 43,
-    "OutCount": 394
+    "OutCount": 396
   },
   {
     "CountyName": "Chesterfield",
@@ -11098,7 +11098,7 @@
   {
     "CountyName": "Dinwiddie",
     "PrecinctName": "302 - New Hope",
-    "TotalMatchedVoters": 117,
+    "TotalMatchedVoters": 118,
     "DemVotedCount": 7,
     "RepVotedCount": 24,
     "UnknownVotedCount": 1,
@@ -11109,10 +11109,10 @@
     "MailDem": 1,
     "MailRep": 2,
     "DemOutCount": 45,
-    "RepOutCount": 33,
+    "RepOutCount": 34,
     "UnknownOutCount": 3,
     "VotedCount": 32,
-    "OutCount": 81
+    "OutCount": 82
   },
   {
     "CountyName": "Dinwiddie",
@@ -29015,7 +29015,7 @@
   {
     "CountyName": "Middlesex",
     "PrecinctName": "101 - Saluda",
-    "TotalMatchedVoters": 65,
+    "TotalMatchedVoters": 66,
     "DemVotedCount": 19,
     "RepVotedCount": 22,
     "UnknownVotedCount": 0,
@@ -29025,30 +29025,30 @@
     "InPersonRep": 18,
     "MailDem": 2,
     "MailRep": 4,
-    "DemOutCount": 9,
+    "DemOutCount": 10,
     "RepOutCount": 12,
     "UnknownOutCount": 1,
     "VotedCount": 41,
-    "OutCount": 22
+    "OutCount": 23
   },
   {
     "CountyName": "Middlesex",
     "PrecinctName": "102 - Urbanna",
     "TotalMatchedVoters": 99,
-    "DemVotedCount": 22,
+    "DemVotedCount": 23,
     "RepVotedCount": 50,
     "UnknownVotedCount": 2,
     "InPersonCount": 70,
-    "MailCount": 4,
+    "MailCount": 5,
     "InPersonDem": 21,
     "InPersonRep": 47,
-    "MailDem": 1,
+    "MailDem": 2,
     "MailRep": 3,
-    "DemOutCount": 12,
+    "DemOutCount": 11,
     "RepOutCount": 11,
     "UnknownOutCount": 0,
-    "VotedCount": 74,
-    "OutCount": 23
+    "VotedCount": 75,
+    "OutCount": 22
   },
   {
     "CountyName": "Middlesex",
