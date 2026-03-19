@@ -123,8 +123,10 @@ RIGHT JOIN dal_deduped dal
     ON van.StateFileID = dal.IDENTIFICATION_NUMBER
 WHERE dal.rn = 1
 
-GROUP BY van.CountyName, van.PrecinctName
-ORDER BY van.CountyName, van.PrecinctName;
+GROUP BY COALESCE(van.CountyName, dal.LOCALITY_NAME),
+         COALESCE(van.PrecinctName, dal.PRECINCT_NAME)
+ORDER BY COALESCE(van.CountyName, dal.LOCALITY_NAME),
+         COALESCE(van.PrecinctName, dal.PRECINCT_NAME);
 """
 
 def build_daily_query(election_name):
