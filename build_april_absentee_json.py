@@ -17,30 +17,66 @@ SERVER      = r"INSTANCE-1"
 DATABASE    = "absentee"
 ODBC_DRIVER = "ODBC Driver 17 for SQL Server"
 
-REPO_ROOT = r"C:\Scripts\Python\Python_Absentee\April\april-referendum-absentee"
-DATA_DIR  = os.path.join(REPO_ROOT, "data")
+REPO_ROOT   = r"C:\Scripts\Python\Python_Absentee\April\april-referendum-absentee"
+DATA_DIR    = os.path.join(REPO_ROOT, "data")
 # ─────────────────────────────────────────────────────────────────────────────
 
-QUERY_SUMMARY = """
+def get_election_name(conn):
+    """Auto-detect the active election from Daily_Absentee_List.
+    Picks the election with the most recent ballot activity.
+    No config change needed when switching elections.
+    """
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT TOP 1 ELECTION_NAME
+        FROM Daily_Absentee_List
+        WHERE ELECTION_NAME IS NOT NULL
+        GROUP BY ELECTION_NAME
+        ORDER BY MAX(BALLOT_RECEIPT_DATE) DESC
+    """)
+    row = cursor.fetchone()
+    if not row:
+        raise ValueError("No election found in Daily_Absentee_List")
+    return row[0]
+
+def build_summary_query(election_name):
+    return f"""
+-- Deduplicate Daily_Absentee_List: one row per voter, most resolved status wins.
+-- Tiebreaker priority: Marked > Pre-Processed > On Machine > Unmarked > other
+WITH dal_deduped AS (
+    SELECT *,
+           ROW_NUMBER() OVER (
+               PARTITION BY IDENTIFICATION_NUMBER
+               ORDER BY
+                   CASE BALLOT_STATUS
+                       WHEN 'Marked'        THEN 1
+                       WHEN 'Pre-Processed' THEN 2
+                       WHEN 'On Machine'    THEN 3
+                       WHEN 'Unmarked'      THEN 4
+                       ELSE                      5
+                   END,
+                   BALLOT_RECEIPT_DATE DESC
+           ) AS rn
+    FROM Daily_Absentee_List
+    WHERE ELECTION_NAME = '{election_name}'
+      AND BALLOT_STATUS NOT IN ('Deleted', 'Not Issued')
+)
 SELECT
     van.CountyName,
     van.PrecinctName,
     COUNT(van.VoterFileVANID) AS TotalMatchedVoters,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
-             AND dal.BALLOT_STATUS NOT IN ('Deleted','Not Issued')
              AND (van.likelyparty IN ('sd','ld')
                  OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
              THEN 1 ELSE 0 END) AS DemVotedCount,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
-             AND dal.BALLOT_STATUS NOT IN ('Deleted','Not Issued')
              AND (van.likelyparty IN ('sr','lr')
                  OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
              THEN 1 ELSE 0 END) AS RepVotedCount,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
-             AND dal.BALLOT_STATUS NOT IN ('Deleted','Not Issued')
              AND ((van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 BETWEEN 41 AND 59)
                  OR van.likelyparty IS NULL
                  OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I'))
@@ -83,14 +119,35 @@ SELECT
              THEN 1 ELSE 0 END) AS UnknownOutCount
 
 FROM van
-INNER JOIN Daily_Absentee_List dal
+INNER JOIN dal_deduped dal
     ON van.StateFileID = dal.IDENTIFICATION_NUMBER
+WHERE dal.rn = 1
 
 GROUP BY van.CountyName, van.PrecinctName
 ORDER BY van.CountyName, van.PrecinctName;
 """
 
-QUERY_DAILY = """
+def build_daily_query(election_name):
+    return f"""
+-- Deduplicate Daily_Absentee_List: one row per voter, most resolved status wins.
+WITH dal_deduped AS (
+    SELECT *,
+           ROW_NUMBER() OVER (
+               PARTITION BY IDENTIFICATION_NUMBER
+               ORDER BY
+                   CASE BALLOT_STATUS
+                       WHEN 'Marked'        THEN 1
+                       WHEN 'Pre-Processed' THEN 2
+                       WHEN 'On Machine'    THEN 3
+                       WHEN 'Unmarked'      THEN 4
+                       ELSE                      5
+                   END,
+                   BALLOT_RECEIPT_DATE DESC
+           ) AS rn
+    FROM Daily_Absentee_List
+    WHERE ELECTION_NAME = '{election_name}'
+      AND BALLOT_STATUS NOT IN ('Deleted', 'Not Issued')
+)
 SELECT
     CASE
         WHEN CAST(dal.BALLOT_RECEIPT_DATE AS DATE) < '2026-03-06'
@@ -139,11 +196,11 @@ SELECT
              THEN 1 ELSE 0 END) AS MailUnknown
 
 FROM van
-INNER JOIN Daily_Absentee_List dal
+INNER JOIN dal_deduped dal
     ON van.StateFileID = dal.IDENTIFICATION_NUMBER
 
-WHERE dal.BALLOT_RECEIPT_DATE IS NOT NULL
-  AND dal.BALLOT_STATUS NOT IN ('Deleted','Not Issued')
+WHERE dal.rn = 1
+  AND dal.BALLOT_RECEIPT_DATE IS NOT NULL
   AND YEAR(dal.BALLOT_RECEIPT_DATE) = 2026
 
 GROUP BY
@@ -221,13 +278,16 @@ def main():
     print(f"Connecting to {SERVER}\\{DATABASE} ...")
     conn = connect()
 
+    election_name = get_election_name(conn)
+    print(f"Election:  {election_name}")
+
     print("Running summary query ...")
-    df = pd.read_sql(QUERY_SUMMARY, conn)
+    df = pd.read_sql(build_summary_query(election_name), conn)
     print(f"  {len(df):,} precinct rows")
     df = add_totals(df)
 
     print("Running daily trend query ...")
-    daily_df = pd.read_sql(QUERY_DAILY, conn)
+    daily_df = pd.read_sql(build_daily_query(election_name), conn)
     print(f"  {len(daily_df):,} daily rows")
     conn.close()
 
