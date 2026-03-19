@@ -62,8 +62,8 @@ WITH dal_deduped AS (
       AND BALLOT_STATUS NOT IN ('Deleted', 'Not Issued')
 )
 SELECT
-    van.CountyName,
-    van.PrecinctName,
+    COALESCE(van.CountyName,  dal.LOCALITY_NAME) AS CountyName,
+    COALESCE(van.PrecinctName, dal.PRECINCT_NAME) AS PrecinctName,
     COUNT(van.VoterFileVANID) AS TotalMatchedVoters,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
@@ -119,7 +119,7 @@ SELECT
              THEN 1 ELSE 0 END) AS UnknownOutCount
 
 FROM van
-INNER JOIN dal_deduped dal
+RIGHT JOIN dal_deduped dal
     ON van.StateFileID = dal.IDENTIFICATION_NUMBER
 WHERE dal.rn = 1
 
@@ -196,7 +196,7 @@ SELECT
              THEN 1 ELSE 0 END) AS MailUnknown
 
 FROM van
-INNER JOIN dal_deduped dal
+RIGHT JOIN dal_deduped dal
     ON van.StateFileID = dal.IDENTIFICATION_NUMBER
 
 WHERE dal.rn = 1
