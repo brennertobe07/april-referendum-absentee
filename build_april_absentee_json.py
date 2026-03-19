@@ -62,7 +62,7 @@ WITH dal_deduped AS (
       AND BALLOT_STATUS NOT IN ('Deleted', 'Not Issued')
 )
 SELECT
-    COALESCE(van.CountyName,  dal.LOCALITY_NAME) AS CountyName,
+    COALESCE(van.CountyName,  ct.CountyName)   AS CountyName,
     COALESCE(van.PrecinctName, dal.PRECINCT_NAME) AS PrecinctName,
     COUNT(van.VoterFileVANID) AS TotalMatchedVoters,
 
@@ -121,11 +121,13 @@ SELECT
 FROM van
 RIGHT JOIN dal_deduped dal
     ON van.StateFileID = dal.IDENTIFICATION_NUMBER
+LEFT JOIN Voter.dbo.County_Twist ct
+    ON dal.LOCALITY_NAME = ct.LOCALITYNAME
 WHERE dal.rn = 1
 
-GROUP BY COALESCE(van.CountyName, dal.LOCALITY_NAME),
+GROUP BY COALESCE(van.CountyName, ct.CountyName),
          COALESCE(van.PrecinctName, dal.PRECINCT_NAME)
-ORDER BY COALESCE(van.CountyName, dal.LOCALITY_NAME),
+ORDER BY COALESCE(van.CountyName, ct.CountyName),
          COALESCE(van.PrecinctName, dal.PRECINCT_NAME);
 """
 
