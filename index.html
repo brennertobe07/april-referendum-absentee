@@ -92,7 +92,7 @@
   .header-right { display: flex; align-items: center; gap: 16px; }
   #days-remaining {
     font-family: var(--mono);
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--accent);
     background: rgba(58,143,212,.15);
@@ -100,7 +100,6 @@
     padding: 8px 18px;
     border-radius: 20px;
     white-space: nowrap;
-    letter-spacing: .02em;
   }
   #last-updated {
     font-family: var(--mono);
@@ -240,15 +239,15 @@
     font-size: .68rem; font-weight: 600; letter-spacing: .08em;
     text-transform: uppercase; color: var(--muted);
   }
-  .toggle-btns { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+  .toggle-btns { display: flex; gap: 8px; flex-wrap: wrap; }
   .toggle-btn {
     display: flex; align-items: center; gap: 7px;
-    padding: 8px 16px; border-radius: 6px; border: 2px solid var(--border);
-    background: none; color: var(--muted); font-family: var(--sans); font-size: .82rem;
+    padding: 9px 16px; border-radius: 6px; border: 2px solid var(--border);
+    background: none; color: var(--muted); font-family: var(--sans); font-size: .85rem;
     cursor: pointer; transition: all .12s;
   }
-  .toggle-btn:hover { color: var(--text); border-color: var(--text); }
-  .toggle-btn.active { color: var(--text-hi); border-color: var(--border-hi); background: rgba(255,255,255,.10); box-shadow: 0 0 0 1px var(--border-hi); }
+  .toggle-btn:hover { color: var(--text); border-color: var(--text-dim); }
+  .toggle-btn.active { color: var(--text-hi); border-color: var(--accent); background: rgba(58,143,212,.12); }
 
   /* colored swatch inside each toggle button */
   .line-swatch {
@@ -261,8 +260,8 @@
   }
   .toggle-btn.active .line-swatch { opacity: 1; }
 
-  [data-cum="dem_ip"].active, [data-cum="rep_ip"].active { border-color: var(--border); }
-  [data-cum="dem_mail"].active, [data-cum="rep_mail"].active { border-color: var(--border); }
+  [data-cum="dem_ip"].active, [data-cum="dem_mail"].active { border-color: var(--dem); background: rgba(33,102,172,.15); color: var(--dem-lt); }
+  [data-cum="rep_ip"].active, [data-cum="rep_mail"].active { border-color: var(--rep); background: rgba(192,57,43,.15); color: var(--rep-lt); }
 
   /* ── TABLE ── */
   .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
@@ -586,7 +585,7 @@ function renderTrends(main) {
     <div class="chart-card tall wide" id="cumulative-wrap">
       <div class="toggle-row">
         <h3>Cumulative Ballots Returned</h3>
-        <div style="font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Click to show/hide lines:</div>
+        <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.10em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">↓ Click to show / hide</div>
         <div class="toggle-btns">
           <button class="toggle-btn" data-cum="total"><span class="line-swatch" style="background:var(--accent)"></span>Total</button>
           <button class="toggle-btn" data-cum="ip"><span class="line-swatch" style="background:var(--ip)"></span>In-Person</button>
@@ -610,8 +609,8 @@ function renderTrends(main) {
         </div>
       </div>
       <div id="daily-scroll-wrap" style="min-width:100%"><canvas id="chart-daily"></canvas></div>
-    </div>
-    <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:6px;padding:0 4px">† Weekend / no state update — returns grouped to prior day</div>`;
+      <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;padding:2px 4px;border-top:1px solid var(--border);padding-top:8px">† Weekend or no state update — returns grouped to nearest prior weekday</div>
+    </div>`;
 
   // Stat cards
   document.getElementById('trend-stats').innerHTML = statCards([
