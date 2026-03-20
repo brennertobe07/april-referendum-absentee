@@ -187,6 +187,12 @@
     font-size: .62rem; font-weight: 600; letter-spacing: .12em;
     text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
   }
+  .section-banner {
+    font-size: 1.1rem; font-weight: 700; color: var(--text);
+    margin-bottom: 16px; padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+    letter-spacing: .02em;
+  }
 
   /* ── STAT CARDS ── */
   .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
@@ -232,10 +238,10 @@
     font-size: .68rem; font-weight: 600; letter-spacing: .08em;
     text-transform: uppercase; color: var(--muted);
   }
-  .toggle-btns { display: flex; gap: 4px; flex-wrap: wrap; }
+  .toggle-btns { display: flex; gap: 6px; flex-wrap: wrap; }
   .toggle-btn {
-    display: flex; align-items: center; gap: 5px;
-    padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border);
+    display: flex; align-items: center; gap: 6px;
+    padding: 7px 14px; border-radius: 6px; border: 1px solid var(--border);
     background: none; color: var(--muted); font-family: var(--sans); font-size: .72rem;
     cursor: pointer; transition: all .12s;
   }
@@ -380,6 +386,12 @@ async function loadData() {
 document.querySelectorAll('.top-tab').forEach(btn => {
   btn.addEventListener('click', () => {
     currentTab = btn.dataset.tab;
+    // Clicking Summary always resets to statewide
+    if (currentTab === 'summary') {
+      currentCounty = null;
+      document.getElementById('btn-statewide').classList.add('active');
+      document.querySelectorAll('#county-list li').forEach(li => li.classList.remove('active'));
+    }
     document.querySelectorAll('.top-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const layout = document.getElementById('layout');
@@ -447,12 +459,12 @@ function renderStatewide(main) {
 
   main.innerHTML = `
     <div>
-      <div class="section-title">Statewide Summary</div>
+      <div class="section-banner">🗺 Statewide Summary</div>
       <div class="stat-grid" id="stat-grid"></div>
     </div>
     <div class="chart-grid">
       <div class="chart-card">
-        <h3>Ballots Returned — by Party</h3>
+        <h3>Ballots Voted — by Party</h3>
         <canvas id="chart-voted"></canvas>
       </div>
       <div class="chart-card">
@@ -476,8 +488,8 @@ function renderStatewide(main) {
   const mailRep   = lastDaily.CumMailRep       || 0;
 
   document.getElementById('stat-grid').innerHTML = statCards([
-    { cls:'total', label:'Total Universe',    val: total,               sub: s.CountyCount+' counties' },
-    { cls:'total', label:'Ballots Returned',  val: voted,               sub: pct(voted,total)+' return rate' },
+    { cls:'total', label:'Total Absentee Universe',    val: total,               sub: s.CountyCount+' counties' },
+    { cls:'total', label:'Ballots Voted',  val: voted,               sub: pct(voted,total)+' return rate' },
     { cls:'ip',    label:'In-Person',         val: ipTotal,             sub: pct(ipTotal, voted)+' of returned' },
     { cls:'out',   label:'Mail Returned',     val: mailTotal,           sub: pct(mailTotal, voted)+' of returned' },
     { cls:'out',   label:'Still Out',         val: out,                 sub: pct(out, total)+' of universe' },
@@ -504,12 +516,12 @@ function renderCounty(main, countyName) {
 
   main.innerHTML = `
     <div>
-      <div class="section-title">${countyName}</div>
+      <div class="section-banner">${countyName}</div>
       <div class="stat-grid" id="stat-grid"></div>
     </div>
     <div class="chart-grid">
       <div class="chart-card">
-        <h3>Ballots Returned — by Party</h3>
+        <h3>Ballots Voted — by Party</h3>
         <canvas id="chart-voted"></canvas>
       </div>
       <div class="chart-card">
@@ -527,8 +539,8 @@ function renderCounty(main, countyName) {
     </div>`;
 
   document.getElementById('stat-grid').innerHTML = statCards([
-    { cls:'total', label:'Total Universe',   val: total,                   sub: precincts.length+' precincts' },
-    { cls:'total', label:'Ballots Returned', val: voted,                   sub: pct(voted,total)+' return rate' },
+    { cls:'total', label:'Total Absentee Universe',   val: total,                   sub: precincts.length+' precincts' },
+    { cls:'total', label:'Ballots Voted', val: voted,                   sub: pct(voted,total)+' return rate' },
     { cls:'ip',    label:'In-Person',        val: cRow.InPersonCount,      sub: pct(cRow.InPersonCount, voted)+' of returned' },
     { cls:'out',   label:'Mail Returned',    val: cRow.MailCount,          sub: pct(cRow.MailCount, voted)+' of returned' },
     { cls:'out',   label:'Still Out',        val: out,                     sub: pct(out, total)+' of universe' },
@@ -585,17 +597,18 @@ function renderTrends(main) {
       <canvas id="chart-cumulative"></canvas>
     </div>
 
-    <div class="chart-card tall wide" id="daily-wrap">
+    <div class="chart-card tall wide" id="daily-wrap" style="overflow-x:auto">
       <div class="toggle-row">
         <h3>Daily Returns</h3>
         <div class="toggle-btns">
-          <button class="toggle-btn active" data-mode="inperson">In-Person D/R/U</button>
+          <button class="toggle-btn active" data-mode="inperson">In-Person D/R/New</button>
           <button class="toggle-btn" data-mode="mail">Mail D/R/U</button>
           <button class="toggle-btn" data-mode="type">In-Person vs Mail</button>
         </div>
       </div>
-      <canvas id="chart-daily"></canvas>
-    </div>`;
+      <div id="daily-scroll-wrap" style="min-width:100%"><canvas id="chart-daily"></canvas></div>
+    </div>
+    <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:6px;padding:0 4px">† Weekend / no state update — returns grouped to prior day</div>`;
 
   // Stat cards
   document.getElementById('trend-stats').innerHTML = statCards([
@@ -761,7 +774,7 @@ function buildCumulativeChart(daily) {
       borderWidth: 2,
       borderDash: [2, 2],
       pointRadius: 2,
-      hidden: true,
+      hidden: false,
     },
   ];
 
@@ -793,6 +806,13 @@ function updateCumulativeChart(state) {
 // ── DAILY BAR CHART ───────────────────────────────────────────────────────
 function buildDailyChart(daily, mode) {
   const labels = daily.map(d => shortDate(d.ReturnDate, d.DayOfWeek));
+
+  // Grow canvas width as dates accumulate so chart stays readable
+  const minWidth = 600;
+  const perBar   = 38;
+  const canvasW  = Math.max(minWidth, labels.length * perBar);
+  const wrap = document.getElementById('daily-scroll-wrap');
+  if (wrap) wrap.style.width = canvasW + 'px';
   let datasets;
 
   if (mode === 'inperson') {
@@ -838,7 +858,7 @@ function buildDailyChart(daily, mode) {
             label: ctx => ` ${ctx.dataset.label}: ${fmt(ctx.parsed.y)}`,
             footer: (items) => {
               const total = items.reduce((s, i) => s + i.parsed.y, 0);
-              return `Total: ${fmt(total)}`;
+              return items.length > 1 ? `Day Total: ${fmt(total)}` : '';
             },
           },
         },
@@ -865,7 +885,7 @@ function buildPartyChart(id, [dem, rep, unk]) {
   const c = new Chart(document.getElementById(id), {
     type: 'bar',
     data: {
-      labels: ['Democrat','Republican','Unknown'],
+      labels: ['Democrat','Republican','New Reg / Unknown'],
       datasets: [{
         data: [dem||0, rep||0, unk||0],
         backgroundColor: [cssVar('--dem'), cssVar('--rep'), cssVar('--unk')],

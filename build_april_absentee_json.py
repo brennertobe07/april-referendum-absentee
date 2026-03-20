@@ -68,18 +68,18 @@ SELECT
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
              AND (van.likelyparty IN ('sd','ld')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 50))
              THEN 1 ELSE 0 END) AS DemVotedCount,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
              AND (van.likelyparty IN ('sr','lr')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 < 50))
              THEN 1 ELSE 0 END) AS RepVotedCount,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NOT NULL
-             AND ((van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 BETWEEN 41 AND 59)
-                 OR van.likelyparty IS NULL
-                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I'))
+             AND (van.likelyparty IS NULL
+                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I')
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 IS NULL))
              THEN 1 ELSE 0 END) AS UnknownVotedCount,
 
     -- In-person vs mail breakdown
@@ -87,35 +87,35 @@ SELECT
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed','Unmarked') THEN 1 ELSE 0 END) AS MailCount,
     SUM(CASE WHEN dal.BALLOT_STATUS = 'On Machine'
              AND (van.likelyparty IN ('sd','ld')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 50))
              THEN 1 ELSE 0 END) AS InPersonDem,
     SUM(CASE WHEN dal.BALLOT_STATUS = 'On Machine'
              AND (van.likelyparty IN ('sr','lr')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 < 50))
              THEN 1 ELSE 0 END) AS InPersonRep,
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed','Unmarked')
              AND (van.likelyparty IN ('sd','ld')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 50))
              THEN 1 ELSE 0 END) AS MailDem,
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed','Unmarked')
              AND (van.likelyparty IN ('sr','lr')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 < 50))
              THEN 1 ELSE 0 END) AS MailRep,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NULL AND dal.ONGOING = 'True'
              AND (van.likelyparty IN ('sd','ld')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 50))
              THEN 1 ELSE 0 END) AS DemOutCount,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NULL AND dal.ONGOING = 'True'
              AND (van.likelyparty IN ('sr','lr')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 < 50))
              THEN 1 ELSE 0 END) AS RepOutCount,
 
     SUM(CASE WHEN dal.BALLOT_RECEIPT_DATE IS NULL AND dal.ONGOING = 'True'
-             AND ((van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 BETWEEN 41 AND 59)
-                 OR van.likelyparty IS NULL
-                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I'))
+             AND (van.likelyparty IS NULL
+                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I')
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 IS NULL))
              THEN 1 ELSE 0 END) AS UnknownOutCount
 
 FROM van
@@ -172,31 +172,31 @@ SELECT
     SUM(CASE WHEN dal.BALLOT_STATUS = 'On Machine' THEN 1 ELSE 0 END) AS InPersonTotal,
     SUM(CASE WHEN dal.BALLOT_STATUS = 'On Machine'
              AND (van.likelyparty IN ('sd','ld')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 50))
              THEN 1 ELSE 0 END) AS InPersonDem,
     SUM(CASE WHEN dal.BALLOT_STATUS = 'On Machine'
              AND (van.likelyparty IN ('sr','lr')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 < 50))
              THEN 1 ELSE 0 END) AS InPersonRep,
     SUM(CASE WHEN dal.BALLOT_STATUS = 'On Machine'
-             AND ((van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 BETWEEN 41 AND 59)
-                 OR van.likelyparty IS NULL
-                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I'))
+             AND (van.likelyparty IS NULL
+                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I')
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 IS NULL))
              THEN 1 ELSE 0 END) AS InPersonUnknown,
 
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed') THEN 1 ELSE 0 END) AS MailTotal,
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed')
              AND (van.likelyparty IN ('sd','ld')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 60))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 >= 50))
              THEN 1 ELSE 0 END) AS MailDem,
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed')
              AND (van.likelyparty IN ('sr','lr')
-                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 <= 40))
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 < 50))
              THEN 1 ELSE 0 END) AS MailRep,
     SUM(CASE WHEN dal.BALLOT_STATUS IN ('Marked','Pre-Processed')
-             AND ((van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 BETWEEN 41 AND 59)
-                 OR van.likelyparty IS NULL
-                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I'))
+             AND (van.likelyparty IS NULL
+                 OR van.likelyparty NOT IN ('sd','ld','sr','lr','nd','U','I')
+                 OR (van.likelyparty IN ('nd','U','I') AND van.Clarity_DemSupport_26 IS NULL))
              THEN 1 ELSE 0 END) AS MailUnknown
 
 FROM van
