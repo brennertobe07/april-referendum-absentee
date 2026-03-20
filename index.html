@@ -247,7 +247,7 @@
     cursor: pointer; transition: all .12s;
   }
   .toggle-btn:hover { color: var(--text); border-color: var(--text-dim); }
-  .toggle-btn.active { color: var(--text-hi); border-color: var(--accent); background: rgba(58,143,212,.12); }
+  .toggle-btn.active { color: var(--text-hi); border-color: var(--border-hi); background: rgba(255,255,255,.08); }
 
   /* colored swatch inside each toggle button */
   .line-swatch {
@@ -598,6 +598,7 @@ function renderTrends(main) {
       </div>
       <canvas id="chart-cumulative"></canvas>
     </div>
+    <div style="font-family:var(--mono);font-size:10px;color:var(--muted);padding:5px 8px;background:rgba(255,255,255,.03);border-radius:4px;border:1px solid var(--border)">† Weekend or no state update — returns grouped to nearest prior weekday</div>
 
     <div class="chart-card tall wide" id="daily-wrap" style="overflow-x:auto">
       <div class="toggle-row">
@@ -609,8 +610,9 @@ function renderTrends(main) {
         </div>
       </div>
       <div id="daily-scroll-wrap" style="min-width:100%"><canvas id="chart-daily"></canvas></div>
-    </div>
-    <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px;padding:4px 8px;background:rgba(255,255,255,.03);border-radius:4px;border:1px solid var(--border)">† Weekend or no state update — returns grouped to nearest prior weekday</div>`;
+    </div>`;
+
+  // Footnote — rendered after HTML is set, inserted after cumulative chart card
 
   // Stat cards
   document.getElementById('trend-stats').innerHTML = statCards([
