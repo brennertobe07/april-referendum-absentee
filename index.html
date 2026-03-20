@@ -92,13 +92,15 @@
   .header-right { display: flex; align-items: center; gap: 16px; }
   #days-remaining {
     font-family: var(--mono);
-    font-size: .78rem;
+    font-size: 1.15rem;
+    font-weight: 700;
     color: var(--accent);
-    background: rgba(58,143,212,.12);
-    border: 1px solid rgba(58,143,212,.3);
-    padding: 4px 10px;
+    background: rgba(58,143,212,.15);
+    border: 2px solid rgba(58,143,212,.5);
+    padding: 8px 18px;
     border-radius: 20px;
     white-space: nowrap;
+    letter-spacing: .02em;
   }
   #last-updated {
     font-family: var(--mono);
@@ -238,15 +240,15 @@
     font-size: .68rem; font-weight: 600; letter-spacing: .08em;
     text-transform: uppercase; color: var(--muted);
   }
-  .toggle-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+  .toggle-btns { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
   .toggle-btn {
-    display: flex; align-items: center; gap: 6px;
-    padding: 7px 14px; border-radius: 6px; border: 1px solid var(--border);
-    background: none; color: var(--muted); font-family: var(--sans); font-size: .72rem;
+    display: flex; align-items: center; gap: 7px;
+    padding: 8px 16px; border-radius: 6px; border: 2px solid var(--border);
+    background: none; color: var(--muted); font-family: var(--sans); font-size: .82rem;
     cursor: pointer; transition: all .12s;
   }
   .toggle-btn:hover { color: var(--text); border-color: var(--text); }
-  .toggle-btn.active { color: var(--text); border-color: var(--border); background: rgba(255,255,255,.05); }
+  .toggle-btn.active { color: var(--text-hi); border-color: var(--border-hi); background: rgba(255,255,255,.10); box-shadow: 0 0 0 1px var(--border-hi); }
 
   /* colored swatch inside each toggle button */
   .line-swatch {
@@ -584,6 +586,7 @@ function renderTrends(main) {
     <div class="chart-card tall wide" id="cumulative-wrap">
       <div class="toggle-row">
         <h3>Cumulative Ballots Returned</h3>
+        <div style="font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Click to show/hide lines:</div>
         <div class="toggle-btns">
           <button class="toggle-btn" data-cum="total"><span class="line-swatch" style="background:var(--accent)"></span>Total</button>
           <button class="toggle-btn" data-cum="ip"><span class="line-swatch" style="background:var(--ip)"></span>In-Person</button>
