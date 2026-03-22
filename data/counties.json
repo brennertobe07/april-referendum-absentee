@@ -38,20 +38,20 @@
   {
     "CountyName": "Alexandria (City)",
     "TotalMatchedVoters": 12840,
-    "DemVotedCount": 5802,
+    "DemVotedCount": 5818,
     "RepVotedCount": 799,
     "UnknownVotedCount": 43,
     "InPersonCount": 2885,
-    "MailCount": 3759,
+    "MailCount": 3775,
     "InPersonDem": 2468,
     "InPersonRep": 405,
-    "MailDem": 3334,
+    "MailDem": 3350,
     "MailRep": 394,
-    "DemOutCount": 5379,
+    "DemOutCount": 5363,
     "RepOutCount": 551,
     "UnknownOutCount": 82,
-    "VotedCount": 6644,
-    "OutCount": 6012
+    "VotedCount": 6660,
+    "OutCount": 5996
   },
   {
     "CountyName": "Alleghany",
@@ -73,20 +73,20 @@
   },
   {
     "CountyName": "Amelia",
-    "TotalMatchedVoters": 1012,
-    "DemVotedCount": 267,
+    "TotalMatchedVoters": 1011,
+    "DemVotedCount": 266,
     "RepVotedCount": 558,
     "UnknownVotedCount": 5,
     "InPersonCount": 680,
-    "MailCount": 150,
+    "MailCount": 149,
     "InPersonDem": 183,
     "InPersonRep": 494,
-    "MailDem": 84,
+    "MailDem": 83,
     "MailRep": 64,
     "DemOutCount": 93,
     "RepOutCount": 80,
     "UnknownOutCount": 2,
-    "VotedCount": 830,
+    "VotedCount": 829,
     "OutCount": 175
   },
   {
@@ -235,7 +235,7 @@
   },
   {
     "CountyName": "Bristol (City)",
-    "TotalMatchedVoters": 901,
+    "TotalMatchedVoters": 902,
     "DemVotedCount": 227,
     "RepVotedCount": 342,
     "UnknownVotedCount": 8,
@@ -246,10 +246,10 @@
     "MailDem": 125,
     "MailRep": 114,
     "DemOutCount": 141,
-    "RepOutCount": 180,
+    "RepOutCount": 181,
     "UnknownOutCount": 4,
     "VotedCount": 577,
-    "OutCount": 325
+    "OutCount": 326
   },
   {
     "CountyName": "Brunswick",
@@ -2251,7 +2251,7 @@
   },
   {
     "CountyName": "Washington",
-    "TotalMatchedVoters": 3364,
+    "TotalMatchedVoters": 3365,
     "DemVotedCount": 742,
     "RepVotedCount": 1571,
     "UnknownVotedCount": 16,
