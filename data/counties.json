@@ -1,20 +1,20 @@
 [
   {
     "CountyName": "Accomack",
-    "TotalMatchedVoters": 2444,
-    "DemVotedCount": 1080,
-    "RepVotedCount": 647,
-    "UnknownVotedCount": 14,
-    "InPersonCount": 1355,
+    "TotalMatchedVoters": 2612,
+    "DemVotedCount": 1179,
+    "RepVotedCount": 711,
+    "UnknownVotedCount": 20,
+    "InPersonCount": 1524,
     "MailCount": 386,
-    "InPersonDem": 826,
-    "InPersonRep": 516,
+    "InPersonDem": 925,
+    "InPersonRep": 580,
     "MailDem": 254,
     "MailRep": 131,
     "DemOutCount": 365,
     "RepOutCount": 304,
     "UnknownOutCount": 10,
-    "VotedCount": 1741,
+    "VotedCount": 1910,
     "OutCount": 679
   },
   {
@@ -451,7 +451,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "TotalMatchedVoters": 30051,
+    "TotalMatchedVoters": 30108,
     "DemVotedCount": 8869,
     "RepVotedCount": 6572,
     "UnknownVotedCount": 92,
@@ -461,11 +461,11 @@
     "InPersonRep": 4696,
     "MailDem": 3644,
     "MailRep": 1876,
-    "DemOutCount": 9882,
-    "RepOutCount": 4244,
+    "DemOutCount": 9898,
+    "RepOutCount": 4251,
     "UnknownOutCount": 92,
     "VotedCount": 15533,
-    "OutCount": 14218
+    "OutCount": 14241
   },
   {
     "CountyName": "Clarke",
@@ -1009,7 +1009,7 @@
   },
   {
     "CountyName": "Hanover",
-    "TotalMatchedVoters": 10313,
+    "TotalMatchedVoters": 10314,
     "DemVotedCount": 2507,
     "RepVotedCount": 4613,
     "UnknownVotedCount": 51,
@@ -1019,11 +1019,11 @@
     "InPersonRep": 3841,
     "MailDem": 876,
     "MailRep": 772,
-    "DemOutCount": 1462,
+    "DemOutCount": 1463,
     "RepOutCount": 1498,
     "UnknownOutCount": 31,
     "VotedCount": 7171,
-    "OutCount": 2991
+    "OutCount": 2992
   },
   {
     "CountyName": "Harrisonburg (City)",
@@ -1891,7 +1891,7 @@
   },
   {
     "CountyName": "Richmond (City)",
-    "TotalMatchedVoters": 13020,
+    "TotalMatchedVoters": 13022,
     "DemVotedCount": 4405,
     "RepVotedCount": 571,
     "UnknownVotedCount": 33,
@@ -1901,11 +1901,11 @@
     "InPersonRep": 423,
     "MailDem": 1523,
     "MailRep": 148,
-    "DemOutCount": 7148,
+    "DemOutCount": 7149,
     "RepOutCount": 561,
     "UnknownOutCount": 110,
     "VotedCount": 5009,
-    "OutCount": 7819
+    "OutCount": 7820
   },
   {
     "CountyName": "Roanoke",
