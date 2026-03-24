@@ -908,14 +908,13 @@ function renderStatewide(main) {
       <div class="table-footer" id="county-footer"></div>
     </div>`;
 
-  // Pull in-person & mail from daily cumulative totals
-  const lastDaily = DATA.daily.length ? DATA.daily[DATA.daily.length - 1] : {};
-  const ipTotal   = lastDaily.CumInPersonTotal || 0;
-  const mailTotal = lastDaily.CumMailTotal     || 0;
-  const ipDem     = lastDaily.CumInPersonDem   || 0;
-  const ipRep     = lastDaily.CumInPersonRep   || 0;
-  const mailDem   = lastDaily.CumMailDem       || 0;
-  const mailRep   = lastDaily.CumMailRep       || 0;
+  // Pull in-person & mail from summary.json to match VotedCount source
+  const ipTotal   = s.InPersonCount || 0;
+  const mailTotal = s.MailCount     || 0;
+  const ipDem     = s.InPersonDem   || 0;
+  const ipRep     = s.InPersonRep   || 0;
+  const mailDem   = s.MailDem       || 0;
+  const mailRep   = s.MailRep       || 0;
 
   document.getElementById('stat-grid').innerHTML = statCards([
     { cls:'total', label:'Total Absentee Universe',    val: total,               sub: s.CountyCount+' counties' },
