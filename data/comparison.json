@@ -850,17 +850,17 @@
   "current_election": "26SP_Apr",
   "summary": {
     "current_election": "26SP_Apr",
-    "current_day": 46,
-    "current_voted": 44,
+    "current_day": 27,
+    "current_voted": 437010,
     "prior_comparisons": [
       {
         "election": "25G",
         "label": "2025 General",
-        "days_before": 43,
-        "prior_voted": 35227,
-        "difference": -35183
+        "days_before": 27,
+        "prior_voted": 421869,
+        "difference": 15141
       }
     ]
   },
-  "generated_at": "2026-03-26 00:46"
+  "generated_at": "2026-03-26 00:51"
 }

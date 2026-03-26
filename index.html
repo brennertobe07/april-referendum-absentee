@@ -1463,13 +1463,7 @@ function buildComparisonChart(cmp, state) {
       interaction: { mode: 'index', intersect: false },
       plugins: {
         legend: {
-          display: true,
-          labels: {
-            color: cssVar('--muted'),
-            font: { family: "'DM Sans', sans-serif", size: 11 },
-            boxWidth: 14, boxHeight: 14,
-            filter: item => !item.text.includes('(prior)') || item.text,
-          },
+          display: false,
         },
         tooltip: {
           callbacks: {
