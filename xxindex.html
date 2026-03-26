@@ -756,7 +756,6 @@ UDk/hX7zfCL/AINOPhd4dngm8YePfFPiXy23SW1pDFYwy/8AAhlx+dfcf7MH/BLT4F/sg+VJ4K+H
     <div class="top-tabs">
       <button class="top-tab active" data-tab="summary">Summary</button>
       <button class="top-tab" data-tab="trends">Daily Trends</button>
-      <button class="top-tab" data-tab="comparison">Historical Comparison</button>
     </div>
   </div>
   <div class="header-right">
@@ -779,7 +778,7 @@ UDk/hX7zfCL/AINOPhd4dngm8YePfFPiXy23SW1pDFYwy/8AAhlx+dfcf7MH/BLT4F/sg+VJ4K+H
 
 <script>
 // ── STATE ─────────────────────────────────────────────────────────────────
-let DATA = { summary: null, counties: [], precincts: [], daily: [], meta: null, comparison: null };
+let DATA = { summary: null, counties: [], precincts: [], daily: [], meta: null };
 let currentTab    = 'summary';
 let currentCounty = null;
 let charts = {};
@@ -789,15 +788,14 @@ const ELECTION_DAY = new Date('2026-04-21');
 // ── BOOT ──────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const [summary, counties, precincts, daily, meta, comparison] = await Promise.all([
+    const [summary, counties, precincts, daily, meta] = await Promise.all([
       fetch('data/summary.json').then(r => r.json()),
       fetch('data/counties.json').then(r => r.json()),
       fetch('data/precincts.json').then(r => r.json()),
       fetch('data/daily.json').then(r => r.json()),
       fetch('data/metadata.json').then(r => r.json()),
-      fetch('data/comparison.json').then(r => r.json()).catch(() => null),
     ]);
-    DATA = { summary, counties, precincts, daily, meta, comparison };
+    DATA = { summary, counties, precincts, daily, meta };
 
     document.getElementById('last-updated').textContent = `Updated: ${meta.last_updated}`;
 
@@ -827,7 +825,7 @@ document.querySelectorAll('.top-tab').forEach(btn => {
     document.querySelectorAll('.top-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const layout = document.getElementById('layout');
-    layout.classList.toggle('no-sidebar', currentTab === 'trends' || currentTab === 'comparison');
+    layout.classList.toggle('no-sidebar', currentTab === 'trends');
     renderView();
   });
 });
@@ -875,8 +873,6 @@ function renderView() {
   const main = document.getElementById('main-content');
   if (currentTab === 'trends') {
     renderTrends(main);
-  } else if (currentTab === 'comparison') {
-    renderComparison(main);
   } else if (currentCounty === null) {
     renderStatewide(main);
   } else {
@@ -1314,200 +1310,6 @@ function buildDailyChart(daily, mode) {
     },
   });
   charts['chart-daily'] = c;
-}
-
-// ── HISTORICAL COMPARISON TAB ─────────────────────────────────────────────
-function renderComparison(main) {
-  const cmp = DATA.comparison;
-  if (!cmp || !cmp.elections || cmp.elections.length === 0) {
-    main.innerHTML = `<div class="loading">No comparison data. Run export_comparison_json.py to generate data/comparison.json.</div>`;
-    return;
-  }
-
-  const summary   = cmp.summary || {};
-  const curName   = cmp.current_election;
-  const curElec   = cmp.elections.find(e => e.name === curName);
-  const priorElec = cmp.elections.find(e => e.name !== curName);
-
-  const curVoted   = summary.current_voted || 0;
-  const priorMatch = summary.prior_comparisons && summary.prior_comparisons[0];
-  const priorVoted = priorMatch ? priorMatch.prior_voted : 0;
-  const diff       = curVoted - priorVoted;
-  const diffSign   = diff >= 0 ? '+' : '';
-  const diffColor  = diff >= 0 ? 'var(--mail)' : 'var(--rep)';
-  const diffLabel  = diff >= 0 ? 'ahead of prior pace' : 'behind prior pace';
-  const curLabel   = curElec  ? curElec.label  : curName;
-  const priorLabel = priorElec ? priorElec.label : (priorMatch ? priorMatch.label : '');
-
-  main.innerHTML = `
-    <div>
-      <div class="section-title">Historical Comparison — Cumulative Ballots Voted</div>
-      <div class="stat-grid" id="cmp-stat-grid"></div>
-    </div>
-
-    <div class="chart-card tall wide" id="cmp-chart-wrap">
-      <div class="toggle-row">
-        <h3>Cumulative Voted — Days Before Election</h3>
-        <div style="font-family:var(--mono);font-size:.65rem;letter-spacing:.10em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">
-          Solid = ${curLabel} &nbsp;|&nbsp; Dashed = ${priorLabel} &nbsp;|&nbsp; ↓ Click to show / hide
-        </div>
-        <div class="toggle-btns">
-          <button class="toggle-btn active" data-cmp="total">
-            <span class="line-swatch" style="background:var(--accent)"></span>Total
-          </button>
-          <button class="toggle-btn" data-cmp="ip">
-            <span class="line-swatch" style="background:var(--ip)"></span>In-Person
-          </button>
-          <button class="toggle-btn" data-cmp="mail">
-            <span class="line-swatch" style="background:var(--mail)"></span>Mail
-          </button>
-          <button class="toggle-btn" data-cmp="dem">
-            <span class="line-swatch" style="background:var(--dem)"></span>Dem
-          </button>
-          <button class="toggle-btn" data-cmp="rep">
-            <span class="line-swatch" style="background:var(--rep)"></span>Rep
-          </button>
-        </div>
-      </div>
-      <canvas id="chart-comparison"></canvas>
-    </div>`;
-
-  document.getElementById('cmp-stat-grid').innerHTML = statCards([
-    { cls:'total', label: curLabel + ' — Day ' + (summary.current_day || '—'),
-      val: curVoted, sub: 'voted as of today' },
-    { cls:'total', label: priorLabel + ' — Same Point',
-      val: priorVoted, sub: priorMatch ? 'day ' + priorMatch.days_before + ' before election' : '—' },
-    { cls: diff >= 0 ? 'out' : 'rep',
-      label: 'Difference',
-      val: Math.abs(diff),
-      sub: diffSign + fmt(diff) + ' — ' + diffLabel },
-  ]);
-
-  // Initial toggle state — only total on
-  const cmpState = { total: true, ip: false, mail: false, dem: false, rep: false };
-
-  buildComparisonChart(cmp, cmpState);
-
-  document.querySelectorAll('[data-cmp]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const k = btn.dataset.cmp;
-      cmpState[k] = !cmpState[k];
-      btn.classList.toggle('active', cmpState[k]);
-      updateComparisonChart(cmpState);
-    });
-  });
-}
-
-function buildComparisonChart(cmp, state) {
-  const curName  = cmp.current_election;
-  const curElec  = cmp.elections.find(e => e.name === curName);
-  const priors   = cmp.elections.filter(e => e.name !== curName);
-
-  // Build a unified sorted set of days_before values across all elections
-  const allDays = [...new Set(
-    cmp.elections.flatMap(e => e.days.map(d => d.days_before))
-  )].sort((a, b) => b - a);  // descending: 50 → 0
-
-  const labels = allDays.map(d => `D-${d}`);
-
-  function makeDataset(elec, field, color, dashed, labelSuffix) {
-    const lookup = {};
-    elec.days.forEach(d => { lookup[d.days_before] = d[field]; });
-    return {
-      label: elec.label + labelSuffix,
-      data:  allDays.map(d => lookup[d] != null ? lookup[d] : null),
-      borderColor: color,
-      backgroundColor: 'transparent',
-      fill: false,
-      tension: .35,
-      borderWidth: dashed ? 2 : 2.5,
-      borderDash: dashed ? [6, 4] : [],
-      pointRadius: dashed ? 2 : 3,
-      pointHoverRadius: 5,
-      spanGaps: false,
-    };
-  }
-
-  const demColor  = cssVar('--dem');
-  const repColor  = cssVar('--rep');
-  const accentColor = cssVar('--accent');
-  const ipColor   = cssVar('--ip');
-  const mailColor = cssVar('--mail');
-
-  const datasets = [];
-
-  // For each series, add current (solid) then each prior (dashed)
-  const series = [
-    { key: 'total', field: 'total_voted',  color: accentColor, label: ' — Total' },
-    { key: 'ip',    field: 'in_person',    color: ipColor,     label: ' — In-Person' },
-    { key: 'mail',  field: 'mail',         color: mailColor,   label: ' — Mail' },
-    { key: 'dem',   field: 'dem_voted',    color: demColor,    label: ' — Dem' },
-    { key: 'rep',   field: 'rep_voted',    color: repColor,    label: ' — Rep' },
-  ];
-
-  series.forEach(s => {
-    if (curElec) {
-      datasets.push({ ...makeDataset(curElec, s.field, s.color, false, s.label), cmpKey: s.key, hidden: !state[s.key] });
-    }
-    priors.forEach(p => {
-      datasets.push({ ...makeDataset(p, s.field, s.color, true, s.label + ' (prior)'), cmpKey: s.key, hidden: !state[s.key] });
-    });
-  });
-
-  const c = new Chart(document.getElementById('chart-comparison'), {
-    type: 'line',
-    data: { labels, datasets },
-    options: {
-      responsive: true,
-      layout: { padding: { right: 20 } },
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: {
-          display: true,
-          labels: {
-            color: cssVar('--muted'),
-            font: { family: "'DM Sans', sans-serif", size: 11 },
-            boxWidth: 14, boxHeight: 14,
-            filter: item => !item.text.includes('(prior)') || item.text,
-          },
-        },
-        tooltip: {
-          callbacks: {
-            label: ctx => ` ${ctx.dataset.label}: ${fmt(ctx.parsed.y)}`,
-          },
-        },
-      },
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: {
-            color: cssVar('--muted'),
-            font: { family: "'DM Mono', monospace", size: 10 },
-            maxTicksLimit: 15,
-            maxRotation: 45,
-          },
-        },
-        y: {
-          grid: { color: 'rgba(255,255,255,.05)' },
-          ticks: {
-            color: cssVar('--muted'),
-            font: { family: "'DM Mono', monospace", size: 10 },
-            callback: v => fmt(v),
-          },
-        },
-      },
-    },
-  });
-  charts['chart-comparison'] = c;
-}
-
-function updateComparisonChart(state) {
-  const c = charts['chart-comparison'];
-  if (!c) return;
-  c.data.datasets.forEach(ds => {
-    if (ds.cmpKey) ds.hidden = !state[ds.cmpKey];
-  });
-  c.update();
 }
 
 // ── PARTY BAR CHART ───────────────────────────────────────────────────────
