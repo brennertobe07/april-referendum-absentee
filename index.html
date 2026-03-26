@@ -757,7 +757,6 @@ UDk/hX7zfCL/AINOPhd4dngm8YePfFPiXy23SW1pDFYwy/8AAhlx+dfcf7MH/BLT4F/sg+VJ4K+H
       <button class="top-tab active" data-tab="summary">Summary</button>
       <button class="top-tab" data-tab="trends">Daily Trends</button>
       <button class="top-tab" data-tab="comparison">Historical Comparison</button>
-      <button class="top-tab" data-tab="partypace">Party Pace</button>
     </div>
   </div>
   <div class="header-right">
@@ -828,7 +827,7 @@ document.querySelectorAll('.top-tab').forEach(btn => {
     document.querySelectorAll('.top-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const layout = document.getElementById('layout');
-    layout.classList.toggle('no-sidebar', currentTab === 'trends' || currentTab === 'comparison' || currentTab === 'partypace');
+    layout.classList.toggle('no-sidebar', currentTab === 'trends' || currentTab === 'comparison');
     renderView();
   });
 });
@@ -877,8 +876,6 @@ function renderView() {
   if (currentTab === 'trends') {
     renderTrends(main);
   } else if (currentTab === 'comparison') {
-    renderComparison(main);
-  } else if (currentTab === 'partypace') {
     renderPartyPace(main);
   } else if (currentCounty === null) {
     renderStatewide(main);
