@@ -208,7 +208,6 @@ RIGHT JOIN dal_deduped dal
 
 WHERE dal.rn = 1
   AND dal.BALLOT_RECEIPT_DATE IS NOT NULL
-  AND YEAR(dal.BALLOT_RECEIPT_DATE) = 2026
   AND dal.BALLOT_STATUS IN ('Marked', 'Pre-Processed', 'On Machine')
 
 GROUP BY
