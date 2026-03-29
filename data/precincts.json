@@ -438,7 +438,7 @@
   },
   {
     "CountyName": "Albemarle",
-    "PrecinctName": "203 - Georgetown",
+    "PrecinctName": "203 - GEORGETOWN",
     "TotalMatchedVoters": 351,
     "DemVotedCount": 157,
     "RepVotedCount": 20,
@@ -476,7 +476,7 @@
   },
   {
     "CountyName": "Albemarle",
-    "PrecinctName": "302 - Red Hill",
+    "PrecinctName": "302 - RED HILL",
     "TotalMatchedVoters": 572,
     "DemVotedCount": 314,
     "RepVotedCount": 83,
@@ -495,7 +495,7 @@
   },
   {
     "CountyName": "Albemarle",
-    "PrecinctName": "304 - East Ivy",
+    "PrecinctName": "304 - EAST IVY",
     "TotalMatchedVoters": 285,
     "DemVotedCount": 149,
     "RepVotedCount": 71,
@@ -628,7 +628,7 @@
   },
   {
     "CountyName": "Albemarle",
-    "PrecinctName": "406 - Stone Robinson",
+    "PrecinctName": "406 - STONE ROBINSON",
     "TotalMatchedVoters": 733,
     "DemVotedCount": 342,
     "RepVotedCount": 208,
@@ -723,7 +723,7 @@
   },
   {
     "CountyName": "Albemarle",
-    "PrecinctName": "504 - FREE BRIDGE",
+    "PrecinctName": "504 - Free Bridge",
     "TotalMatchedVoters": 565,
     "DemVotedCount": 273,
     "RepVotedCount": 57,
@@ -742,7 +742,7 @@
   },
   {
     "CountyName": "Albemarle",
-    "PrecinctName": "506 - BAKER-BUTLER",
+    "PrecinctName": "506 - Baker-Butler",
     "TotalMatchedVoters": 714,
     "DemVotedCount": 289,
     "RepVotedCount": 100,
@@ -894,7 +894,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "102 - OLD TOWN SOUTH",
+    "PrecinctName": "102 - Old Town South",
     "TotalMatchedVoters": 632,
     "DemVotedCount": 390,
     "RepVotedCount": 106,
@@ -989,7 +989,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "107 - Mt Vernon Recreation Center",
+    "PrecinctName": "107 - MT VERNON RECREATION CENTER",
     "TotalMatchedVoters": 643,
     "DemVotedCount": 383,
     "RepVotedCount": 38,
@@ -1084,7 +1084,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "201 - Naomi L. Brooks School",
+    "PrecinctName": "201 - NAOMI L. BROOKS SCHOOL",
     "TotalMatchedVoters": 429,
     "DemVotedCount": 266,
     "RepVotedCount": 22,
@@ -1198,7 +1198,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "207 - Beth El Hebrew Congregation",
+    "PrecinctName": "207 - BETH EL HEBREW CONGREGATION",
     "TotalMatchedVoters": 567,
     "DemVotedCount": 286,
     "RepVotedCount": 32,
@@ -1236,7 +1236,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "209 - JAMES K POLK SCHOOL",
+    "PrecinctName": "209 - James K Polk School",
     "TotalMatchedVoters": 447,
     "DemVotedCount": 222,
     "RepVotedCount": 24,
@@ -1255,7 +1255,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "210 - F.T. Day School",
+    "PrecinctName": "210 - F.T. DAY SCHOOL",
     "TotalMatchedVoters": 287,
     "DemVotedCount": 131,
     "RepVotedCount": 28,
@@ -1312,7 +1312,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "302 - PATRICK HENRY REC CENTER",
+    "PrecinctName": "302 - Patrick Henry Rec Center",
     "TotalMatchedVoters": 283,
     "DemVotedCount": 124,
     "RepVotedCount": 8,
@@ -1369,7 +1369,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "305 - John Adams School",
+    "PrecinctName": "305 - JOHN ADAMS SCHOOL",
     "TotalMatchedVoters": 220,
     "DemVotedCount": 92,
     "RepVotedCount": 8,
@@ -1407,7 +1407,7 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "PrecinctName": "307 - TUCKER WEST",
+    "PrecinctName": "307 - Tucker West",
     "TotalMatchedVoters": 528,
     "DemVotedCount": 261,
     "RepVotedCount": 31,
@@ -2225,7 +2225,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "104 - Precinct 104",
-    "TotalMatchedVoters": 505,
+    "TotalMatchedVoters": 507,
     "DemVotedCount": 260,
     "RepVotedCount": 23,
     "UnknownVotedCount": 3,
@@ -2263,7 +2263,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "106 - Precinct 106",
-    "TotalMatchedVoters": 326,
+    "TotalMatchedVoters": 327,
     "DemVotedCount": 176,
     "RepVotedCount": 15,
     "UnknownVotedCount": 3,
@@ -2282,7 +2282,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "107 - PRECINCT 107",
-    "TotalMatchedVoters": 515,
+    "TotalMatchedVoters": 516,
     "DemVotedCount": 274,
     "RepVotedCount": 27,
     "UnknownVotedCount": 2,
@@ -2292,11 +2292,11 @@
     "InPersonRep": 13,
     "MailDem": 119,
     "MailRep": 14,
-    "DemOutCount": 185,
+    "DemOutCount": 186,
     "RepOutCount": 13,
     "UnknownOutCount": 3,
     "VotedCount": 303,
-    "OutCount": 201
+    "OutCount": 202
   },
   {
     "CountyName": "Arlington",
@@ -2319,8 +2319,8 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "109 - Precinct 109",
-    "TotalMatchedVoters": 373,
+    "PrecinctName": "109 - PRECINCT 109",
+    "TotalMatchedVoters": 375,
     "DemVotedCount": 151,
     "RepVotedCount": 14,
     "UnknownVotedCount": 3,
@@ -2330,11 +2330,11 @@
     "InPersonRep": 6,
     "MailDem": 94,
     "MailRep": 8,
-    "DemOutCount": 181,
+    "DemOutCount": 182,
     "RepOutCount": 11,
     "UnknownOutCount": 4,
     "VotedCount": 168,
-    "OutCount": 196
+    "OutCount": 197
   },
   {
     "CountyName": "Arlington",
@@ -2351,9 +2351,9 @@
     "MailRep": 13,
     "DemOutCount": 181,
     "RepOutCount": 28,
-    "UnknownOutCount": 2,
+    "UnknownOutCount": 3,
     "VotedCount": 455,
-    "OutCount": 211
+    "OutCount": 212
   },
   {
     "CountyName": "Arlington",
@@ -2415,7 +2415,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "114 - Precinct 114",
-    "TotalMatchedVoters": 393,
+    "TotalMatchedVoters": 395,
     "DemVotedCount": 206,
     "RepVotedCount": 27,
     "UnknownVotedCount": 4,
@@ -2434,7 +2434,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "115 - Precinct 115",
-    "TotalMatchedVoters": 208,
+    "TotalMatchedVoters": 210,
     "DemVotedCount": 102,
     "RepVotedCount": 12,
     "UnknownVotedCount": 0,
@@ -2452,7 +2452,7 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "116 - Precinct 116",
+    "PrecinctName": "116 - PRECINCT 116",
     "TotalMatchedVoters": 525,
     "DemVotedCount": 301,
     "RepVotedCount": 23,
@@ -2471,8 +2471,8 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "117 - Precinct 117",
-    "TotalMatchedVoters": 612,
+    "PrecinctName": "117 - PRECINCT 117",
+    "TotalMatchedVoters": 613,
     "DemVotedCount": 326,
     "RepVotedCount": 27,
     "UnknownVotedCount": 5,
@@ -2482,11 +2482,11 @@
     "InPersonRep": 12,
     "MailDem": 157,
     "MailRep": 15,
-    "DemOutCount": 219,
+    "DemOutCount": 220,
     "RepOutCount": 15,
     "UnknownOutCount": 2,
     "VotedCount": 358,
-    "OutCount": 236
+    "OutCount": 237
   },
   {
     "CountyName": "Arlington",
@@ -2509,7 +2509,7 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "119 - Precinct 119",
+    "PrecinctName": "119 - PRECINCT 119",
     "TotalMatchedVoters": 668,
     "DemVotedCount": 360,
     "RepVotedCount": 41,
@@ -2586,7 +2586,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "123 - Precinct 123",
-    "TotalMatchedVoters": 437,
+    "TotalMatchedVoters": 440,
     "DemVotedCount": 215,
     "RepVotedCount": 19,
     "UnknownVotedCount": 2,
@@ -2596,16 +2596,16 @@
     "InPersonRep": 9,
     "MailDem": 103,
     "MailRep": 10,
-    "DemOutCount": 172,
+    "DemOutCount": 173,
     "RepOutCount": 10,
     "UnknownOutCount": 2,
     "VotedCount": 236,
-    "OutCount": 184
+    "OutCount": 185
   },
   {
     "CountyName": "Arlington",
     "PrecinctName": "124 - Precinct 124",
-    "TotalMatchedVoters": 606,
+    "TotalMatchedVoters": 609,
     "DemVotedCount": 312,
     "RepVotedCount": 34,
     "UnknownVotedCount": 3,
@@ -2662,7 +2662,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "127 - Precinct 127",
-    "TotalMatchedVoters": 425,
+    "TotalMatchedVoters": 426,
     "DemVotedCount": 217,
     "RepVotedCount": 25,
     "UnknownVotedCount": 1,
@@ -2672,11 +2672,11 @@
     "InPersonRep": 11,
     "MailDem": 99,
     "MailRep": 14,
-    "DemOutCount": 151,
+    "DemOutCount": 152,
     "RepOutCount": 18,
     "UnknownOutCount": 2,
     "VotedCount": 243,
-    "OutCount": 171
+    "OutCount": 172
   },
   {
     "CountyName": "Arlington",
@@ -2699,8 +2699,8 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "129 - PRECINCT 129",
-    "TotalMatchedVoters": 542,
+    "PrecinctName": "129 - Precinct 129",
+    "TotalMatchedVoters": 543,
     "DemVotedCount": 311,
     "RepVotedCount": 27,
     "UnknownVotedCount": 3,
@@ -2738,7 +2738,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "131 - Precinct 131",
-    "TotalMatchedVoters": 464,
+    "TotalMatchedVoters": 465,
     "DemVotedCount": 242,
     "RepVotedCount": 20,
     "UnknownVotedCount": 3,
@@ -2776,7 +2776,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "133 - Precinct 133",
-    "TotalMatchedVoters": 502,
+    "TotalMatchedVoters": 503,
     "DemVotedCount": 260,
     "RepVotedCount": 46,
     "UnknownVotedCount": 5,
@@ -2795,7 +2795,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "134 - Precinct 134",
-    "TotalMatchedVoters": 394,
+    "TotalMatchedVoters": 396,
     "DemVotedCount": 193,
     "RepVotedCount": 19,
     "UnknownVotedCount": 0,
@@ -2890,7 +2890,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "139 - Precinct 139",
-    "TotalMatchedVoters": 269,
+    "TotalMatchedVoters": 270,
     "DemVotedCount": 152,
     "RepVotedCount": 5,
     "UnknownVotedCount": 2,
@@ -2946,7 +2946,7 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "142 - Precinct 142",
+    "PrecinctName": "142 - PRECINCT 142",
     "TotalMatchedVoters": 300,
     "DemVotedCount": 131,
     "RepVotedCount": 15,
@@ -2984,7 +2984,7 @@
   },
   {
     "CountyName": "Arlington",
-    "PrecinctName": "144 - PRECINCT 144",
+    "PrecinctName": "144 - Precinct 144",
     "TotalMatchedVoters": 287,
     "DemVotedCount": 158,
     "RepVotedCount": 23,
@@ -3023,7 +3023,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "146 - Precinct 146",
-    "TotalMatchedVoters": 436,
+    "TotalMatchedVoters": 439,
     "DemVotedCount": 217,
     "RepVotedCount": 28,
     "UnknownVotedCount": 4,
@@ -3033,16 +3033,16 @@
     "InPersonRep": 13,
     "MailDem": 126,
     "MailRep": 15,
-    "DemOutCount": 155,
+    "DemOutCount": 157,
     "RepOutCount": 17,
     "UnknownOutCount": 6,
     "VotedCount": 249,
-    "OutCount": 178
+    "OutCount": 180
   },
   {
     "CountyName": "Arlington",
     "PrecinctName": "147 - Precinct 147",
-    "TotalMatchedVoters": 245,
+    "TotalMatchedVoters": 246,
     "DemVotedCount": 112,
     "RepVotedCount": 12,
     "UnknownVotedCount": 0,
@@ -3052,11 +3052,11 @@
     "InPersonRep": 6,
     "MailDem": 69,
     "MailRep": 6,
-    "DemOutCount": 109,
+    "DemOutCount": 110,
     "RepOutCount": 6,
     "UnknownOutCount": 2,
     "VotedCount": 124,
-    "OutCount": 117
+    "OutCount": 118
   },
   {
     "CountyName": "Arlington",
@@ -3080,7 +3080,7 @@
   {
     "CountyName": "Arlington",
     "PrecinctName": "149 - Precinct 149",
-    "TotalMatchedVoters": 300,
+    "TotalMatchedVoters": 303,
     "DemVotedCount": 155,
     "RepVotedCount": 13,
     "UnknownVotedCount": 2,
@@ -3090,11 +3090,11 @@
     "InPersonRep": 7,
     "MailDem": 77,
     "MailRep": 6,
-    "DemOutCount": 111,
+    "DemOutCount": 113,
     "RepOutCount": 11,
     "UnknownOutCount": 3,
     "VotedCount": 170,
-    "OutCount": 125
+    "OutCount": 127
   },
   {
     "CountyName": "Arlington",
@@ -3269,7 +3269,7 @@
   },
   {
     "CountyName": "Augusta",
-    "PrecinctName": "201 - CRIMORA",
+    "PrecinctName": "201 - Crimora",
     "TotalMatchedVoters": 343,
     "DemVotedCount": 66,
     "RepVotedCount": 212,
@@ -3706,7 +3706,7 @@
   },
   {
     "CountyName": "Augusta",
-    "PrecinctName": "804 - GOOSE CREEK",
+    "PrecinctName": "804 - Goose Creek",
     "TotalMatchedVoters": 246,
     "DemVotedCount": 67,
     "RepVotedCount": 147,
@@ -3782,7 +3782,7 @@
   },
   {
     "CountyName": "Bath",
-    "PrecinctName": "301 - Fairview",
+    "PrecinctName": "301 - FAIRVIEW",
     "TotalMatchedVoters": 50,
     "DemVotedCount": 9,
     "RepVotedCount": 30,
@@ -3896,7 +3896,7 @@
   },
   {
     "CountyName": "Bedford",
-    "PrecinctName": "103 - CHAMBLISSBURG BAPTIST CHURCH",
+    "PrecinctName": "103 - Chamblissburg Baptist Church",
     "TotalMatchedVoters": 188,
     "DemVotedCount": 53,
     "RepVotedCount": 108,
@@ -3934,7 +3934,7 @@
   },
   {
     "CountyName": "Bedford",
-    "PrecinctName": "105 - DIAMOND HILL BAPTIST CHURCH",
+    "PrecinctName": "105 - Diamond Hill Baptist Church",
     "TotalMatchedVoters": 138,
     "DemVotedCount": 35,
     "RepVotedCount": 74,
@@ -4067,7 +4067,7 @@
   },
   {
     "CountyName": "Bedford",
-    "PrecinctName": "302 - Bedford County Gym",
+    "PrecinctName": "302 - BEDFORD COUNTY GYM",
     "TotalMatchedVoters": 388,
     "DemVotedCount": 87,
     "RepVotedCount": 269,
@@ -5112,7 +5112,7 @@
   },
   {
     "CountyName": "Brunswick",
-    "PrecinctName": "501 - Totaro",
+    "PrecinctName": "501 - TOTARO",
     "TotalMatchedVoters": 306,
     "DemVotedCount": 176,
     "RepVotedCount": 48,
@@ -6214,7 +6214,7 @@
   },
   {
     "CountyName": "Caroline",
-    "PrecinctName": "601 - CHILESBURG",
+    "PrecinctName": "601 - Chilesburg",
     "TotalMatchedVoters": 213,
     "DemVotedCount": 103,
     "RepVotedCount": 54,
@@ -6309,7 +6309,7 @@
   },
   {
     "CountyName": "Carroll",
-    "PrecinctName": "105 - FANCY GAP",
+    "PrecinctName": "105 - Fancy Gap",
     "TotalMatchedVoters": 167,
     "DemVotedCount": 46,
     "RepVotedCount": 102,
@@ -6689,7 +6689,7 @@
   },
   {
     "CountyName": "Charlotte",
-    "PrecinctName": "501 - CULLEN/RED HOUSE",
+    "PrecinctName": "501 - Cullen/Red House",
     "TotalMatchedVoters": 142,
     "DemVotedCount": 46,
     "RepVotedCount": 78,
@@ -6784,7 +6784,7 @@
   },
   {
     "CountyName": "Charlottesville (City)",
-    "PrecinctName": "201 - Carver",
+    "PrecinctName": "201 - CARVER",
     "TotalMatchedVoters": 337,
     "DemVotedCount": 203,
     "RepVotedCount": 13,
@@ -7088,7 +7088,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "010 - Oscar Smith",
+    "PrecinctName": "010 - OSCAR SMITH",
     "TotalMatchedVoters": 107,
     "DemVotedCount": 32,
     "RepVotedCount": 25,
@@ -7202,7 +7202,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "016 - Hickory Grove",
+    "PrecinctName": "016 - HICKORY GROVE",
     "TotalMatchedVoters": 353,
     "DemVotedCount": 100,
     "RepVotedCount": 150,
@@ -7335,7 +7335,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "023 - Oak Grove",
+    "PrecinctName": "023 - OAK GROVE",
     "TotalMatchedVoters": 484,
     "DemVotedCount": 193,
     "RepVotedCount": 117,
@@ -7506,7 +7506,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "032 - PROVIDENCE",
+    "PrecinctName": "032 - Providence",
     "TotalMatchedVoters": 343,
     "DemVotedCount": 174,
     "RepVotedCount": 7,
@@ -7582,7 +7582,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "036 - GREAT BRIDGE BAPTIST CHURCH",
+    "PrecinctName": "036 - Great Bridge Baptist Church",
     "TotalMatchedVoters": 382,
     "DemVotedCount": 115,
     "RepVotedCount": 163,
@@ -7810,7 +7810,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "050 - River Walk",
+    "PrecinctName": "050 - RIVER WALK",
     "TotalMatchedVoters": 390,
     "DemVotedCount": 184,
     "RepVotedCount": 87,
@@ -7829,7 +7829,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "051 - Coopers Way",
+    "PrecinctName": "051 - COOPERS WAY",
     "TotalMatchedVoters": 662,
     "DemVotedCount": 213,
     "RepVotedCount": 274,
@@ -8019,7 +8019,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "061 - Centerville",
+    "PrecinctName": "061 - CENTERVILLE",
     "TotalMatchedVoters": 513,
     "DemVotedCount": 119,
     "RepVotedCount": 253,
@@ -8095,7 +8095,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "PrecinctName": "065 - Waterway II",
+    "PrecinctName": "065 - WATERWAY II",
     "TotalMatchedVoters": 571,
     "DemVotedCount": 204,
     "RepVotedCount": 184,
@@ -8190,7 +8190,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "104 - NORTH CHESTER",
+    "PrecinctName": "104 - North Chester",
     "TotalMatchedVoters": 635,
     "DemVotedCount": 226,
     "RepVotedCount": 236,
@@ -8266,7 +8266,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "109 - Elizabeth Scott",
+    "PrecinctName": "109 - ELIZABETH SCOTT",
     "TotalMatchedVoters": 703,
     "DemVotedCount": 304,
     "RepVotedCount": 205,
@@ -8342,7 +8342,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "113 - Iron Bridge North",
+    "PrecinctName": "113 - IRON BRIDGE NORTH",
     "TotalMatchedVoters": 669,
     "DemVotedCount": 336,
     "RepVotedCount": 203,
@@ -8361,7 +8361,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "115 - Cresthill",
+    "PrecinctName": "115 - CRESTHILL",
     "TotalMatchedVoters": 525,
     "DemVotedCount": 220,
     "RepVotedCount": 176,
@@ -8722,7 +8722,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "305 - Beach",
+    "PrecinctName": "305 - BEACH",
     "TotalMatchedVoters": 227,
     "DemVotedCount": 57,
     "RepVotedCount": 129,
@@ -8741,7 +8741,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "306 - Winterpock",
+    "PrecinctName": "306 - WINTERPOCK",
     "TotalMatchedVoters": 492,
     "DemVotedCount": 118,
     "RepVotedCount": 255,
@@ -8874,7 +8874,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "319 - Magnolia",
+    "PrecinctName": "319 - MAGNOLIA",
     "TotalMatchedVoters": 804,
     "DemVotedCount": 288,
     "RepVotedCount": 236,
@@ -8893,7 +8893,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "320 - DRY CREEK",
+    "PrecinctName": "320 - Dry Creek",
     "TotalMatchedVoters": 897,
     "DemVotedCount": 361,
     "RepVotedCount": 261,
@@ -9102,7 +9102,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "412 - Clover Hill",
+    "PrecinctName": "412 - CLOVER HILL",
     "TotalMatchedVoters": 512,
     "DemVotedCount": 198,
     "RepVotedCount": 111,
@@ -9254,7 +9254,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "422 - OTTERDALE",
+    "PrecinctName": "422 - Otterdale",
     "TotalMatchedVoters": 605,
     "DemVotedCount": 185,
     "RepVotedCount": 146,
@@ -9387,7 +9387,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "509 - Cranbeck",
+    "PrecinctName": "509 - CRANBECK",
     "TotalMatchedVoters": 203,
     "DemVotedCount": 67,
     "RepVotedCount": 38,
@@ -9463,7 +9463,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "PrecinctName": "514 - Watkins",
+    "PrecinctName": "514 - WATKINS",
     "TotalMatchedVoters": 490,
     "DemVotedCount": 159,
     "RepVotedCount": 148,
@@ -10242,7 +10242,7 @@
   },
   {
     "CountyName": "Culpeper",
-    "PrecinctName": "502 - RIXEYVILLE",
+    "PrecinctName": "502 - Rixeyville",
     "TotalMatchedVoters": 450,
     "DemVotedCount": 136,
     "RepVotedCount": 226,
@@ -10318,7 +10318,7 @@
   },
   {
     "CountyName": "Culpeper",
-    "PrecinctName": "702 - Brandy Station",
+    "PrecinctName": "702 - BRANDY STATION",
     "TotalMatchedVoters": 529,
     "DemVotedCount": 194,
     "RepVotedCount": 236,
@@ -10394,7 +10394,7 @@
   },
   {
     "CountyName": "Cumberland",
-    "PrecinctName": "201 - PRECINCT 2",
+    "PrecinctName": "201 - Precinct 2",
     "TotalMatchedVoters": 194,
     "DemVotedCount": 74,
     "RepVotedCount": 90,
@@ -10527,7 +10527,7 @@
   },
   {
     "CountyName": "Danville (City)",
-    "PrecinctName": "004 - Ward Four",
+    "PrecinctName": "004 - WARD FOUR",
     "TotalMatchedVoters": 326,
     "DemVotedCount": 156,
     "RepVotedCount": 94,
@@ -10755,7 +10755,7 @@
   },
   {
     "CountyName": "Danville (City)",
-    "PrecinctName": "017 - WARD SEVENTEEN",
+    "PrecinctName": "017 - Ward Seventeen",
     "TotalMatchedVoters": 282,
     "DemVotedCount": 86,
     "RepVotedCount": 149,
@@ -11040,7 +11040,7 @@
   },
   {
     "CountyName": "Dinwiddie",
-    "PrecinctName": "201 - ROHOIC",
+    "PrecinctName": "201 - Rohoic",
     "TotalMatchedVoters": 111,
     "DemVotedCount": 56,
     "RepVotedCount": 34,
@@ -11154,7 +11154,7 @@
   },
   {
     "CountyName": "Dinwiddie",
-    "PrecinctName": "402 - McKenney",
+    "PrecinctName": "402 - MCKENNEY",
     "TotalMatchedVoters": 163,
     "DemVotedCount": 50,
     "RepVotedCount": 90,
@@ -11420,7 +11420,7 @@
   },
   {
     "CountyName": "Essex",
-    "PrecinctName": "401 - Central",
+    "PrecinctName": "401 - CENTRAL",
     "TotalMatchedVoters": 301,
     "DemVotedCount": 113,
     "RepVotedCount": 147,
@@ -11477,7 +11477,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "106 - HERITAGE",
+    "PrecinctName": "106 - Heritage",
     "TotalMatchedVoters": 329,
     "DemVotedCount": 112,
     "RepVotedCount": 34,
@@ -11819,7 +11819,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "129 - KEENE MILL",
+    "PrecinctName": "129 - Keene Mill",
     "TotalMatchedVoters": 174,
     "DemVotedCount": 45,
     "RepVotedCount": 18,
@@ -11838,7 +11838,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "130 - TERRA CENTRE",
+    "PrecinctName": "130 - Terra Centre",
     "TotalMatchedVoters": 266,
     "DemVotedCount": 114,
     "RepVotedCount": 26,
@@ -12028,7 +12028,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "203 - FLORIS",
+    "PrecinctName": "203 - Floris",
     "TotalMatchedVoters": 616,
     "DemVotedCount": 269,
     "RepVotedCount": 126,
@@ -12066,7 +12066,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "208 - Reston #1",
+    "PrecinctName": "208 - RESTON #1",
     "TotalMatchedVoters": 650,
     "DemVotedCount": 389,
     "RepVotedCount": 44,
@@ -12085,7 +12085,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "209 - Reston #2",
+    "PrecinctName": "209 - RESTON #2",
     "TotalMatchedVoters": 697,
     "DemVotedCount": 388,
     "RepVotedCount": 61,
@@ -12161,7 +12161,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "218 - Vienna #6",
+    "PrecinctName": "218 - VIENNA #6",
     "TotalMatchedVoters": 449,
     "DemVotedCount": 214,
     "RepVotedCount": 40,
@@ -12237,7 +12237,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "222 - Reston #3",
+    "PrecinctName": "222 - RESTON #3",
     "TotalMatchedVoters": 403,
     "DemVotedCount": 259,
     "RepVotedCount": 23,
@@ -12256,7 +12256,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "223 - Glade",
+    "PrecinctName": "223 - GLADE",
     "TotalMatchedVoters": 705,
     "DemVotedCount": 414,
     "RepVotedCount": 51,
@@ -12275,7 +12275,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "224 - SOUTH LAKES",
+    "PrecinctName": "224 - South Lakes",
     "TotalMatchedVoters": 862,
     "DemVotedCount": 497,
     "RepVotedCount": 81,
@@ -12446,7 +12446,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "237 - McNair",
+    "PrecinctName": "237 - MCNAIR",
     "TotalMatchedVoters": 452,
     "DemVotedCount": 197,
     "RepVotedCount": 20,
@@ -12465,7 +12465,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "238 - Cameron Glen",
+    "PrecinctName": "238 - CAMERON GLEN",
     "TotalMatchedVoters": 982,
     "DemVotedCount": 590,
     "RepVotedCount": 114,
@@ -12522,7 +12522,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "242 - Westbriar #2",
+    "PrecinctName": "242 - WESTBRIAR #2",
     "TotalMatchedVoters": 286,
     "DemVotedCount": 117,
     "RepVotedCount": 38,
@@ -12560,7 +12560,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "244 - Fox Mill #2",
+    "PrecinctName": "244 - FOX MILL #2",
     "TotalMatchedVoters": 128,
     "DemVotedCount": 59,
     "RepVotedCount": 32,
@@ -12731,7 +12731,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "309 - Kenmore",
+    "PrecinctName": "309 - KENMORE",
     "TotalMatchedVoters": 584,
     "DemVotedCount": 215,
     "RepVotedCount": 65,
@@ -12883,7 +12883,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "318 - Westmoreland",
+    "PrecinctName": "318 - WESTMORELAND",
     "TotalMatchedVoters": 209,
     "DemVotedCount": 78,
     "RepVotedCount": 13,
@@ -12978,7 +12978,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "323 - SHOUSE",
+    "PrecinctName": "323 - Shouse",
     "TotalMatchedVoters": 327,
     "DemVotedCount": 150,
     "RepVotedCount": 34,
@@ -12997,7 +12997,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "324 - Herndon #3",
+    "PrecinctName": "324 - HERNDON #3",
     "TotalMatchedVoters": 478,
     "DemVotedCount": 197,
     "RepVotedCount": 54,
@@ -13111,7 +13111,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "332 - Coates",
+    "PrecinctName": "332 - COATES",
     "TotalMatchedVoters": 602,
     "DemVotedCount": 221,
     "RepVotedCount": 42,
@@ -13282,7 +13282,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "410 - Rose Hill",
+    "PrecinctName": "410 - ROSE HILL",
     "TotalMatchedVoters": 667,
     "DemVotedCount": 260,
     "RepVotedCount": 59,
@@ -13320,7 +13320,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "413 - FAIRFIELD",
+    "PrecinctName": "413 - Fairfield",
     "TotalMatchedVoters": 257,
     "DemVotedCount": 97,
     "RepVotedCount": 18,
@@ -13396,7 +13396,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "419 - Lane",
+    "PrecinctName": "419 - LANE",
     "TotalMatchedVoters": 300,
     "DemVotedCount": 110,
     "RepVotedCount": 27,
@@ -13453,7 +13453,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "422 - Van Dorn",
+    "PrecinctName": "422 - VAN DORN",
     "TotalMatchedVoters": 451,
     "DemVotedCount": 164,
     "RepVotedCount": 37,
@@ -13605,7 +13605,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "432 - Edison #2",
+    "PrecinctName": "432 - EDISON #2",
     "TotalMatchedVoters": 436,
     "DemVotedCount": 183,
     "RepVotedCount": 29,
@@ -13681,7 +13681,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "503 - Belvedere",
+    "PrecinctName": "503 - BELVEDERE",
     "TotalMatchedVoters": 208,
     "DemVotedCount": 90,
     "RepVotedCount": 15,
@@ -13852,7 +13852,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "512 - Sleepy Hollow",
+    "PrecinctName": "512 - SLEEPY HOLLOW",
     "TotalMatchedVoters": 391,
     "DemVotedCount": 169,
     "RepVotedCount": 28,
@@ -14023,7 +14023,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "522 - Camelot",
+    "PrecinctName": "522 - CAMELOT",
     "TotalMatchedVoters": 266,
     "DemVotedCount": 126,
     "RepVotedCount": 36,
@@ -14099,7 +14099,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "527 - Edsall",
+    "PrecinctName": "527 - EDSALL",
     "TotalMatchedVoters": 194,
     "DemVotedCount": 81,
     "RepVotedCount": 15,
@@ -14194,7 +14194,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "601 - BELLE HAVEN",
+    "PrecinctName": "601 - Belle Haven",
     "TotalMatchedVoters": 390,
     "DemVotedCount": 183,
     "RepVotedCount": 89,
@@ -14403,7 +14403,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "613 - Westgate",
+    "PrecinctName": "613 - WESTGATE",
     "TotalMatchedVoters": 645,
     "DemVotedCount": 277,
     "RepVotedCount": 193,
@@ -14479,7 +14479,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "617 - Lorton",
+    "PrecinctName": "617 - LORTON",
     "TotalMatchedVoters": 290,
     "DemVotedCount": 96,
     "RepVotedCount": 20,
@@ -14745,7 +14745,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "636 - Laurel Hill #2",
+    "PrecinctName": "636 - LAUREL HILL #2",
     "TotalMatchedVoters": 138,
     "DemVotedCount": 59,
     "RepVotedCount": 12,
@@ -14783,7 +14783,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "701 - BLAKE",
+    "PrecinctName": "701 - Blake",
     "TotalMatchedVoters": 647,
     "DemVotedCount": 325,
     "RepVotedCount": 44,
@@ -15068,7 +15068,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "726 - Magarity",
+    "PrecinctName": "726 - MAGARITY",
     "TotalMatchedVoters": 480,
     "DemVotedCount": 158,
     "RepVotedCount": 40,
@@ -15125,7 +15125,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "731 - Tysons",
+    "PrecinctName": "731 - TYSONS",
     "TotalMatchedVoters": 344,
     "DemVotedCount": 165,
     "RepVotedCount": 24,
@@ -15182,7 +15182,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "734 - Hunters Branch",
+    "PrecinctName": "734 - HUNTERS BRANCH",
     "TotalMatchedVoters": 349,
     "DemVotedCount": 141,
     "RepVotedCount": 12,
@@ -15448,7 +15448,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "815 - Woodyard",
+    "PrecinctName": "815 - WOODYARD",
     "TotalMatchedVoters": 224,
     "DemVotedCount": 83,
     "RepVotedCount": 63,
@@ -15809,7 +15809,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "856 - PENDERBROOK",
+    "PrecinctName": "856 - Penderbrook",
     "TotalMatchedVoters": 487,
     "DemVotedCount": 242,
     "RepVotedCount": 60,
@@ -16018,7 +16018,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "905 - FRANKLIN",
+    "PrecinctName": "905 - Franklin",
     "TotalMatchedVoters": 429,
     "DemVotedCount": 218,
     "RepVotedCount": 84,
@@ -16037,7 +16037,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "908 - HIDDEN MEADOW",
+    "PrecinctName": "908 - Hidden Meadow",
     "TotalMatchedVoters": 387,
     "DemVotedCount": 193,
     "RepVotedCount": 67,
@@ -16094,7 +16094,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "911 - Navy",
+    "PrecinctName": "911 - NAVY",
     "TotalMatchedVoters": 674,
     "DemVotedCount": 306,
     "RepVotedCount": 106,
@@ -16170,7 +16170,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "916 - WAPLES MILL",
+    "PrecinctName": "916 - Waples Mill",
     "TotalMatchedVoters": 876,
     "DemVotedCount": 427,
     "RepVotedCount": 164,
@@ -16227,7 +16227,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "919 - GREEN TRAILS",
+    "PrecinctName": "919 - Green Trails",
     "TotalMatchedVoters": 510,
     "DemVotedCount": 202,
     "RepVotedCount": 48,
@@ -16341,7 +16341,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "PrecinctName": "926 - Powell",
+    "PrecinctName": "926 - POWELL",
     "TotalMatchedVoters": 493,
     "DemVotedCount": 180,
     "RepVotedCount": 31,
@@ -16512,7 +16512,7 @@
   },
   {
     "CountyName": "Fairfax (City)",
-    "PrecinctName": "003 - THREE",
+    "PrecinctName": "003 - Three",
     "TotalMatchedVoters": 636,
     "DemVotedCount": 338,
     "RepVotedCount": 102,
@@ -16531,7 +16531,7 @@
   },
   {
     "CountyName": "Fairfax (City)",
-    "PrecinctName": "004 - Four",
+    "PrecinctName": "004 - FOUR",
     "TotalMatchedVoters": 550,
     "DemVotedCount": 339,
     "RepVotedCount": 95,
@@ -16588,7 +16588,7 @@
   },
   {
     "CountyName": "Falls Church (City)",
-    "PrecinctName": "001 - First Ward",
+    "PrecinctName": "001 - FIRST WARD",
     "TotalMatchedVoters": 651,
     "DemVotedCount": 416,
     "RepVotedCount": 55,
@@ -16892,7 +16892,7 @@
   },
   {
     "CountyName": "Fauquier",
-    "PrecinctName": "303 - Bealeton",
+    "PrecinctName": "303 - BEALETON",
     "TotalMatchedVoters": 203,
     "DemVotedCount": 66,
     "RepVotedCount": 49,
@@ -17101,7 +17101,7 @@
   },
   {
     "CountyName": "Floyd",
-    "PrecinctName": "101 - Locust Grove",
+    "PrecinctName": "101 - LOCUST GROVE",
     "TotalMatchedVoters": 314,
     "DemVotedCount": 98,
     "RepVotedCount": 157,
@@ -17120,7 +17120,7 @@
   },
   {
     "CountyName": "Floyd",
-    "PrecinctName": "201 - Little River",
+    "PrecinctName": "201 - LITTLE RIVER",
     "TotalMatchedVoters": 407,
     "DemVotedCount": 186,
     "RepVotedCount": 170,
@@ -17158,7 +17158,7 @@
   },
   {
     "CountyName": "Floyd",
-    "PrecinctName": "401 - Burks Fork",
+    "PrecinctName": "401 - BURKS FORK",
     "TotalMatchedVoters": 344,
     "DemVotedCount": 126,
     "RepVotedCount": 176,
@@ -17253,7 +17253,7 @@
   },
   {
     "CountyName": "Fluvanna",
-    "PrecinctName": "401 - Cunningham",
+    "PrecinctName": "401 - CUNNINGHAM",
     "TotalMatchedVoters": 992,
     "DemVotedCount": 415,
     "RepVotedCount": 478,
@@ -17272,7 +17272,7 @@
   },
   {
     "CountyName": "Fluvanna",
-    "PrecinctName": "501 - Rivanna",
+    "PrecinctName": "501 - RIVANNA",
     "TotalMatchedVoters": 1258,
     "DemVotedCount": 667,
     "RepVotedCount": 470,
@@ -17975,7 +17975,7 @@
   },
   {
     "CountyName": "Frederick",
-    "PrecinctName": "203 - Redland",
+    "PrecinctName": "203 - REDLAND",
     "TotalMatchedVoters": 548,
     "DemVotedCount": 150,
     "RepVotedCount": 288,
@@ -18108,7 +18108,7 @@
   },
   {
     "CountyName": "Frederick",
-    "PrecinctName": "305 - SUNNYSIDE",
+    "PrecinctName": "305 - Sunnyside",
     "TotalMatchedVoters": 321,
     "DemVotedCount": 108,
     "RepVotedCount": 132,
@@ -18336,7 +18336,7 @@
   },
   {
     "CountyName": "Frederick",
-    "PrecinctName": "603 - Greenwood",
+    "PrecinctName": "603 - GREENWOOD",
     "TotalMatchedVoters": 433,
     "DemVotedCount": 154,
     "RepVotedCount": 193,
@@ -18431,7 +18431,7 @@
   },
   {
     "CountyName": "Fredericksburg (City)",
-    "PrecinctName": "301 - Gladys West",
+    "PrecinctName": "301 - GLADYS WEST",
     "TotalMatchedVoters": 725,
     "DemVotedCount": 347,
     "RepVotedCount": 115,
@@ -18450,7 +18450,7 @@
   },
   {
     "CountyName": "Fredericksburg (City)",
-    "PrecinctName": "401 - FCPS ADMINISTRATION",
+    "PrecinctName": "401 - Fcps Administration",
     "TotalMatchedVoters": 397,
     "DemVotedCount": 202,
     "RepVotedCount": 49,
@@ -18944,7 +18944,7 @@
   },
   {
     "CountyName": "Goochland",
-    "PrecinctName": "202 - Sandy Hook",
+    "PrecinctName": "202 - SANDY HOOK",
     "TotalMatchedVoters": 413,
     "DemVotedCount": 144,
     "RepVotedCount": 212,
@@ -19077,7 +19077,7 @@
   },
   {
     "CountyName": "Goochland",
-    "PrecinctName": "502 - Blair",
+    "PrecinctName": "502 - BLAIR",
     "TotalMatchedVoters": 692,
     "DemVotedCount": 214,
     "RepVotedCount": 310,
@@ -20141,7 +20141,7 @@
   },
   {
     "CountyName": "Hampton (City)",
-    "PrecinctName": "106 - Armstrong",
+    "PrecinctName": "106 - ARMSTRONG",
     "TotalMatchedVoters": 412,
     "DemVotedCount": 218,
     "RepVotedCount": 72,
@@ -20255,7 +20255,7 @@
   },
   {
     "CountyName": "Hampton (City)",
-    "PrecinctName": "112 - Smith",
+    "PrecinctName": "112 - SMITH",
     "TotalMatchedVoters": 590,
     "DemVotedCount": 315,
     "RepVotedCount": 60,
@@ -20768,7 +20768,7 @@
   },
   {
     "CountyName": "Hanover",
-    "PrecinctName": "203 - Wilmington Parish",
+    "PrecinctName": "203 - WILMINGTON PARISH",
     "TotalMatchedVoters": 480,
     "DemVotedCount": 146,
     "RepVotedCount": 244,
@@ -21129,7 +21129,7 @@
   },
   {
     "CountyName": "Hanover",
-    "PrecinctName": "507 - Laurel Meadow",
+    "PrecinctName": "507 - LAUREL MEADOW",
     "TotalMatchedVoters": 307,
     "DemVotedCount": 76,
     "RepVotedCount": 167,
@@ -21281,7 +21281,7 @@
   },
   {
     "CountyName": "Hanover",
-    "PrecinctName": "704 - Elmont",
+    "PrecinctName": "704 - ELMONT",
     "TotalMatchedVoters": 582,
     "DemVotedCount": 198,
     "RepVotedCount": 269,
@@ -21300,7 +21300,7 @@
   },
   {
     "CountyName": "Hanover",
-    "PrecinctName": "705 - SOUTH ANNA",
+    "PrecinctName": "705 - South Anna",
     "TotalMatchedVoters": 189,
     "DemVotedCount": 52,
     "RepVotedCount": 97,
@@ -21509,7 +21509,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "102 - Dumbarton",
+    "PrecinctName": "102 - DUMBARTON",
     "TotalMatchedVoters": 512,
     "DemVotedCount": 238,
     "RepVotedCount": 72,
@@ -21604,7 +21604,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "107 - HUNGARY CREEK",
+    "PrecinctName": "107 - Hungary Creek",
     "TotalMatchedVoters": 946,
     "DemVotedCount": 387,
     "RepVotedCount": 310,
@@ -21737,7 +21737,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "114 - Staples Mill",
+    "PrecinctName": "114 - STAPLES MILL",
     "TotalMatchedVoters": 663,
     "DemVotedCount": 268,
     "RepVotedCount": 235,
@@ -21984,7 +21984,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "214 - Hungary",
+    "PrecinctName": "214 - HUNGARY",
     "TotalMatchedVoters": 312,
     "DemVotedCount": 193,
     "RepVotedCount": 17,
@@ -22174,7 +22174,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "226 - Yellow Tavern",
+    "PrecinctName": "226 - YELLOW TAVERN",
     "TotalMatchedVoters": 652,
     "DemVotedCount": 303,
     "RepVotedCount": 97,
@@ -22231,7 +22231,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "303 - Colonial Trail",
+    "PrecinctName": "303 - COLONIAL TRAIL",
     "TotalMatchedVoters": 394,
     "DemVotedCount": 157,
     "RepVotedCount": 63,
@@ -22269,7 +22269,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "305 - Jackson Davis",
+    "PrecinctName": "305 - JACKSON DAVIS",
     "TotalMatchedVoters": 333,
     "DemVotedCount": 129,
     "RepVotedCount": 83,
@@ -22288,7 +22288,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "306 - Nuckols Farm",
+    "PrecinctName": "306 - NUCKOLS FARM",
     "TotalMatchedVoters": 631,
     "DemVotedCount": 244,
     "RepVotedCount": 188,
@@ -22307,7 +22307,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "307 - Pocahontas",
+    "PrecinctName": "307 - POCAHONTAS",
     "TotalMatchedVoters": 480,
     "DemVotedCount": 186,
     "RepVotedCount": 115,
@@ -22345,7 +22345,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "309 - RIVERS EDGE",
+    "PrecinctName": "309 - Rivers Edge",
     "TotalMatchedVoters": 505,
     "DemVotedCount": 216,
     "RepVotedCount": 125,
@@ -22383,7 +22383,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "311 - Shady Grove",
+    "PrecinctName": "311 - SHADY GROVE",
     "TotalMatchedVoters": 551,
     "DemVotedCount": 173,
     "RepVotedCount": 142,
@@ -22459,7 +22459,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "315 - TUCKER",
+    "PrecinctName": "315 - Tucker",
     "TotalMatchedVoters": 417,
     "DemVotedCount": 173,
     "RepVotedCount": 48,
@@ -22706,7 +22706,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "413 - Ridgefield",
+    "PrecinctName": "413 - RIDGEFIELD",
     "TotalMatchedVoters": 474,
     "DemVotedCount": 161,
     "RepVotedCount": 112,
@@ -22744,7 +22744,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "415 - Skipwith",
+    "PrecinctName": "415 - SKIPWITH",
     "TotalMatchedVoters": 231,
     "DemVotedCount": 118,
     "RepVotedCount": 34,
@@ -22820,7 +22820,7 @@
   },
   {
     "CountyName": "Henrico",
-    "PrecinctName": "419 - West End",
+    "PrecinctName": "419 - WEST END",
     "TotalMatchedVoters": 392,
     "DemVotedCount": 144,
     "RepVotedCount": 104,
@@ -24036,7 +24036,7 @@
   },
   {
     "CountyName": "Isle of Wight",
-    "PrecinctName": "303 - BENNS CHURCH",
+    "PrecinctName": "303 - Benns Church",
     "TotalMatchedVoters": 182,
     "DemVotedCount": 83,
     "RepVotedCount": 33,
@@ -24226,7 +24226,7 @@
   },
   {
     "CountyName": "James City",
-    "PrecinctName": "102 - Berkeley B",
+    "PrecinctName": "102 - BERKELEY B",
     "TotalMatchedVoters": 784,
     "DemVotedCount": 377,
     "RepVotedCount": 277,
@@ -24321,7 +24321,7 @@
   },
   {
     "CountyName": "James City",
-    "PrecinctName": "203 - Jamestown C",
+    "PrecinctName": "203 - JAMESTOWN C",
     "TotalMatchedVoters": 711,
     "DemVotedCount": 342,
     "RepVotedCount": 254,
@@ -24511,7 +24511,7 @@
   },
   {
     "CountyName": "James City",
-    "PrecinctName": "502 - ROBERTS B",
+    "PrecinctName": "502 - Roberts B",
     "TotalMatchedVoters": 1187,
     "DemVotedCount": 495,
     "RepVotedCount": 529,
@@ -24530,7 +24530,7 @@
   },
   {
     "CountyName": "James City",
-    "PrecinctName": "503 - ROBERTS C",
+    "PrecinctName": "503 - Roberts C",
     "TotalMatchedVoters": 1177,
     "DemVotedCount": 616,
     "RepVotedCount": 388,
@@ -24625,7 +24625,7 @@
   },
   {
     "CountyName": "King and Queen",
-    "PrecinctName": "501 - Oldmill",
+    "PrecinctName": "501 - OLDMILL",
     "TotalMatchedVoters": 107,
     "DemVotedCount": 22,
     "RepVotedCount": 66,
@@ -24663,7 +24663,7 @@
   },
   {
     "CountyName": "King George",
-    "PrecinctName": "102 - Passapatanzy",
+    "PrecinctName": "102 - PASSAPATANZY",
     "TotalMatchedVoters": 212,
     "DemVotedCount": 69,
     "RepVotedCount": 108,
@@ -24682,7 +24682,7 @@
   },
   {
     "CountyName": "King George",
-    "PrecinctName": "201 - Monroe",
+    "PrecinctName": "201 - MONROE",
     "TotalMatchedVoters": 874,
     "DemVotedCount": 253,
     "RepVotedCount": 486,
@@ -24853,7 +24853,7 @@
   },
   {
     "CountyName": "Lancaster",
-    "PrecinctName": "101 - Precinct 1-1",
+    "PrecinctName": "101 - PRECINCT 1-1",
     "TotalMatchedVoters": 384,
     "DemVotedCount": 117,
     "RepVotedCount": 227,
@@ -25043,7 +25043,7 @@
   },
   {
     "CountyName": "Lee",
-    "PrecinctName": "202 - FLATWOODS",
+    "PrecinctName": "202 - Flatwoods",
     "TotalMatchedVoters": 110,
     "DemVotedCount": 11,
     "RepVotedCount": 70,
@@ -25290,7 +25290,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "107 - LITTLE RIVER",
+    "PrecinctName": "107 - Little River",
     "TotalMatchedVoters": 225,
     "DemVotedCount": 73,
     "RepVotedCount": 30,
@@ -25309,7 +25309,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "108 - Mercer",
+    "PrecinctName": "108 - MERCER",
     "TotalMatchedVoters": 181,
     "DemVotedCount": 67,
     "RepVotedCount": 15,
@@ -25613,7 +25613,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "215 - Sugarland South",
+    "PrecinctName": "215 - SUGARLAND SOUTH",
     "TotalMatchedVoters": 325,
     "DemVotedCount": 133,
     "RepVotedCount": 38,
@@ -25784,7 +25784,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "309 - Aldie",
+    "PrecinctName": "309 - ALDIE",
     "TotalMatchedVoters": 140,
     "DemVotedCount": 58,
     "RepVotedCount": 41,
@@ -25879,7 +25879,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "321 - BRAMBLETON MIDDLE",
+    "PrecinctName": "321 - Brambleton Middle",
     "TotalMatchedVoters": 358,
     "DemVotedCount": 136,
     "RepVotedCount": 40,
@@ -25936,7 +25936,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "324 - Madison",
+    "PrecinctName": "324 - MADISON",
     "TotalMatchedVoters": 220,
     "DemVotedCount": 70,
     "RepVotedCount": 27,
@@ -25974,7 +25974,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "326 - INDEPENDENCE",
+    "PrecinctName": "326 - Independence",
     "TotalMatchedVoters": 527,
     "DemVotedCount": 164,
     "RepVotedCount": 98,
@@ -26050,7 +26050,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "401 - West Lovettsville",
+    "PrecinctName": "401 - WEST LOVETTSVILLE",
     "TotalMatchedVoters": 526,
     "DemVotedCount": 192,
     "RepVotedCount": 142,
@@ -26107,7 +26107,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "409 - Clarkes Gap",
+    "PrecinctName": "409 - CLARKES GAP",
     "TotalMatchedVoters": 593,
     "DemVotedCount": 209,
     "RepVotedCount": 189,
@@ -26221,7 +26221,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "424 - Purcellville",
+    "PrecinctName": "424 - PURCELLVILLE",
     "TotalMatchedVoters": 373,
     "DemVotedCount": 140,
     "RepVotedCount": 91,
@@ -26240,7 +26240,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "425 - Round Hill",
+    "PrecinctName": "425 - ROUND HILL",
     "TotalMatchedVoters": 338,
     "DemVotedCount": 110,
     "RepVotedCount": 99,
@@ -26259,7 +26259,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "426 - Hillsboro",
+    "PrecinctName": "426 - HILLSBORO",
     "TotalMatchedVoters": 415,
     "DemVotedCount": 132,
     "RepVotedCount": 125,
@@ -26278,7 +26278,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "427 - Philomont",
+    "PrecinctName": "427 - PHILOMONT",
     "TotalMatchedVoters": 287,
     "DemVotedCount": 79,
     "RepVotedCount": 103,
@@ -26392,7 +26392,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "503 - Dry Mill",
+    "PrecinctName": "503 - DRY MILL",
     "TotalMatchedVoters": 277,
     "DemVotedCount": 127,
     "RepVotedCount": 52,
@@ -26677,7 +26677,7 @@
   },
   {
     "CountyName": "Loudoun",
-    "PrecinctName": "622 - Farmwell Station",
+    "PrecinctName": "622 - FARMWELL STATION",
     "TotalMatchedVoters": 539,
     "DemVotedCount": 238,
     "RepVotedCount": 116,
@@ -27361,7 +27361,7 @@
   },
   {
     "CountyName": "Louisa",
-    "PrecinctName": "201 - LOUISA #1",
+    "PrecinctName": "201 - Louisa #1",
     "TotalMatchedVoters": 264,
     "DemVotedCount": 104,
     "RepVotedCount": 110,
@@ -27570,7 +27570,7 @@
   },
   {
     "CountyName": "Louisa",
-    "PrecinctName": "702 - Mountain Road #2",
+    "PrecinctName": "702 - MOUNTAIN ROAD #2",
     "TotalMatchedVoters": 298,
     "DemVotedCount": 106,
     "RepVotedCount": 109,
@@ -27722,7 +27722,7 @@
   },
   {
     "CountyName": "Lunenburg",
-    "PrecinctName": "502 - Peoples Community Center",
+    "PrecinctName": "502 - PEOPLES COMMUNITY CENTER",
     "TotalMatchedVoters": 139,
     "DemVotedCount": 91,
     "RepVotedCount": 31,
@@ -27817,7 +27817,7 @@
   },
   {
     "CountyName": "Lynchburg (City)",
-    "PrecinctName": "102 - FIRST WARD SECOND PRECINCT",
+    "PrecinctName": "102 - First Ward Second Precinct",
     "TotalMatchedVoters": 667,
     "DemVotedCount": 237,
     "RepVotedCount": 260,
@@ -27836,7 +27836,7 @@
   },
   {
     "CountyName": "Lynchburg (City)",
-    "PrecinctName": "103 - First Ward Third Precinct",
+    "PrecinctName": "103 - FIRST WARD THIRD PRECINCT",
     "TotalMatchedVoters": 581,
     "DemVotedCount": 219,
     "RepVotedCount": 200,
@@ -28064,7 +28064,7 @@
   },
   {
     "CountyName": "Lynchburg (City)",
-    "PrecinctName": "401 - FOURTH WARD FIRST PRECINCT",
+    "PrecinctName": "401 - Fourth Ward First Precinct",
     "TotalMatchedVoters": 762,
     "DemVotedCount": 252,
     "RepVotedCount": 292,
@@ -28425,7 +28425,7 @@
   },
   {
     "CountyName": "Manassas Park (City)",
-    "PrecinctName": "002 - Precinct Two",
+    "PrecinctName": "002 - PRECINCT TWO",
     "TotalMatchedVoters": 259,
     "DemVotedCount": 104,
     "RepVotedCount": 76,
@@ -28482,7 +28482,7 @@
   },
   {
     "CountyName": "Martinsville (City)",
-    "PrecinctName": "002 - Precinct #2",
+    "PrecinctName": "002 - PRECINCT #2",
     "TotalMatchedVoters": 208,
     "DemVotedCount": 99,
     "RepVotedCount": 64,
@@ -28672,7 +28672,7 @@
   },
   {
     "CountyName": "Mecklenburg",
-    "PrecinctName": "103 - CLARKSVILLE SOUTH",
+    "PrecinctName": "103 - Clarksville South",
     "TotalMatchedVoters": 140,
     "DemVotedCount": 62,
     "RepVotedCount": 46,
@@ -29033,7 +29033,7 @@
   },
   {
     "CountyName": "Mecklenburg",
-    "PrecinctName": "903 - Clarksville North",
+    "PrecinctName": "903 - CLARKSVILLE NORTH",
     "TotalMatchedVoters": 231,
     "DemVotedCount": 80,
     "RepVotedCount": 119,
@@ -29090,7 +29090,7 @@
   },
   {
     "CountyName": "Middlesex",
-    "PrecinctName": "201 - New Market",
+    "PrecinctName": "201 - NEW MARKET",
     "TotalMatchedVoters": 359,
     "DemVotedCount": 97,
     "RepVotedCount": 229,
@@ -29660,7 +29660,7 @@
   },
   {
     "CountyName": "Montgomery",
-    "PrecinctName": "701 - Precinct G-1",
+    "PrecinctName": "701 - PRECINCT G-1",
     "TotalMatchedVoters": 132,
     "DemVotedCount": 74,
     "RepVotedCount": 11,
@@ -29774,7 +29774,7 @@
   },
   {
     "CountyName": "Nelson",
-    "PrecinctName": "301 - Shipman",
+    "PrecinctName": "301 - SHIPMAN",
     "TotalMatchedVoters": 320,
     "DemVotedCount": 157,
     "RepVotedCount": 110,
@@ -30078,7 +30078,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "101 - Denbigh",
+    "PrecinctName": "101 - DENBIGH",
     "TotalMatchedVoters": 387,
     "DemVotedCount": 205,
     "RepVotedCount": 18,
@@ -30230,7 +30230,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "111 - Stoneybrook",
+    "PrecinctName": "111 - STONEYBROOK",
     "TotalMatchedVoters": 403,
     "DemVotedCount": 205,
     "RepVotedCount": 38,
@@ -30249,7 +30249,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "112 - Knollwood Meadows",
+    "PrecinctName": "112 - KNOLLWOOD MEADOWS",
     "TotalMatchedVoters": 420,
     "DemVotedCount": 187,
     "RepVotedCount": 83,
@@ -30325,7 +30325,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "203 - Charles",
+    "PrecinctName": "203 - CHARLES",
     "TotalMatchedVoters": 473,
     "DemVotedCount": 219,
     "RepVotedCount": 104,
@@ -30382,7 +30382,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "208 - HIDENWOOD",
+    "PrecinctName": "208 - Hidenwood",
     "TotalMatchedVoters": 227,
     "DemVotedCount": 103,
     "RepVotedCount": 65,
@@ -30401,7 +30401,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "211 - PALMER",
+    "PrecinctName": "211 - Palmer",
     "TotalMatchedVoters": 323,
     "DemVotedCount": 177,
     "RepVotedCount": 43,
@@ -30496,7 +30496,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "219 - DEER PARK",
+    "PrecinctName": "219 - Deer Park",
     "TotalMatchedVoters": 515,
     "DemVotedCount": 245,
     "RepVotedCount": 93,
@@ -30534,7 +30534,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "302 - BRIARFIELD",
+    "PrecinctName": "302 - Briarfield",
     "TotalMatchedVoters": 221,
     "DemVotedCount": 133,
     "RepVotedCount": 11,
@@ -30667,7 +30667,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "311 - Newmarket",
+    "PrecinctName": "311 - NEWMARKET",
     "TotalMatchedVoters": 331,
     "DemVotedCount": 210,
     "RepVotedCount": 14,
@@ -30762,7 +30762,7 @@
   },
   {
     "CountyName": "Newport News (City)",
-    "PrecinctName": "316 - South Morrison",
+    "PrecinctName": "316 - SOUTH MORRISON",
     "TotalMatchedVoters": 277,
     "DemVotedCount": 125,
     "RepVotedCount": 41,
@@ -30895,7 +30895,7 @@
   },
   {
     "CountyName": "Norfolk (City)",
-    "PrecinctName": "101 - Granby",
+    "PrecinctName": "101 - GRANBY",
     "TotalMatchedVoters": 461,
     "DemVotedCount": 194,
     "RepVotedCount": 62,
@@ -31826,7 +31826,7 @@
   },
   {
     "CountyName": "Northampton",
-    "PrecinctName": "201 - PRECINCT 2-1",
+    "PrecinctName": "201 - Precinct 2-1",
     "TotalMatchedVoters": 301,
     "DemVotedCount": 171,
     "RepVotedCount": 65,
@@ -31921,7 +31921,7 @@
   },
   {
     "CountyName": "Northumberland",
-    "PrecinctName": "201 - 2a",
+    "PrecinctName": "201 - 2A",
     "TotalMatchedVoters": 397,
     "DemVotedCount": 155,
     "RepVotedCount": 212,
@@ -32339,7 +32339,7 @@
   },
   {
     "CountyName": "Orange",
-    "PrecinctName": "501 - Five South",
+    "PrecinctName": "501 - FIVE SOUTH",
     "TotalMatchedVoters": 414,
     "DemVotedCount": 161,
     "RepVotedCount": 129,
@@ -32377,7 +32377,7 @@
   },
   {
     "CountyName": "Page",
-    "PrecinctName": "101 - WEST LURAY",
+    "PrecinctName": "101 - West Luray",
     "TotalMatchedVoters": 515,
     "DemVotedCount": 162,
     "RepVotedCount": 252,
@@ -32586,7 +32586,7 @@
   },
   {
     "CountyName": "Patrick",
-    "PrecinctName": "301 - Critz/Stella",
+    "PrecinctName": "301 - CRITZ/STELLA",
     "TotalMatchedVoters": 180,
     "DemVotedCount": 37,
     "RepVotedCount": 105,
@@ -32700,7 +32700,7 @@
   },
   {
     "CountyName": "Patrick",
-    "PrecinctName": "503 - Woolwine",
+    "PrecinctName": "503 - WOOLWINE",
     "TotalMatchedVoters": 149,
     "DemVotedCount": 41,
     "RepVotedCount": 82,
@@ -33156,7 +33156,7 @@
   },
   {
     "CountyName": "Pittsylvania",
-    "PrecinctName": "405 - Ringgold",
+    "PrecinctName": "405 - RINGGOLD",
     "TotalMatchedVoters": 199,
     "DemVotedCount": 47,
     "RepVotedCount": 97,
@@ -33327,7 +33327,7 @@
   },
   {
     "CountyName": "Pittsylvania",
-    "PrecinctName": "702 - Bachelors Hall",
+    "PrecinctName": "702 - BACHELORS HALL",
     "TotalMatchedVoters": 159,
     "DemVotedCount": 39,
     "RepVotedCount": 80,
@@ -33403,7 +33403,7 @@
   },
   {
     "CountyName": "Poquoson (City)",
-    "PrecinctName": "001 - CENTRAL",
+    "PrecinctName": "001 - Central",
     "TotalMatchedVoters": 549,
     "DemVotedCount": 112,
     "RepVotedCount": 350,
@@ -33422,7 +33422,7 @@
   },
   {
     "CountyName": "Poquoson (City)",
-    "PrecinctName": "002 - EASTERN",
+    "PrecinctName": "002 - Eastern",
     "TotalMatchedVoters": 412,
     "DemVotedCount": 102,
     "RepVotedCount": 264,
@@ -33460,7 +33460,7 @@
   },
   {
     "CountyName": "Portsmouth (City)",
-    "PrecinctName": "001 - Emanuel A. M. E. Church",
+    "PrecinctName": "001 - EMANUEL A. M. E. CHURCH ",
     "TotalMatchedVoters": 275,
     "DemVotedCount": 181,
     "RepVotedCount": 20,
@@ -33612,7 +33612,7 @@
   },
   {
     "CountyName": "Portsmouth (City)",
-    "PrecinctName": "016 - CRADOCK MIDDLE SCHOOL",
+    "PrecinctName": "016 - Cradock Middle School",
     "TotalMatchedVoters": 167,
     "DemVotedCount": 91,
     "RepVotedCount": 13,
@@ -33916,7 +33916,7 @@
   },
   {
     "CountyName": "Portsmouth (City)",
-    "PrecinctName": "033- Pinecrest Baptist Church",
+    "PrecinctName": "033- PINECREST BAPTIST CHURCH",
     "TotalMatchedVoters": 107,
     "DemVotedCount": 32,
     "RepVotedCount": 37,
@@ -33973,7 +33973,7 @@
   },
   {
     "CountyName": "Portsmouth (City)",
-    "PrecinctName": "036 - CHURCHLAND HIGH SCHOOL",
+    "PrecinctName": "036 - Churchland High School",
     "TotalMatchedVoters": 586,
     "DemVotedCount": 266,
     "RepVotedCount": 89,
@@ -34277,7 +34277,7 @@
   },
   {
     "CountyName": "Prince Edward",
-    "PrecinctName": "101 - FARMVILLE",
+    "PrecinctName": "101 - Farmville",
     "TotalMatchedVoters": 283,
     "DemVotedCount": 120,
     "RepVotedCount": 95,
@@ -34469,58 +34469,58 @@
     "CountyName": "Prince George",
     "PrecinctName": "101 - Richard Bland",
     "TotalMatchedVoters": 175,
-    "DemVotedCount": 62,
+    "DemVotedCount": 63,
     "RepVotedCount": 74,
     "UnknownVotedCount": 0,
     "InPersonCount": 103,
-    "MailCount": 33,
+    "MailCount": 34,
     "InPersonDem": 44,
     "InPersonRep": 59,
-    "MailDem": 18,
+    "MailDem": 19,
     "MailRep": 15,
-    "DemOutCount": 17,
+    "DemOutCount": 16,
     "RepOutCount": 18,
     "UnknownOutCount": 0,
-    "VotedCount": 136,
-    "OutCount": 35
+    "VotedCount": 137,
+    "OutCount": 34
   },
   {
     "CountyName": "Prince George",
     "PrecinctName": "102 - Templeton",
     "TotalMatchedVoters": 480,
-    "DemVotedCount": 131,
+    "DemVotedCount": 132,
     "RepVotedCount": 249,
     "UnknownVotedCount": 1,
     "InPersonCount": 320,
-    "MailCount": 61,
+    "MailCount": 62,
     "InPersonDem": 103,
     "InPersonRep": 216,
-    "MailDem": 28,
+    "MailDem": 29,
     "MailRep": 33,
-    "DemOutCount": 37,
+    "DemOutCount": 36,
     "RepOutCount": 56,
     "UnknownOutCount": 0,
-    "VotedCount": 381,
-    "OutCount": 93
+    "VotedCount": 382,
+    "OutCount": 92
   },
   {
     "CountyName": "Prince George",
     "PrecinctName": "103 - Union Branch",
     "TotalMatchedVoters": 275,
-    "DemVotedCount": 97,
-    "RepVotedCount": 124,
+    "DemVotedCount": 103,
+    "RepVotedCount": 125,
     "UnknownVotedCount": 0,
     "InPersonCount": 164,
-    "MailCount": 57,
+    "MailCount": 64,
     "InPersonDem": 65,
     "InPersonRep": 99,
-    "MailDem": 32,
-    "MailRep": 25,
-    "DemOutCount": 34,
-    "RepOutCount": 17,
+    "MailDem": 38,
+    "MailRep": 26,
+    "DemOutCount": 28,
+    "RepOutCount": 16,
     "UnknownOutCount": 0,
-    "VotedCount": 221,
-    "OutCount": 51
+    "VotedCount": 228,
+    "OutCount": 44
   },
   {
     "CountyName": "Prince George",
@@ -34581,21 +34581,21 @@
   },
   {
     "CountyName": "Prince George",
-    "PrecinctName": "202 - BLACKWATER",
+    "PrecinctName": "202 - Blackwater",
     "TotalMatchedVoters": 382,
     "DemVotedCount": 104,
-    "RepVotedCount": 202,
+    "RepVotedCount": 204,
     "UnknownVotedCount": 6,
     "InPersonCount": 266,
-    "MailCount": 46,
+    "MailCount": 48,
     "InPersonDem": 79,
     "InPersonRep": 182,
     "MailDem": 25,
-    "MailRep": 20,
+    "MailRep": 22,
     "DemOutCount": 30,
     "RepOutCount": 36,
     "UnknownOutCount": 1,
-    "VotedCount": 312,
+    "VotedCount": 314,
     "OutCount": 67
   },
   {
@@ -34621,39 +34621,39 @@
     "CountyName": "Prince George",
     "PrecinctName": "204 - Courts",
     "TotalMatchedVoters": 462,
-    "DemVotedCount": 216,
+    "DemVotedCount": 218,
     "RepVotedCount": 145,
     "UnknownVotedCount": 3,
     "InPersonCount": 299,
-    "MailCount": 65,
+    "MailCount": 67,
     "InPersonDem": 172,
     "InPersonRep": 124,
-    "MailDem": 44,
+    "MailDem": 46,
     "MailRep": 21,
-    "DemOutCount": 56,
+    "DemOutCount": 55,
     "RepOutCount": 30,
     "UnknownOutCount": 0,
-    "VotedCount": 364,
-    "OutCount": 86
+    "VotedCount": 366,
+    "OutCount": 85
   },
   {
     "CountyName": "Prince George",
     "PrecinctName": "205 - Jefferson Park",
     "TotalMatchedVoters": 228,
-    "DemVotedCount": 112,
+    "DemVotedCount": 113,
     "RepVotedCount": 52,
     "UnknownVotedCount": 0,
     "InPersonCount": 116,
-    "MailCount": 48,
+    "MailCount": 49,
     "InPersonDem": 73,
     "InPersonRep": 43,
-    "MailDem": 39,
+    "MailDem": 40,
     "MailRep": 9,
-    "DemOutCount": 48,
+    "DemOutCount": 47,
     "RepOutCount": 14,
     "UnknownOutCount": 0,
-    "VotedCount": 164,
-    "OutCount": 62
+    "VotedCount": 165,
+    "OutCount": 61
   },
   {
     "CountyName": "Prince William",
@@ -34714,7 +34714,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "104 - Nokesville",
+    "PrecinctName": "104 - NOKESVILLE",
     "TotalMatchedVoters": 427,
     "DemVotedCount": 149,
     "RepVotedCount": 108,
@@ -34828,7 +34828,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "110 - BUCKLAND MILLS",
+    "PrecinctName": "110 - Buckland Mills",
     "TotalMatchedVoters": 413,
     "DemVotedCount": 115,
     "RepVotedCount": 83,
@@ -34923,7 +34923,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "201 - Hylton",
+    "PrecinctName": "201 - HYLTON",
     "TotalMatchedVoters": 320,
     "DemVotedCount": 104,
     "RepVotedCount": 37,
@@ -34980,7 +34980,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "204 - Ellis",
+    "PrecinctName": "204 - ELLIS",
     "TotalMatchedVoters": 314,
     "DemVotedCount": 129,
     "RepVotedCount": 67,
@@ -35189,7 +35189,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "215 - SAUNDERS",
+    "PrecinctName": "215 - Saunders",
     "TotalMatchedVoters": 302,
     "DemVotedCount": 137,
     "RepVotedCount": 20,
@@ -35284,7 +35284,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "305 - FOREST PARK",
+    "PrecinctName": "305 - Forest Park",
     "TotalMatchedVoters": 307,
     "DemVotedCount": 95,
     "RepVotedCount": 55,
@@ -35493,7 +35493,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "316 - POTOMAC SHORES",
+    "PrecinctName": "316 - Potomac Shores",
     "TotalMatchedVoters": 389,
     "DemVotedCount": 155,
     "RepVotedCount": 24,
@@ -35512,7 +35512,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "401 - Evergreen",
+    "PrecinctName": "401 - EVERGREEN",
     "TotalMatchedVoters": 312,
     "DemVotedCount": 97,
     "RepVotedCount": 67,
@@ -35778,7 +35778,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "501 - Springwoods",
+    "PrecinctName": "501 - SPRINGWOODS",
     "TotalMatchedVoters": 433,
     "DemVotedCount": 149,
     "RepVotedCount": 59,
@@ -35797,7 +35797,7 @@
   },
   {
     "CountyName": "Prince William",
-    "PrecinctName": "502 - Occoquan",
+    "PrecinctName": "502 - OCCOQUAN",
     "TotalMatchedVoters": 275,
     "DemVotedCount": 94,
     "RepVotedCount": 28,
@@ -36861,7 +36861,7 @@
   },
   {
     "CountyName": "Radford (City)",
-    "PrecinctName": "001 - East Precinct",
+    "PrecinctName": "001 - EAST PRECINCT",
     "TotalMatchedVoters": 195,
     "DemVotedCount": 85,
     "RepVotedCount": 57,
@@ -36918,7 +36918,7 @@
   },
   {
     "CountyName": "Radford (City)",
-    "PrecinctName": "004 - New River Precinct",
+    "PrecinctName": "004 - NEW RIVER PRECINCT",
     "TotalMatchedVoters": 173,
     "DemVotedCount": 77,
     "RepVotedCount": 64,
@@ -37146,7 +37146,7 @@
   },
   {
     "CountyName": "Richmond (City)",
-    "PrecinctName": "101 - One Hundred One",
+    "PrecinctName": "101 - ONE HUNDRED ONE",
     "TotalMatchedVoters": 66,
     "DemVotedCount": 25,
     "RepVotedCount": 19,
@@ -37469,7 +37469,7 @@
   },
   {
     "CountyName": "Richmond (City)",
-    "PrecinctName": "216 - Two Hundred Sixteen",
+    "PrecinctName": "216 - TWO HUNDRED SIXTEEN",
     "TotalMatchedVoters": 29,
     "DemVotedCount": 13,
     "RepVotedCount": 1,
@@ -37602,7 +37602,7 @@
   },
   {
     "CountyName": "Richmond (City)",
-    "PrecinctName": "307 - THREE HUNDRED SEVEN",
+    "PrecinctName": "307 - Three Hundred Seven",
     "TotalMatchedVoters": 657,
     "DemVotedCount": 449,
     "RepVotedCount": 52,
@@ -37716,7 +37716,7 @@
   },
   {
     "CountyName": "Richmond (City)",
-    "PrecinctName": "404 - Four Hundred Four",
+    "PrecinctName": "404 - FOUR HUNDRED FOUR",
     "TotalMatchedVoters": 233,
     "DemVotedCount": 111,
     "RepVotedCount": 17,
@@ -37944,7 +37944,7 @@
   },
   {
     "CountyName": "Richmond (City)",
-    "PrecinctName": "509 - FIVE HUNDRED NINE",
+    "PrecinctName": "509 - Five Hundred Nine",
     "TotalMatchedVoters": 151,
     "DemVotedCount": 65,
     "RepVotedCount": 4,
@@ -38837,7 +38837,7 @@
   },
   {
     "CountyName": "Roanoke",
-    "PrecinctName": "305 - East Hidden Valley",
+    "PrecinctName": "305 - EAST HIDDEN VALLEY",
     "TotalMatchedVoters": 405,
     "DemVotedCount": 168,
     "RepVotedCount": 176,
@@ -38894,7 +38894,7 @@
   },
   {
     "CountyName": "Roanoke",
-    "PrecinctName": "401 - Bonsack",
+    "PrecinctName": "401 - BONSACK",
     "TotalMatchedVoters": 241,
     "DemVotedCount": 66,
     "RepVotedCount": 146,
@@ -38970,7 +38970,7 @@
   },
   {
     "CountyName": "Roanoke",
-    "PrecinctName": "405 - South Lindenwood",
+    "PrecinctName": "405 - SOUTH LINDENWOOD",
     "TotalMatchedVoters": 325,
     "DemVotedCount": 86,
     "RepVotedCount": 173,
@@ -39046,7 +39046,7 @@
   },
   {
     "CountyName": "Roanoke",
-    "PrecinctName": "503 - East Cave Spring",
+    "PrecinctName": "503 - EAST CAVE SPRING",
     "TotalMatchedVoters": 309,
     "DemVotedCount": 125,
     "RepVotedCount": 125,
@@ -39331,7 +39331,7 @@
   },
   {
     "CountyName": "Roanoke (City)",
-    "PrecinctName": "011 - RALEIGH COURT",
+    "PrecinctName": "011 - Raleigh Court",
     "TotalMatchedVoters": 533,
     "DemVotedCount": 337,
     "RepVotedCount": 85,
@@ -39350,7 +39350,7 @@
   },
   {
     "CountyName": "Roanoke (City)",
-    "PrecinctName": "012 - South Roanoke",
+    "PrecinctName": "012 - SOUTH ROANOKE",
     "TotalMatchedVoters": 491,
     "DemVotedCount": 228,
     "RepVotedCount": 177,
@@ -40148,7 +40148,7 @@
   },
   {
     "CountyName": "Rockingham",
-    "PrecinctName": "306 - Crossroads",
+    "PrecinctName": "306 - CROSSROADS",
     "TotalMatchedVoters": 720,
     "DemVotedCount": 265,
     "RepVotedCount": 338,
@@ -40433,7 +40433,7 @@
   },
   {
     "CountyName": "Russell",
-    "PrecinctName": "103 - South Castlewood",
+    "PrecinctName": "103 - SOUTH CASTLEWOOD",
     "TotalMatchedVoters": 69,
     "DemVotedCount": 23,
     "RepVotedCount": 25,
@@ -40623,7 +40623,7 @@
   },
   {
     "CountyName": "Russell",
-    "PrecinctName": "501 - West Lebanon",
+    "PrecinctName": "501 - WEST LEBANON",
     "TotalMatchedVoters": 355,
     "DemVotedCount": 80,
     "RepVotedCount": 173,
@@ -40737,7 +40737,7 @@
   },
   {
     "CountyName": "Salem (City)",
-    "PrecinctName": "004 - West Salem",
+    "PrecinctName": "004 - WEST SALEM",
     "TotalMatchedVoters": 248,
     "DemVotedCount": 93,
     "RepVotedCount": 106,
@@ -40794,7 +40794,7 @@
   },
   {
     "CountyName": "Salem (City)",
-    "PrecinctName": "007 - South Salem No 2",
+    "PrecinctName": "007 - SOUTH SALEM NO 2",
     "TotalMatchedVoters": 210,
     "DemVotedCount": 77,
     "RepVotedCount": 99,
@@ -40889,7 +40889,7 @@
   },
   {
     "CountyName": "Scott",
-    "PrecinctName": "102 - Yuma",
+    "PrecinctName": "102 - YUMA",
     "TotalMatchedVoters": 176,
     "DemVotedCount": 25,
     "RepVotedCount": 135,
@@ -41383,7 +41383,7 @@
   },
   {
     "CountyName": "Shenandoah",
-    "PrecinctName": "503 - Toms Brook",
+    "PrecinctName": "503 - TOMS BROOK",
     "TotalMatchedVoters": 468,
     "DemVotedCount": 141,
     "RepVotedCount": 259,
@@ -41915,7 +41915,7 @@
   },
   {
     "CountyName": "Spotsylvania",
-    "PrecinctName": "102 - BERKELEY",
+    "PrecinctName": "102 - Berkeley",
     "TotalMatchedVoters": 340,
     "DemVotedCount": 101,
     "RepVotedCount": 150,
@@ -42143,7 +42143,7 @@
   },
   {
     "CountyName": "Spotsylvania",
-    "PrecinctName": "402 - Germanna Campus",
+    "PrecinctName": "402 - GERMANNA CAMPUS",
     "TotalMatchedVoters": 593,
     "DemVotedCount": 269,
     "RepVotedCount": 179,
@@ -42295,7 +42295,7 @@
   },
   {
     "CountyName": "Spotsylvania",
-    "PrecinctName": "601 - Battlefield Elementary",
+    "PrecinctName": "601 - BATTLEFIELD ELEMENTARY",
     "TotalMatchedVoters": 429,
     "DemVotedCount": 182,
     "RepVotedCount": 121,
@@ -42314,7 +42314,7 @@
   },
   {
     "CountyName": "Spotsylvania",
-    "PrecinctName": "602 - Smith Station Elementary",
+    "PrecinctName": "602 - SMITH STATION ELEMENTARY",
     "TotalMatchedVoters": 484,
     "DemVotedCount": 204,
     "RepVotedCount": 130,
@@ -42390,7 +42390,7 @@
   },
   {
     "CountyName": "Spotsylvania",
-    "PrecinctName": "702 - Eastland Church",
+    "PrecinctName": "702 - EASTLAND CHURCH",
     "TotalMatchedVoters": 382,
     "DemVotedCount": 165,
     "RepVotedCount": 98,
@@ -42447,7 +42447,7 @@
   },
   {
     "CountyName": "Stafford",
-    "PrecinctName": "101 - HARTWOOD",
+    "PrecinctName": "101 - Hartwood",
     "TotalMatchedVoters": 573,
     "DemVotedCount": 163,
     "RepVotedCount": 218,
@@ -42656,7 +42656,7 @@
   },
   {
     "CountyName": "Stafford",
-    "PrecinctName": "301 - Staffordboro",
+    "PrecinctName": "301 - STAFFORDBORO",
     "TotalMatchedVoters": 166,
     "DemVotedCount": 73,
     "RepVotedCount": 25,
@@ -43055,7 +43055,7 @@
   },
   {
     "CountyName": "Stafford",
-    "PrecinctName": "605 - Melchers",
+    "PrecinctName": "605 - MELCHERS",
     "TotalMatchedVoters": 949,
     "DemVotedCount": 454,
     "RepVotedCount": 236,
@@ -43112,7 +43112,7 @@
   },
   {
     "CountyName": "Stafford",
-    "PrecinctName": "703 - Hampton",
+    "PrecinctName": "703 - HAMPTON",
     "TotalMatchedVoters": 537,
     "DemVotedCount": 215,
     "RepVotedCount": 154,
@@ -43302,7 +43302,7 @@
   },
   {
     "CountyName": "Suffolk (City)",
-    "PrecinctName": "105 - HARBOURVIEW",
+    "PrecinctName": "105 - Harbourview",
     "TotalMatchedVoters": 769,
     "DemVotedCount": 298,
     "RepVotedCount": 142,
@@ -43454,7 +43454,7 @@
   },
   {
     "CountyName": "Suffolk (City)",
-    "PrecinctName": "305 - Shoulders Hill",
+    "PrecinctName": "305 - SHOULDERS HILL",
     "TotalMatchedVoters": 169,
     "DemVotedCount": 86,
     "RepVotedCount": 27,
@@ -43587,7 +43587,7 @@
   },
   {
     "CountyName": "Suffolk (City)",
-    "PrecinctName": "501 - Kilbys Mill",
+    "PrecinctName": "501 - KILBYS MILL",
     "TotalMatchedVoters": 451,
     "DemVotedCount": 176,
     "RepVotedCount": 164,
@@ -43625,7 +43625,7 @@
   },
   {
     "CountyName": "Suffolk (City)",
-    "PrecinctName": "504 - LAKE COHOON",
+    "PrecinctName": "504 - Lake Cohoon",
     "TotalMatchedVoters": 712,
     "DemVotedCount": 261,
     "RepVotedCount": 281,
@@ -44119,7 +44119,7 @@
   },
   {
     "CountyName": "Tazewell",
-    "PrecinctName": "101 - Indian Valley",
+    "PrecinctName": "101 - INDIAN VALLEY",
     "TotalMatchedVoters": 73,
     "DemVotedCount": 26,
     "RepVotedCount": 31,
@@ -44404,7 +44404,7 @@
   },
   {
     "CountyName": "Tazewell",
-    "PrecinctName": "401 - RICHLANDS",
+    "PrecinctName": "401 - Richlands",
     "TotalMatchedVoters": 448,
     "DemVotedCount": 88,
     "RepVotedCount": 256,
@@ -44480,7 +44480,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "001 - PRECINCT 1",
+    "PrecinctName": "001 - Precinct 1",
     "TotalMatchedVoters": 575,
     "DemVotedCount": 185,
     "RepVotedCount": 162,
@@ -44518,7 +44518,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "003 - Precinct 3",
+    "PrecinctName": "003 - PRECINCT 3",
     "TotalMatchedVoters": 336,
     "DemVotedCount": 128,
     "RepVotedCount": 115,
@@ -44670,7 +44670,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "011 - Precinct 11",
+    "PrecinctName": "011 - PRECINCT 11",
     "TotalMatchedVoters": 546,
     "DemVotedCount": 249,
     "RepVotedCount": 123,
@@ -44746,7 +44746,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "015 - Precinct 15",
+    "PrecinctName": "015 - PRECINCT 15",
     "TotalMatchedVoters": 244,
     "DemVotedCount": 84,
     "RepVotedCount": 54,
@@ -44841,7 +44841,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "020 - PRECINCT 20",
+    "PrecinctName": "020 - Precinct 20",
     "TotalMatchedVoters": 212,
     "DemVotedCount": 76,
     "RepVotedCount": 46,
@@ -44974,7 +44974,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "027 - PRECINCT 27",
+    "PrecinctName": "027 - Precinct 27",
     "TotalMatchedVoters": 281,
     "DemVotedCount": 102,
     "RepVotedCount": 84,
@@ -45050,7 +45050,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "031 - Precinct 31",
+    "PrecinctName": "031 - PRECINCT 31",
     "TotalMatchedVoters": 637,
     "DemVotedCount": 226,
     "RepVotedCount": 247,
@@ -45126,7 +45126,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "035 - Precinct 35",
+    "PrecinctName": "035 - PRECINCT 35",
     "TotalMatchedVoters": 849,
     "DemVotedCount": 322,
     "RepVotedCount": 394,
@@ -45164,7 +45164,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "037 - Precinct 37",
+    "PrecinctName": "037 - PRECINCT 37",
     "TotalMatchedVoters": 219,
     "DemVotedCount": 70,
     "RepVotedCount": 56,
@@ -45278,7 +45278,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "043 - Precinct 43",
+    "PrecinctName": "043 - PRECINCT 43",
     "TotalMatchedVoters": 397,
     "DemVotedCount": 159,
     "RepVotedCount": 57,
@@ -45392,7 +45392,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "049 - PRECINCT 49",
+    "PrecinctName": "049 - Precinct 49",
     "TotalMatchedVoters": 579,
     "DemVotedCount": 187,
     "RepVotedCount": 157,
@@ -45563,7 +45563,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "058 - PRECINCT 58",
+    "PrecinctName": "058 - Precinct 58",
     "TotalMatchedVoters": 300,
     "DemVotedCount": 116,
     "RepVotedCount": 81,
@@ -45639,7 +45639,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "062 - PRECINCT 62",
+    "PrecinctName": "062 - Precinct 62",
     "TotalMatchedVoters": 463,
     "DemVotedCount": 195,
     "RepVotedCount": 139,
@@ -45867,7 +45867,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "074 - PRECINCT 74",
+    "PrecinctName": "074 - Precinct 74",
     "TotalMatchedVoters": 398,
     "DemVotedCount": 141,
     "RepVotedCount": 66,
@@ -45981,7 +45981,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "080 - PRECINCT 80",
+    "PrecinctName": "080 - Precinct 80",
     "TotalMatchedVoters": 311,
     "DemVotedCount": 126,
     "RepVotedCount": 50,
@@ -46019,7 +46019,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "082 - Precinct 82",
+    "PrecinctName": "082 - PRECINCT 82",
     "TotalMatchedVoters": 351,
     "DemVotedCount": 136,
     "RepVotedCount": 121,
@@ -46418,7 +46418,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "103 - Precinct 103",
+    "PrecinctName": "103 - PRECINCT 103",
     "TotalMatchedVoters": 159,
     "DemVotedCount": 67,
     "RepVotedCount": 29,
@@ -46475,7 +46475,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "PrecinctName": "106 - Precinct 106",
+    "PrecinctName": "106 - PRECINCT 106",
     "TotalMatchedVoters": 266,
     "DemVotedCount": 90,
     "RepVotedCount": 54,
@@ -46532,7 +46532,7 @@
   },
   {
     "CountyName": "Warren",
-    "PrecinctName": "101 - Fork Town",
+    "PrecinctName": "101 - FORK TOWN",
     "TotalMatchedVoters": 255,
     "DemVotedCount": 93,
     "RepVotedCount": 115,
@@ -46589,7 +46589,7 @@
   },
   {
     "CountyName": "Warren",
-    "PrecinctName": "202 - LINDEN",
+    "PrecinctName": "202 - Linden",
     "TotalMatchedVoters": 432,
     "DemVotedCount": 156,
     "RepVotedCount": 178,
@@ -46608,7 +46608,7 @@
   },
   {
     "CountyName": "Warren",
-    "PrecinctName": "301 - North River",
+    "PrecinctName": "301 - NORTH RIVER",
     "TotalMatchedVoters": 296,
     "DemVotedCount": 118,
     "RepVotedCount": 123,
@@ -46627,7 +46627,7 @@
   },
   {
     "CountyName": "Warren",
-    "PrecinctName": "302 - RIVERTON",
+    "PrecinctName": "302 - Riverton",
     "TotalMatchedVoters": 452,
     "DemVotedCount": 122,
     "RepVotedCount": 249,
@@ -46798,7 +46798,7 @@
   },
   {
     "CountyName": "Washington",
-    "PrecinctName": "202 - Greendale",
+    "PrecinctName": "202 - GREENDALE",
     "TotalMatchedVoters": 224,
     "DemVotedCount": 47,
     "RepVotedCount": 144,
@@ -46874,7 +46874,7 @@
   },
   {
     "CountyName": "Washington",
-    "PrecinctName": "302 - SOUTH ABINGDON",
+    "PrecinctName": "302 - South Abingdon",
     "TotalMatchedVoters": 472,
     "DemVotedCount": 160,
     "RepVotedCount": 240,
@@ -47102,7 +47102,7 @@
   },
   {
     "CountyName": "Waynesboro (City)",
-    "PrecinctName": "001 - WARD A",
+    "PrecinctName": "001 - Ward A",
     "TotalMatchedVoters": 280,
     "DemVotedCount": 115,
     "RepVotedCount": 78,
@@ -47122,25 +47122,25 @@
   {
     "CountyName": "Waynesboro (City)",
     "PrecinctName": "002 - Ward B",
-    "TotalMatchedVoters": 796,
+    "TotalMatchedVoters": 798,
     "DemVotedCount": 352,
-    "RepVotedCount": 306,
+    "RepVotedCount": 308,
     "UnknownVotedCount": 3,
-    "InPersonCount": 503,
+    "InPersonCount": 505,
     "MailCount": 158,
     "InPersonDem": 248,
-    "InPersonRep": 252,
+    "InPersonRep": 254,
     "MailDem": 104,
     "MailRep": 54,
     "DemOutCount": 79,
     "RepOutCount": 45,
     "UnknownOutCount": 0,
-    "VotedCount": 661,
+    "VotedCount": 663,
     "OutCount": 124
   },
   {
     "CountyName": "Waynesboro (City)",
-    "PrecinctName": "003 - WARD C",
+    "PrecinctName": "003 - Ward C",
     "TotalMatchedVoters": 529,
     "DemVotedCount": 206,
     "RepVotedCount": 204,
@@ -47159,7 +47159,7 @@
   },
   {
     "CountyName": "Waynesboro (City)",
-    "PrecinctName": "004 - WARD D",
+    "PrecinctName": "004 - Ward D",
     "TotalMatchedVoters": 742,
     "DemVotedCount": 288,
     "RepVotedCount": 299,
@@ -47216,7 +47216,7 @@
   },
   {
     "CountyName": "Westmoreland",
-    "PrecinctName": "201 - PRECINCT 2-1",
+    "PrecinctName": "201 - Precinct 2-1",
     "TotalMatchedVoters": 403,
     "DemVotedCount": 167,
     "RepVotedCount": 176,
@@ -47330,7 +47330,7 @@
   },
   {
     "CountyName": "Williamsburg (City)",
-    "PrecinctName": "001 - STRYKER",
+    "PrecinctName": "001 - Stryker",
     "TotalMatchedVoters": 992,
     "DemVotedCount": 600,
     "RepVotedCount": 206,
@@ -47368,7 +47368,7 @@
   },
   {
     "CountyName": "Winchester (City)",
-    "PrecinctName": "101 - Merrimans",
+    "PrecinctName": "101 - MERRIMANS",
     "TotalMatchedVoters": 618,
     "DemVotedCount": 312,
     "RepVotedCount": 234,
@@ -47425,7 +47425,7 @@
   },
   {
     "CountyName": "Winchester (City)",
-    "PrecinctName": "301 - War Memorial",
+    "PrecinctName": "301 - WAR MEMORIAL",
     "TotalMatchedVoters": 302,
     "DemVotedCount": 142,
     "RepVotedCount": 84,
@@ -47558,7 +47558,7 @@
   },
   {
     "CountyName": "Wise",
-    "PrecinctName": "201 - North Coeburn",
+    "PrecinctName": "201 - NORTH COEBURN",
     "TotalMatchedVoters": 94,
     "DemVotedCount": 11,
     "RepVotedCount": 59,
@@ -47938,7 +47938,7 @@
   },
   {
     "CountyName": "York",
-    "PrecinctName": "102 - Waller Mill",
+    "PrecinctName": "102 - WALLER MILL",
     "TotalMatchedVoters": 1191,
     "DemVotedCount": 600,
     "RepVotedCount": 437,
@@ -48014,7 +48014,7 @@
   },
   {
     "CountyName": "York",
-    "PrecinctName": "301 - SEAFORD",
+    "PrecinctName": "301 - Seaford",
     "TotalMatchedVoters": 749,
     "DemVotedCount": 185,
     "RepVotedCount": 486,
