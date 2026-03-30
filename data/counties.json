@@ -38,20 +38,20 @@
   {
     "CountyName": "Alexandria (City)",
     "TotalMatchedVoters": 14303,
-    "DemVotedCount": 7614,
+    "DemVotedCount": 7648,
     "RepVotedCount": 1051,
     "UnknownVotedCount": 63,
     "InPersonCount": 4238,
-    "MailCount": 4490,
+    "MailCount": 4524,
     "InPersonDem": 3629,
     "InPersonRep": 580,
-    "MailDem": 3985,
+    "MailDem": 4019,
     "MailRep": 471,
-    "DemOutCount": 4384,
+    "DemOutCount": 4354,
     "RepOutCount": 450,
     "UnknownOutCount": 75,
-    "VotedCount": 8728,
-    "OutCount": 4909
+    "VotedCount": 8762,
+    "OutCount": 4879
   },
   {
     "CountyName": "Alleghany",
@@ -433,7 +433,7 @@
   },
   {
     "CountyName": "Chesapeake (City)",
-    "TotalMatchedVoters": 21086,
+    "TotalMatchedVoters": 21087,
     "DemVotedCount": 8163,
     "RepVotedCount": 6053,
     "UnknownVotedCount": 84,
@@ -443,15 +443,15 @@
     "InPersonRep": 4396,
     "MailDem": 3423,
     "MailRep": 1657,
-    "DemOutCount": 4304,
+    "DemOutCount": 4305,
     "RepOutCount": 2017,
     "UnknownOutCount": 66,
     "VotedCount": 14300,
-    "OutCount": 6387
+    "OutCount": 6388
   },
   {
     "CountyName": "Chesterfield",
-    "TotalMatchedVoters": 34917,
+    "TotalMatchedVoters": 34978,
     "DemVotedCount": 14153,
     "RepVotedCount": 10035,
     "UnknownVotedCount": 147,
@@ -461,11 +461,11 @@
     "InPersonRep": 6905,
     "MailDem": 6488,
     "MailRep": 3130,
-    "DemOutCount": 6961,
-    "RepOutCount": 2948,
+    "DemOutCount": 6974,
+    "RepOutCount": 2959,
     "UnknownOutCount": 86,
     "VotedCount": 24335,
-    "OutCount": 9995
+    "OutCount": 10019
   },
   {
     "CountyName": "Clarke",
@@ -1045,7 +1045,7 @@
   },
   {
     "CountyName": "Henrico",
-    "TotalMatchedVoters": 34683,
+    "TotalMatchedVoters": 34684,
     "DemVotedCount": 16364,
     "RepVotedCount": 6742,
     "UnknownVotedCount": 129,
@@ -1055,11 +1055,11 @@
     "InPersonRep": 4979,
     "MailDem": 5455,
     "MailRep": 1763,
-    "DemOutCount": 8359,
+    "DemOutCount": 8360,
     "RepOutCount": 2397,
     "UnknownOutCount": 91,
     "VotedCount": 23235,
-    "OutCount": 10847
+    "OutCount": 10848
   },
   {
     "CountyName": "Henry",
@@ -1135,7 +1135,7 @@
   },
   {
     "CountyName": "James City",
-    "TotalMatchedVoters": 14379,
+    "TotalMatchedVoters": 14381,
     "DemVotedCount": 6754,
     "RepVotedCount": 5422,
     "UnknownVotedCount": 84,
@@ -1145,11 +1145,11 @@
     "InPersonRep": 4612,
     "MailDem": 1805,
     "MailRep": 810,
-    "DemOutCount": 1299,
+    "DemOutCount": 1301,
     "RepOutCount": 613,
     "UnknownOutCount": 22,
     "VotedCount": 12260,
-    "OutCount": 1934
+    "OutCount": 1936
   },
   {
     "CountyName": "King George",
@@ -1459,7 +1459,7 @@
   },
   {
     "CountyName": "Montgomery",
-    "TotalMatchedVoters": 7450,
+    "TotalMatchedVoters": 7449,
     "DemVotedCount": 3320,
     "RepVotedCount": 2407,
     "UnknownVotedCount": 32,
@@ -1469,11 +1469,11 @@
     "InPersonRep": 1972,
     "MailDem": 1186,
     "MailRep": 435,
-    "DemOutCount": 1124,
+    "DemOutCount": 1123,
     "RepOutCount": 453,
     "UnknownOutCount": 13,
     "VotedCount": 5759,
-    "OutCount": 1590
+    "OutCount": 1589
   },
   {
     "CountyName": "Nelson",
@@ -1992,10 +1992,10 @@
     "MailDem": 92,
     "MailRep": 74,
     "DemOutCount": 149,
-    "RepOutCount": 184,
+    "RepOutCount": 183,
     "UnknownOutCount": 15,
     "VotedCount": 1240,
-    "OutCount": 348
+    "OutCount": 347
   },
   {
     "CountyName": "Salem (City)",
@@ -2197,21 +2197,21 @@
   },
   {
     "CountyName": "Tazewell",
-    "TotalMatchedVoters": 3001,
-    "DemVotedCount": 634,
-    "RepVotedCount": 1891,
+    "TotalMatchedVoters": 3003,
+    "DemVotedCount": 639,
+    "RepVotedCount": 1896,
     "UnknownVotedCount": 65,
     "InPersonCount": 2167,
-    "MailCount": 423,
+    "MailCount": 433,
     "InPersonDem": 431,
     "InPersonRep": 1679,
-    "MailDem": 203,
-    "MailRep": 212,
-    "DemOutCount": 113,
-    "RepOutCount": 254,
+    "MailDem": 208,
+    "MailRep": 217,
+    "DemOutCount": 107,
+    "RepOutCount": 251,
     "UnknownOutCount": 10,
-    "VotedCount": 2590,
-    "OutCount": 377
+    "VotedCount": 2600,
+    "OutCount": 368
   },
   {
     "CountyName": "Virginia Beach (City)",
