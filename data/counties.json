@@ -37,21 +37,21 @@
   },
   {
     "CountyName": "Alexandria (City)",
-    "TotalMatchedVoters": 16205,
-    "DemVotedCount": 9784,
+    "TotalMatchedVoters": 16210,
+    "DemVotedCount": 9791,
     "RepVotedCount": 1358,
     "UnknownVotedCount": 88,
     "InPersonCount": 5984,
-    "MailCount": 5246,
+    "MailCount": 5253,
     "InPersonDem": 5113,
     "InPersonRep": 827,
-    "MailDem": 4671,
+    "MailDem": 4678,
     "MailRep": 531,
-    "DemOutCount": 3795,
-    "RepOutCount": 403,
+    "DemOutCount": 3789,
+    "RepOutCount": 404,
     "UnknownOutCount": 73,
-    "VotedCount": 11230,
-    "OutCount": 4271
+    "VotedCount": 11237,
+    "OutCount": 4266
   },
   {
     "CountyName": "Alleghany",
@@ -74,20 +74,20 @@
   {
     "CountyName": "Amelia",
     "TotalMatchedVoters": 1624,
-    "DemVotedCount": 443,
+    "DemVotedCount": 445,
     "RepVotedCount": 1023,
     "UnknownVotedCount": 12,
     "InPersonCount": 1294,
-    "MailCount": 184,
+    "MailCount": 186,
     "InPersonDem": 343,
     "InPersonRep": 941,
-    "MailDem": 100,
+    "MailDem": 102,
     "MailRep": 82,
-    "DemOutCount": 67,
+    "DemOutCount": 65,
     "RepOutCount": 67,
     "UnknownOutCount": 2,
-    "VotedCount": 1478,
-    "OutCount": 136
+    "VotedCount": 1480,
+    "OutCount": 134
   },
   {
     "CountyName": "Amherst",
@@ -379,21 +379,21 @@
   },
   {
     "CountyName": "Charles City",
-    "TotalMatchedVoters": 1046,
-    "DemVotedCount": 569,
-    "RepVotedCount": 265,
-    "UnknownVotedCount": 2,
-    "InPersonCount": 613,
-    "MailCount": 223,
-    "InPersonDem": 388,
-    "InPersonRep": 223,
-    "MailDem": 181,
-    "MailRep": 42,
-    "DemOutCount": 157,
-    "RepOutCount": 40,
+    "TotalMatchedVoters": 1091,
+    "DemVotedCount": 596,
+    "RepVotedCount": 284,
+    "UnknownVotedCount": 3,
+    "InPersonCount": 656,
+    "MailCount": 227,
+    "InPersonDem": 413,
+    "InPersonRep": 240,
+    "MailDem": 183,
+    "MailRep": 44,
+    "DemOutCount": 158,
+    "RepOutCount": 37,
     "UnknownOutCount": 3,
-    "VotedCount": 836,
-    "OutCount": 200
+    "VotedCount": 883,
+    "OutCount": 198
   },
   {
     "CountyName": "Charlotte",
@@ -451,7 +451,7 @@
   },
   {
     "CountyName": "Chesterfield",
-    "TotalMatchedVoters": 39996,
+    "TotalMatchedVoters": 39999,
     "DemVotedCount": 18105,
     "RepVotedCount": 12676,
     "UnknownVotedCount": 209,
@@ -461,11 +461,11 @@
     "InPersonRep": 9039,
     "MailDem": 7747,
     "MailRep": 3637,
-    "DemOutCount": 5738,
+    "DemOutCount": 5741,
     "RepOutCount": 2482,
     "UnknownOutCount": 88,
     "VotedCount": 30990,
-    "OutCount": 8308
+    "OutCount": 8311
   },
   {
     "CountyName": "Clarke",
@@ -667,7 +667,7 @@
   },
   {
     "CountyName": "Fairfax",
-    "TotalMatchedVoters": 106055,
+    "TotalMatchedVoters": 106056,
     "DemVotedCount": 53413,
     "RepVotedCount": 15146,
     "UnknownVotedCount": 460,
@@ -677,11 +677,11 @@
     "InPersonRep": 9126,
     "MailDem": 30938,
     "MailRep": 6020,
-    "DemOutCount": 28862,
+    "DemOutCount": 28863,
     "RepOutCount": 4756,
     "UnknownOutCount": 412,
     "VotedCount": 69019,
-    "OutCount": 34030
+    "OutCount": 34031
   },
   {
     "CountyName": "Fairfax (City)",
@@ -1729,21 +1729,21 @@
   },
   {
     "CountyName": "Portsmouth (City)",
-    "TotalMatchedVoters": 8074,
-    "DemVotedCount": 4995,
-    "RepVotedCount": 790,
+    "TotalMatchedVoters": 8103,
+    "DemVotedCount": 4998,
+    "RepVotedCount": 791,
     "UnknownVotedCount": 35,
     "InPersonCount": 3497,
-    "MailCount": 2323,
+    "MailCount": 2327,
     "InPersonDem": 2968,
     "InPersonRep": 506,
-    "MailDem": 2027,
-    "MailRep": 284,
-    "DemOutCount": 1750,
-    "RepOutCount": 289,
+    "MailDem": 2030,
+    "MailRep": 285,
+    "DemOutCount": 1759,
+    "RepOutCount": 290,
     "UnknownOutCount": 23,
-    "VotedCount": 5820,
-    "OutCount": 2062
+    "VotedCount": 5824,
+    "OutCount": 2072
   },
   {
     "CountyName": "Powhatan",
@@ -2107,7 +2107,7 @@
   },
   {
     "CountyName": "Stafford",
-    "TotalMatchedVoters": 15423,
+    "TotalMatchedVoters": 15424,
     "DemVotedCount": 6530,
     "RepVotedCount": 5164,
     "UnknownVotedCount": 92,
@@ -2117,11 +2117,11 @@
     "InPersonRep": 3807,
     "MailDem": 2584,
     "MailRep": 1357,
-    "DemOutCount": 2139,
+    "DemOutCount": 2140,
     "RepOutCount": 1168,
     "UnknownOutCount": 46,
     "VotedCount": 11786,
-    "OutCount": 3353
+    "OutCount": 3354
   },
   {
     "CountyName": "Staunton (City)",
@@ -2215,7 +2215,7 @@
   },
   {
     "CountyName": "Virginia Beach (City)",
-    "TotalMatchedVoters": 43991,
+    "TotalMatchedVoters": 43992,
     "DemVotedCount": 17899,
     "RepVotedCount": 12643,
     "UnknownVotedCount": 214,
@@ -2225,11 +2225,11 @@
     "InPersonRep": 7589,
     "MailDem": 9377,
     "MailRep": 5054,
-    "DemOutCount": 7938,
+    "DemOutCount": 7939,
     "RepOutCount": 3988,
     "UnknownOutCount": 140,
     "VotedCount": 30756,
-    "OutCount": 12066
+    "OutCount": 12067
   },
   {
     "CountyName": "Warren",
