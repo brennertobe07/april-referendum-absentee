@@ -1285,6 +1285,19 @@
           "in_person_rep": 505301,
           "mail_dem": 229507,
           "mail_rep": 85486
+        },
+        {
+          "days_before": -8,
+          "total_voted": 1394745,
+          "in_person": 1076710,
+          "mail": 318035,
+          "dem_voted": 787316,
+          "rep_voted": 590787,
+          "unknown_voted": 16642,
+          "in_person_dem": 557809,
+          "in_person_rep": 505301,
+          "mail_dem": 229507,
+          "mail_rep": 85486
         }
       ]
     }
@@ -1292,7 +1305,7 @@
   "current_election": "26SP_Apr",
   "summary": {
     "current_election": "26SP_Apr",
-    "current_day": -7,
+    "current_day": -8,
     "current_voted": 1394745,
     "prior_comparisons": [
       {
@@ -1304,5 +1317,5 @@
       }
     ]
   },
-  "generated_at": "2026-04-28 07:01"
+  "generated_at": "2026-04-29 07:00"
 }
