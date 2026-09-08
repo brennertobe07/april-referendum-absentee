@@ -1,5 +1,5 @@
 {
-  "TotalMatchedVoters": 61863,
+  "TotalMatchedVoters": 66632,
   "DemVotedCount": 12,
   "RepVotedCount": 9,
   "UnknownVotedCount": 1,
@@ -9,11 +9,11 @@
   "InPersonRep": 4,
   "MailDem": 8,
   "MailRep": 6,
-  "DemOutCount": 44015,
-  "RepOutCount": 16570,
-  "UnknownOutCount": 168,
+  "DemOutCount": 46378,
+  "RepOutCount": 18903,
+  "UnknownOutCount": 171,
   "VotedCount": 22,
-  "OutCount": 60753,
+  "OutCount": 65452,
   "CountyCount": 78,
-  "PrecinctCount": 831
+  "PrecinctCount": 874
 }

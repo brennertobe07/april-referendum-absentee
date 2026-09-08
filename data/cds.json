@@ -8,7 +8,7 @@
   "districts": [
     {
       "CD": "01",
-      "TotalMatchedVoters": 11419,
+      "TotalMatchedVoters": 15410,
       "DemVotedCount": 4,
       "RepVotedCount": 3,
       "UnknownVotedCount": 0,
@@ -18,12 +18,12 @@
       "InPersonRep": 3,
       "MailDem": 1,
       "MailRep": 0,
-      "DemOutCount": 7064,
-      "RepOutCount": 4022,
-      "UnknownOutCount": 42,
+      "DemOutCount": 9084,
+      "RepOutCount": 5927,
+      "UnknownOutCount": 45,
       "VotedCount": 7,
-      "OutCount": 11128,
-      "CountyCount": 26,
+      "OutCount": 15056,
+      "CountyCount": 27,
       "Target": true
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "CD": "05",
-      "TotalMatchedVoters": 3684,
+      "TotalMatchedVoters": 4462,
       "DemVotedCount": 4,
       "RepVotedCount": 4,
       "UnknownVotedCount": 1,
@@ -98,12 +98,12 @@
       "InPersonRep": 0,
       "MailDem": 3,
       "MailRep": 4,
-      "DemOutCount": 2108,
-      "RepOutCount": 1543,
+      "DemOutCount": 2451,
+      "RepOutCount": 1971,
       "UnknownOutCount": 5,
       "VotedCount": 9,
-      "OutCount": 3656,
-      "CountyCount": 10,
+      "OutCount": 4427,
+      "CountyCount": 11,
       "Target": true
     },
     {
@@ -211,7 +211,7 @@
     {
       "CD": "01",
       "CountyName": "Chesterfield",
-      "TotalMatchedVoters": 2110,
+      "TotalMatchedVoters": 2112,
       "DemVotedCount": 0,
       "RepVotedCount": 0,
       "UnknownVotedCount": 0,
@@ -222,10 +222,10 @@
       "MailDem": 0,
       "MailRep": 0,
       "DemOutCount": 1243,
-      "RepOutCount": 693,
+      "RepOutCount": 695,
       "UnknownOutCount": 15,
       "VotedCount": 0,
-      "OutCount": 1951
+      "OutCount": 1953
     },
     {
       "CD": "01",
@@ -245,6 +245,25 @@
       "UnknownOutCount": 1,
       "VotedCount": 1,
       "OutCount": 1076
+    },
+    {
+      "CD": "01",
+      "CountyName": "Hanover",
+      "TotalMatchedVoters": 3984,
+      "DemVotedCount": 1,
+      "RepVotedCount": 0,
+      "UnknownVotedCount": 0,
+      "InPersonCount": 0,
+      "MailCount": 1,
+      "InPersonDem": 0,
+      "InPersonRep": 0,
+      "MailDem": 1,
+      "MailRep": 0,
+      "DemOutCount": 2014,
+      "RepOutCount": 1902,
+      "UnknownOutCount": 3,
+      "VotedCount": 1,
+      "OutCount": 3919
     },
     {
       "CD": "01",
@@ -287,7 +306,7 @@
     {
       "CD": "01",
       "CountyName": "York",
-      "TotalMatchedVoters": 3014,
+      "TotalMatchedVoters": 3015,
       "DemVotedCount": 0,
       "RepVotedCount": 0,
       "UnknownVotedCount": 0,
@@ -298,10 +317,10 @@
       "MailDem": 0,
       "MailRep": 0,
       "DemOutCount": 1862,
-      "RepOutCount": 1100,
+      "RepOutCount": 1101,
       "UnknownOutCount": 12,
       "VotedCount": 0,
-      "OutCount": 2974
+      "OutCount": 2975
     },
     {
       "CD": "02",
@@ -549,6 +568,25 @@
       "UnknownOutCount": 1,
       "VotedCount": 0,
       "OutCount": 952
+    },
+    {
+      "CD": "05",
+      "CountyName": "Hanover",
+      "TotalMatchedVoters": 778,
+      "DemVotedCount": 0,
+      "RepVotedCount": 0,
+      "UnknownVotedCount": 0,
+      "InPersonCount": 0,
+      "MailCount": 0,
+      "InPersonDem": 0,
+      "InPersonRep": 0,
+      "MailDem": 0,
+      "MailRep": 0,
+      "DemOutCount": 343,
+      "RepOutCount": 428,
+      "UnknownOutCount": 0,
+      "VotedCount": 0,
+      "OutCount": 771
     },
     {
       "CD": "05",
